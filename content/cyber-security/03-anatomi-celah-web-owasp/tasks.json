@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis keamanan/jaringan\n",
+  "hint": "Bandingkan sasaran serangan antara SQLi (Database) dan XSS (Pengunjung).",
+  "tasks": [
+    {
+      "id": "cs-3-1",
+      "type": "quiz",
+      "params": {
+        "question": "Jika seorang penyerang (attacker) memasukkan teks `' OR 1=1 --` ke dalam kolom login agar sistem secara salah logika memberikan hak akses tanpa memerlukan kata sandi, celah keamanan apakah yang sedang ia manfaatkan?",
+        "options": ["Cross-Site Scripting (XSS)", "SQL Injection (SQLi)", "Denial of Service (DoS)", "Ransomware"],
+        "answer": 1
+      },
+      "hint": "Teks tersebut merupakan bahasa perintah query untuk Database."
+    },
+    {
+      "id": "cs-3-2",
+      "type": "quiz",
+      "params": {
+        "question": "Celah keamanan di mana seorang penyerang menyisipkan kode/skrip berbahaya (seperti JavaScript) ke dalam forum diskusi website sehingga skrip tersebut dieksekusi secara otomatis oleh browser pengunjung lain disebut...",
+        "options": ["Phishing", "SQL Injection", "Cross-Site Scripting (XSS)", "Brute Force"],
+        "answer": 2
+      },
+      "hint": "Menyerang menyilang antar situs/korban."
+    },
+    {
+      "id": "cs-3-3",
+      "type": "quiz",
+      "params": {
+        "question": "Apa prinsip pertahanan paling mendasar (Golden Rule) bagi seorang Programmer untuk mencegah celah keamanan SQLi dan XSS?",
+        "options": ["Hanya menerima akses dari orang yang dikenal", "Membeli Antivirus mahal untuk laptop server", "Jangan pernah mempercayai inputan user secara mentah dan selalu lakukan sanitasi / penyaringan karakter khusus (Input Sanitization)", "Menghapus fitur login dan kolom komentar dari website"],
+        "answer": 2
+      },
+      "hint": "Segala inputan dari form adalah potensi racun yang harus dibersihkan dulu."
+    }
+  ]
+}

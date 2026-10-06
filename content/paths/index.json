@@ -1,0 +1,557 @@
+{
+  "paths": [
+    {
+      "slug": "web-dev",
+      "title": "Web Development",
+      "icon": "<svg fill=\"currentColor\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"   viewBox=\"0 0 512 512\" enable-background=\"new 0 0 512 512\" xml:space=\"preserve\"><g id=\"c133de6af664cd4f011a55de6b000d0b\"><path display=\"inline\" d=\"M108.669,0.501h23.032v22.756h21.069V0.501h23.034V69.41h-23.032V46.334h-21.069V69.41h-23.032V0.501 H108.669z M206.091,23.353h-20.275V0.501h63.594v22.852h-20.285V69.41h-23.032V23.353H206.091z M259.502,0.501h24.02l14.771,24.213 l14.759-24.213h24.023V69.41h-22.938V35.256l-15.845,24.5h-0.395l-15.856-24.5V69.41h-22.539V0.501z M348.54,0.501h23.038v46.133 h32.391V69.41H348.54V0.501z M74.987,100.926l32.946,369.533l147.844,41.04L404.031,470.4l32.981-369.475H74.987z M368.289,188.62 l-2.063,22.977l-0.906,10.188h-0.149H256h-0.158h-63.956l4.142,46.407h59.814H256h92.98h12.214l-1.106,12.172l-10.65,119.32 l-0.682,7.652L256,433.045v0.008l-0.208,0.059l-92.839-25.774l-6.351-71.161h20.97h24.527l3.227,36.146l50.474,13.632l0.042-0.013 v-0.004l50.551-13.64l5.257-58.781H256h-0.158H154.578L143.439,188.62l-1.085-12.157h113.488H256h113.374L368.289,188.62z\"></path></g></svg>",
+      "summary": "Membangun website dari tampilan interaktif hingga server dan database yang aman.",
+      "startingPoint": "Level 0 (Kenal IT) + Web Dasar",
+      "tipe": "Coding",
+      "roles": [
+        {
+          "name": "Frontend Developer",
+          "desc": "Mengolah tampilan visual, komponen interaktif, dan animasi di browser."
+        },
+        {
+          "name": "Backend Developer",
+          "desc": "Mengurus logika server, autentikasi (JWT/Session), database, dan API."
+        },
+        {
+          "name": "Fullstack Developer",
+          "desc": "Menguasai sisi tampilan dan server untuk membangun produk utuh."
+        }
+      ],
+      "stages": [
+        {
+          "title": "Interaktivitas & DOM: JavaScript",
+          "description": "Manipulasi elemen halaman, event klik/input, dan logika pemrograman di browser.",
+          "project": "Halaman web interaktif dengan tombol tema dan kalkulator mini"
+        },
+        {
+          "title": "API & Integrasi Data",
+          "description": "Mengambil dan mengolah data dari server eksternal menggunakan Fetch API, Async/Await, dan JSON.",
+          "project": "Web penampil cuaca realtime atau daftar anime publik"
+        },
+        {
+          "title": "Frontend Modern (React / Vue)",
+          "description": "Membangun arsitektur web skala besar dengan komponen interaktif, state management, dan client-side routing.",
+          "project": "Dashboard catatan digital interaktif"
+        },
+        {
+          "title": "Backend & Database",
+          "description": "Membangun server dengan Node.js/Python, keamanan autentikasi JWT/Session, dan manajemen database SQL.",
+          "project": "REST API untuk platform Blog dengan fitur login yang aman"
+        },
+        {
+          "title": "Fullstack & Deployment",
+          "description": "Menggabungkan Frontend dan Backend menjadi sistem utuh, kemudian mempublikasikannya ke platform cloud.",
+          "project": "Web aplikasi utuh skala produksi yang siap pakai"
+        }
+      ]
+    },
+    {
+      "slug": "mobile",
+      "title": "Mobile Development",
+      "icon": "\ud83d\udcf1",
+      "summary": "Membangun aplikasi Android/iOS, dari antarmuka (UI) sampai integrasi fitur perangkat keras ponsel.",
+      "startingPoint": "Level 0 (Kenal IT) + Python Dasar (OOP)",
+      "tipe": "Coding",
+      "roles": [
+        {
+          "name": "Cross-Platform Developer",
+          "desc": "Membangun satu kode (Flutter/Dart) yang bisa jalan di Android dan iOS."
+        },
+        {
+          "name": "Native Android Developer",
+          "desc": "Fokus membangun aplikasi Android dengan performa maksimal menggunakan Kotlin."
+        }
+      ],
+      "stages": [
+        {
+          "title": "Dasar Bahasa & OOP",
+          "description": "Pemahaman paradigma Pemrograman Berorientasi Objek (OOP) menggunakan Dart atau Kotlin.",
+          "project": "Program konsol permainan logika interaktif"
+        },
+        {
+          "title": "UI Layout & Widget Smartphone",
+          "description": "Menyusun antarmuka aplikasi seluler yang responsif dan sesuai dengan layar sentuh (touchscreen).",
+          "project": "Desain antarmuka (UI) untuk aplikasi katalog produk"
+        },
+        {
+          "title": "State Management & Interaktivitas",
+          "description": "Mengatur logika saat tombol ditekan atau layar digeser untuk mengubah isi tampilan layar secara realtime.",
+          "project": "Aplikasi to-do list pribadi dengan filter kategori"
+        },
+        {
+          "title": "Database Lokal & Notifikasi",
+          "description": "Menyimpan data secara permanen di ponsel (SQLite/Hive) dan membangun sistem alarm/notifikasi.",
+          "project": "Aplikasi jadwal pelajaran sekolah yang dilengkapi pengingat alarm"
+        }
+      ]
+    },
+    {
+      "slug": "game-dev",
+      "title": "Game Development",
+      "icon": "\ud83c\udfae",
+      "summary": "Merancang dan membangun game, dari logika pemrograman hingga pembuatan karya visual dan narasi.",
+      "startingPoint": "Level 0 (Kenal IT) + Python Dasar",
+      "tipe": "Coding & Kreatif",
+      "roles": [
+        {
+          "name": "Game Programmer",
+          "desc": "Otak di balik pergerakan karakter, gravitasi (physics), dan aturan (logika) permainan."
+        },
+        {
+          "name": "Game Artist (2D/3D)",
+          "desc": "Menciptakan wujud karakter, animasi pergerakan, hingga lingkungan dalam game."
+        },
+        {
+          "name": "Level & Game Designer",
+          "desc": "Merancang susunan arena, rintangan, teka-teki, dan mekanik tingkat kesulitan game."
+        },
+        {
+          "name": "Narrative / Story Writer",
+          "desc": "Menulis naskah dialog bercabang dan merajut latar belakang dunia game (lore)."
+        },
+        {
+          "name": "Audio Designer",
+          "desc": "Menciptakan musik latar (BGM) dan efek suara seperti benturan atau langkah kaki."
+        }
+      ],
+      "stages": [
+        {
+          "title": "Dasar Game Loop & Logika Gerak",
+          "description": "Memahami sistem deteksi tabrakan (collider), input keyboard/gamepad, dan gerakan fisika 2D.",
+          "project": "Mini prototype game tangkap bola sederhana"
+        },
+        {
+          "title": "Game Engine (Godot & GDScript)",
+          "description": "Bekerja di dalam platform pembuat game profesional dengan menggunakan Scene dan sistem Node.",
+          "project": "Game 2D Platformer (Lompat) dengan 3 level"
+        },
+        {
+          "title": "Level Design & Game Balancing",
+          "description": "Membuat posisi rintangan, memvariasikan tingkat kecerdasan musuh, dan mengatur poin.",
+          "project": "Desain arena (map) yang seimbang tingkat kesulitannya"
+        },
+        {
+          "title": "Art, Narrative & Sound Integration",
+          "description": "Menyatukan semua elemen visual (Aseprite), dialog interaktif (Twine), dan musik menjadi satu game utuh.",
+          "project": "Game petualangan naratif bergaya pixel art"
+        }
+      ]
+    },
+    {
+      "slug": "iot-elektronika",
+      "title": "Elektronika & IoT",
+      "icon": "\ud83d\udcdf",
+      "summary": "Membuat perangkat keras (hardware) fisik berinteraksi dengan dunia nyata dan tersambung ke internet.",
+      "startingPoint": "Level 0 (Kenal IT) + Python Dasar",
+      "tipe": "Hardware & Coding",
+      "roles": [
+        {
+          "name": "Hardware / Circuit Designer",
+          "desc": "Merangkai jalur listrik, menempatkan komponen sensor, dan memastikan daya aman."
+        },
+        {
+          "name": "Embedded Software Engineer",
+          "desc": "Menulis kode yang ditanam langsung ke dalam chip pintar mikrokontroler."
+        },
+        {
+          "name": "IoT Engineer",
+          "desc": "Menyambungkan perangkat fisik ke jaringan internet untuk monitoring data dari jauh."
+        }
+      ],
+      "stages": [
+        {
+          "title": "Dasar Listrik & Komponen",
+          "description": "Mengenal komponen dasar seperti Resistor, Lampu LED, Sensor, Breadboard, dan logika Hukum Ohm.",
+          "project": "Merangkai sirkuit miniatur lampu lalu lintas"
+        },
+        {
+          "title": "Mikrokontroler Arduino & Sensor",
+          "description": "Mempelajari logika Input/Output secara digital/analog menggunakan simulator Wokwi tanpa komponen fisik.",
+          "project": "Alat pengukur jarak ultrasonik dengan alarm peringatan (Buzzer)"
+        },
+        {
+          "title": "ESP32 & Koneksi Internet",
+          "description": "Membawa mikrokontroler online via WiFi/MQTT untuk berinteraksi dengan sistem awan (Cloud).",
+          "project": "Dashboard pemantau suhu ruangan via website"
+        },
+        {
+          "title": "Sistem Smart Device Otomatis",
+          "description": "Menjadikan alat bertindak mandiri secara cerdas berdasarkan bacaan dari berbagai sensor eksternal.",
+          "project": "Prototipe alat penyiram tanaman otomatis berbantuan sensor kelembapan tanah"
+        }
+      ]
+    },
+    {
+      "slug": "it-support",
+      "title": "IT Support & SysAdmin",
+      "icon": "\ud83d\udd27",
+      "summary": "Jalur ahli hardware, instalasi perangkat keras/lunak, dan pemecah masalah komputer perkantoran.",
+      "startingPoint": "Level 0 (Kenal IT)",
+      "tipe": "Hardware & Networking (Non-Coding)",
+      "roles": [
+        {
+          "name": "IT Support / Helpdesk",
+          "desc": "Menjadi garda terdepan mengatasi laptop lemot, instalasi driver, seting printer, dan recovery file."
+        },
+        {
+          "name": "System Administrator",
+          "desc": "Mengatur ratusan komputer sekolah/kantor, menentukan hak akses folder, dan melakukan backup massal."
+        }
+      ],
+      "stages": [
+        {
+          "title": "Hardware Komputer & Perakitan PC",
+          "description": "Anatomi RAM, Motherboard, penyimpanan SSD/NVMe, dan cara merakit perangkat komputer dengan aman.",
+          "project": "Merancang panduan spesifikasi dan perakitan PC Lab Komputer Sekolah"
+        },
+        {
+          "title": "Sistem Operasi & Partisi Disk",
+          "description": "Instalasi OS tingkat lanjut (Windows/Linux), manajemen driver, serta konfigurasi BIOS/UEFI dan format storage.",
+          "project": "Pembuatan flashdisk sakti USB Bootable Multi-OS menggunakan Ventoy"
+        },
+        {
+          "title": "Manajemen Pengguna & File Sharing",
+          "description": "Mengatur kata sandi pengguna massal (Active Directory), perizinan akses data lokal, dan keamanan jaringan.",
+          "project": "Konfigurasi sistem hak akses folder antar divisi di file server lokal"
+        },
+        {
+          "title": "Troubleshooting & Backup Recovery",
+          "description": "Mendiagnosa layar biru (BSOD), perangkat mati mendadak, serta aturan mutlak pencadangan data (Backup 3-2-1).",
+          "project": "Membuat Standard Operating Procedure (SOP) penanganan komputer rusak dan jadwal rutin backup"
+        }
+      ]
+    },
+    {
+      "slug": "data-ai",
+      "title": "Data, AI & Otomasi",
+      "icon": "\ud83d\udcca",
+      "summary": "Membaca pola dari tumpukan data angka dan memanfaatkan AI modern untuk menyelesaikan pekerjaan harian secara otomatis.",
+      "startingPoint": "Level 0 (Kenal IT) + Python Dasar",
+      "tipe": "Coding & Logika",
+      "roles": [
+        {
+          "name": "Data Analyst",
+          "desc": "Orang yang mengubah ribuan baris Excel membosankan menjadi grafik cerita yang informatif."
+        },
+        {
+          "name": "AI Practitioner / Prompt Engineer",
+          "desc": "Pawang AI; memberikan instruksi/prompt khusus ke sistem LLM untuk tugas-tugas cerdas."
+        },
+        {
+          "name": "Automation Specialist",
+          "desc": "Menciptakan robot/skrip untuk mengerjakan tugas klik manual harian (seperti nge-post otomatis)."
+        }
+      ],
+      "stages": [
+        {
+          "title": "Eksplorasi Data (Python & Pandas)",
+          "description": "Membaca file data raksasa (CSV/Excel), membuang sampah data, dan menemukan rata-rata secara instan.",
+          "project": "Analisis data dari tabel nilai rapor sekolah"
+        },
+        {
+          "title": "Visualisasi Data (Matplotlib)",
+          "description": "Merancang visualisasi menarik (Diagram batang, Pie chart) agar orang awam bisa membaca tren seketika.",
+          "project": "Membuat grafik dashboard tren minat ekstrakurikuler siswa"
+        },
+        {
+          "title": "AI & API LLM Modern",
+          "description": "Menyambungkan kodemu dengan mesin otak AI raksasa (OpenAI/Gemini) untuk menganalisa atau memproduksi teks.",
+          "project": "Membangun asisten AI penanya-jawab (Chatbot) perangkum materi pelajaran"
+        },
+        {
+          "title": "Otomasi Script & Bot",
+          "description": "Menulis robot pintar yang berjalan otomatis di background untuk menunaikan tugas sosial/grup (Discord/Telegram).",
+          "project": "Membuat bot pengingat jadwal piket kelas yang mengirim pesan harian otomatis"
+        }
+      ]
+    },
+    {
+      "slug": "cyber-security",
+      "title": "Cyber Security",
+      "icon": "\ud83d\udee1\ufe0f",
+      "summary": "Memahami pola serangan digital, seni mengamankan rahasia sistem, hingga berlomba menjadi Hacker Etis.",
+      "startingPoint": "Level 0 (Kenal IT) + Web Dasar",
+      "tipe": "Coding & Jaringan",
+      "roles": [
+        {
+          "name": "Penetration Tester (Ethical Hacker)",
+          "desc": "Si Peretas Baik (Red Team); dibayar untuk membobol web klien agar celahnya ketahuan."
+        },
+        {
+          "name": "Security Defender (Blue Team)",
+          "desc": "Si Penjaga Benteng; memantau lalu lintas jaringan dan menghalau masuknya orang tak diundang."
+        }
+      ],
+      "stages": [
+        {
+          "title": "Dasar Linux Terminal & Keamanan Digital",
+          "description": "Hidup sepenuhnya di layar hitam (Command Line), navigasi server, dan sistem hak cipta pengguna di Linux.",
+          "project": "Konfigurasi lab eksperimen server aman menggunakan WSL (Windows Subsystem for Linux)"
+        },
+        {
+          "title": "Kriptografi & Logika Sandi",
+          "description": "Seni menyandikan pesan rahasia (Enkripsi) dari Base64, perhitungan matematis MD5/SHA, hingga logika RSA.",
+          "project": "Membangun program pemecah dan pembuat teka-teki pesan sandi rahasia"
+        },
+        {
+          "title": "Keamanan Web & Celah Vulnerabilitas",
+          "description": "Mempelajari 10 jurus peretasan web paling umum sedunia (OWASP Top 10) seperti SQL Injection dan XSS, serta pelindungnya.",
+          "project": "Uji coba simulasi meretas celah keamanan aplikasi web milik sendiri secara lokal (Localhost)"
+        },
+        {
+          "title": "Tantangan CTF (Capture The Flag)",
+          "description": "Ajang olimpiade para peretas di dunia maya; berlomba mencari kode rahasia ('Bendera') di dalam server.",
+          "project": "Menyelesaikan 5 tantangan pemula CTF di platform global (picoCTF / TryHackMe)"
+        }
+      ]
+    },
+    {
+      "slug": "devops",
+      "title": "DevOps & Cloud",
+      "icon": "\u2699\ufe0f",
+      "summary": "Menggabungkan kecepatan Programming (Dev) dengan ketahanan Server (Ops) agar software di internet tidak gampang tumbang.",
+      "startingPoint": "Level 0 (Kenal IT) + Web Dasar",
+      "tipe": "Infrastruktur Coding",
+      "roles": [
+        {
+          "name": "Infrastructure Engineer",
+          "desc": "Merancang susunan server internet (Cloud) yang kuat walau diakses sejuta pengunjung bersamaan."
+        },
+        {
+          "name": "CI/CD Engineer",
+          "desc": "Membangun rel otomatis; begitu programmer klik simpan (push), web langsung rilis online seketika."
+        }
+      ],
+      "stages": [
+        {
+          "title": "Version Control (Git Lanjut)",
+          "description": "Menyelami teknik cabang riwayat kode (Branching), penggabungan paralel (Merge), dan resolusi tabrakan (Conflict).",
+          "project": "Pengerjaan kolaborasi repository kode tim dengan multi-cabang tanpa error penimpaan"
+        },
+        {
+          "title": "Linux Server & Shell Scripting",
+          "description": "Mengoperasikan mesin server jarak jauh sepenuhnya lewat baris perintah terminal tanpa menggunakan kursor mouse.",
+          "project": "Persiapan dan setup pelayan web (Nginx) di sebuah VPS Linux sungguhan"
+        },
+        {
+          "title": "Containerisasi dengan Docker",
+          "description": "Membungkus aplikasi beserta seluruh komponen pendukungnya ke dalam satu 'kotak ajaib' (Container) yang bisa jalan dimana saja.",
+          "project": "Mengemas proyek aplikasi web sederhana ke dalam bentuk Docker Container"
+        },
+        {
+          "title": "Otomasi Pipeline (CI/CD GitHub Actions)",
+          "description": "Merakit robot yang akan secara otomatis mengetes, membungkus, lalu merilis kodemu setiap kali ada pembaruan.",
+          "project": "Merancang pipeline rilis web otomatis dari git push menuju hosting Cloud"
+        }
+      ]
+    },
+    {
+      "slug": "jaringan",
+      "title": "Jaringan Komputer (Networking)",
+      "icon": "\ud83d\udd0c",
+      "summary": "Mempelajari rute lalu lintas sinyal komunikasi data mulai dari router rumah sampai kabel bawah laut.",
+      "startingPoint": "Level 0 (Kenal IT)",
+      "tipe": "Hardware & Logika (Non-Coding)",
+      "roles": [
+        {
+          "name": "Network Administrator",
+          "desc": "Pemimpin pengatur jaringan perusahaan; mendesain rute kabel, IP, dan tembok pertahanan lalu lintas digital."
+        },
+        {
+          "name": "Network Technician",
+          "desc": "Tim lapangan eksekutor; memasang kabel tembaga/fiber fisik dan menyambungkan ujung komputer klien."
+        }
+      ],
+      "stages": [
+        {
+          "title": "Model OSI 7 Layer & Protokol Internet",
+          "description": "Membedah alur teoritis mutlak bagaimana sebuah pesan WhatsApp dikupas menjadi pecahan bit, dialirkan, dan disusun kembali.",
+          "project": "Menyadap dan menganalisa kiriman paket data lokal dengan aplikasi Wireshark"
+        },
+        {
+          "title": "IP Addressing & Subnetting",
+          "description": "Belajar aturan penamaan komputer dalam jaringan (IPv4), pemotongan blok (CIDR), dan pembatasan siaran data.",
+          "project": "Simulasi perhitungan efisiensi pembagian alamat IP (Subnetting) untuk 3 Lab Komputer"
+        },
+        {
+          "title": "Routing, Switch & VLAN",
+          "description": "Merancang jalur jalan tol komunikasi (Router), pembagi (Switch), dan pembagian jalan gaib dalam jaringan (VLAN).",
+          "project": "Merancang jaringan maya penghubung antar gedung dalam simulator Cisco Packet Tracer"
+        },
+        {
+          "title": "Troubleshooting & Keamanan Jaringan",
+          "description": "Menggunakan perintah diagnostik dasar (Ping, Traceroute) dan merancang batas portal (Firewall) ringan.",
+          "project": "Studi kasus: Mendiagnosa dan memulihkan titik jaringan yang putus secara logika"
+        }
+      ]
+    },
+    {
+      "slug": "ui-ux",
+      "title": "UI/UX & Desain Produk",
+      "icon": "\ud83c\udfa8",
+      "summary": "Seni merancang wujud visual aplikasi (UI) serta kepuasan batin orang yang memakainya (UX).",
+      "startingPoint": "Level 0 (Kenal IT)",
+      "tipe": "Desain / Kreatif (Non-Coding)",
+      "roles": [
+        {
+          "name": "UX Researcher",
+          "desc": "Detektif produk; mewawancarai calon pengguna untuk mencari tahu masalah terbesar mereka."
+        },
+        {
+          "name": "UI Designer",
+          "desc": "Seniman layar; menata warna, bentuk tombol, huruf, hingga tata letak yang memanjakan mata."
+        },
+        {
+          "name": "Product Designer",
+          "desc": "Mendikte visi besar aplikasi, menggabungkan kepuasan pengguna (UX), keindahan (UI), dan potensi bisnis."
+        }
+      ],
+      "stages": [
+        {
+          "title": "Prinsip Desain Visual & Hierarki",
+          "description": "Ilmu magis soal penataan Typografi, perbandingan Kontras, dan penempatan Ruang Kosong (Whitespace) yang elegan.",
+          "project": "Desain ulang kartu informasi yang berantakan menjadi enak dipandang"
+        },
+        {
+          "title": "User Research & Wireframing",
+          "description": "Menggambar rangka kasar aplikasi (Sketsa) bermodalkan riset karakter pengguna dan alur perjalanan logika.",
+          "project": "Merancang bagan arus diagram (Flowchart) alur pendaftaran siswa baru"
+        },
+        {
+          "title": "Mastering Figma (Komponen Modular)",
+          "description": "Menyulap alat desain Figma bagai kode program (Auto Layout) agar komponen bisa memanjang dan responsif otomatis.",
+          "project": "Membangun sistem desain (Design System) mini mulai dari standar tombol hingga kotak masukan"
+        },
+        {
+          "title": "Prototyping & Usability Testing",
+          "description": "Merakit bingkai mati tadi menjadi model klik interaktif yang bisa ditekan-tekan selayaknya HP sungguhan.",
+          "project": "Membuat prototipe presentasi klik aplikasi perpustakaan sekolah digital"
+        }
+      ]
+    },
+    {
+      "slug": "desain-grafis",
+      "title": "Desain Grafis & Media Kreatif",
+      "icon": "\ud83c\udfac",
+      "summary": "Menyalurkan kreativitas murni lewat karya poster visual, ilustrasi vektor, hingga memoles tontonan sinematik.",
+      "startingPoint": "Level 0 (Kenal IT)",
+      "tipe": "Desain / Kreatif (Non-Coding)",
+      "roles": [
+        {
+          "name": "Graphic Designer",
+          "desc": "Perancang gambar statis 2D yang memukau; pembuat logo identitas, banner sosmed, dan pamflet."
+        },
+        {
+          "name": "Video Editor & Motion",
+          "desc": "Sutradara potongan gambar; mengatur ritme potongan film, suara, warna, serta teks efek bergerak."
+        }
+      ],
+      "stages": [
+        {
+          "title": "Desain Komposisi & Layout",
+          "description": "Mengatur keseimbangan ruang karya lewat pola Grid, kaidah penempatan tulisan tebal-tipis, dan trik warna (menggunakan Canva/Photoshop).",
+          "project": "Pembuatan seting poster pengumuman event sekolah formal & non-formal"
+        },
+        {
+          "title": "Desain Vektor & Identitas Visual",
+          "description": "Seni menggambar objek 2D geometris yang jika diperbesar sebesar gedung tidak akan pernah pecah (Illustrator/Inkscape).",
+          "project": "Perancangan filosofi logo ekskul beserta desain stiker merchandise"
+        },
+        {
+          "title": "Video Editing & Pacing (Ritme Cut)",
+          "description": "Menyusun potongan momen dari kamera disinkronkan dengan ketukan (beat) musik (CapCut/Premiere).",
+          "project": "Pembuatan potongan klip (teaser) dokumentasi kegiatan ekstrakurikuler berdurasi pendek (30 detik)"
+        },
+        {
+          "title": "Penyusunan Portofolio Kreatif",
+          "description": "Etalase maya; tata cara mengkomunikasikan hasil karya seni agar menarik klien di media publik (Instagram/Behance).",
+          "project": "Membangun dan mempublikasikan katalog hasil etalase desain komprehensif"
+        }
+      ]
+    },
+    {
+      "slug": "qa-testing",
+      "title": "Quality Assurance (QA)",
+      "icon": "\ud83e\uddea",
+      "summary": "Profesi kritis untuk memburu cacat tersembunyi (Bug) sebelum aplikasi rusak di tangan konsumen massal.",
+      "startingPoint": "Level 0 (Kenal IT) + Web Dasar",
+      "tipe": "Analisis Data Logika (Low-Coding)",
+      "roles": [
+        {
+          "name": "Manual QA Tester",
+          "desc": "Siswa penasaran perusak aplikasi (secara legal); menguji keanehan dari tombol ditekan hingga data hancur."
+        },
+        {
+          "name": "QA Automation Engineer",
+          "desc": "Pawang robot perusak; menulis kode robot yang sanggup mengetes jutaan tombol dalam sedetik secara otomatis."
+        }
+      ],
+      "stages": [
+        {
+          "title": "Mindset Tester & Siklus Hidup Bug",
+          "description": "Berpikir di luar kotak dengan pertanyaan semacam: 'Apa jadinya bila kolom nama saya isi dengan angka negatif?'",
+          "project": "Simulasi analisis cacat (skenario uji logis) pada aplikasi kalkulator handphone"
+        },
+        {
+          "title": "Penyusunan Test Case Dokumen Lengkap",
+          "description": "Menuangkan kecurigaan menjadi dokumen resmi pengecekan langkah-demi-langkah (Pengujian Positif & Negatif).",
+          "project": "Mendokumentasikan 10 skenario batas pengujian wajib pada kotak formulir pendaftaran"
+        },
+        {
+          "title": "Pelaporan Bug Profesional (Bug Reporting)",
+          "description": "Mengkomunikasikan cacat kepada tim programmer tanpa memicu konflik, dengan bukti reproduksi langkah jelas.",
+          "project": "Audit nyata pada sebuah website publik untuk laporan komprehensif 5 temuan bug"
+        },
+        {
+          "title": "Browser DevTools untuk QA Cepat",
+          "description": "Mengintip kesalahan jeroan web di konsol dan jaringan tanpa harus membuka kode sumber mentahnya (Source Code).",
+          "project": "Melacak dan menyimpulkan riwayat putus akses (HTTP Error 404/500) pada sebuah web contoh"
+        }
+      ]
+    },
+    {
+      "slug": "produk-analis",
+      "title": "Produk & Analis IT",
+      "icon": "\ud83e\udde9",
+      "summary": "Otak perancang jembatan emas penghubung kebutuhan bahasa bisnis dengan rumitnya bahasa robot teknis.",
+      "startingPoint": "Level 0 (Kenal IT)",
+      "tipe": "Bisnis & Komunikasi (Non-Coding)",
+      "roles": [
+        {
+          "name": "Product Manager",
+          "desc": "Sang Mandor Utama; mendikte arah produk ini mau dibuat untuk siapa, kapabilitas apa, dan strategi waktu rilisnya."
+        },
+        {
+          "name": "System / Business Analyst",
+          "desc": "Sang Penerjemah; membedah permintaan 'Web Jualan Baju' menjadi ratusan rancangan relasi database dan diagram."
+        }
+      ],
+      "stages": [
+        {
+          "title": "Identifikasi Masalah & User Story",
+          "description": "Menangkap keresahan orang awam kemudian diubah menjadi poin kalimat cerita kebutuhan pengguna (User Story) yang padat.",
+          "project": "Perumusan proposal dokumen kebutuhan pembuatan fitur peminjaman barang inventaris sekolah"
+        },
+        {
+          "title": "Pemodelan Alur Sistem (BPMN / Flowchart)",
+          "description": "Seni merangkai urutan logika kejadian manusia dengan mesin menggunakan bahasa gambar teknis standar internasional.",
+          "project": "Menggambarkan arsitektur urutan logis diagram untuk alur pemesanan kantin digital"
+        },
+        {
+          "title": "Struktur Data Bisnis Dasar (ERD)",
+          "description": "Memetakan bagaimana wujud data 'Siswa' akan bersentuhan dengan data 'Mata Pelajaran' secara masuk akal.",
+          "project": "Penyusunan peta hubungan relasi data Entity Relationship Diagram (ERD) kependidikan"
+        },
+        {
+          "title": "Manajemen Proyek Agile & Kanban",
+          "description": "Ilmu sihir kolaborasi kerja tim lintas disiplin ilmu agar progres target tidak saling menabrak ataupun mandek jalan di tempat.",
+          "project": "Pengelolaan jadwal dan lalu lintas kartu pekerjaan proyek nyata menggunakan board visual (Trello/Kanban)"
+        }
+      ]
+    }
+  ]
+}

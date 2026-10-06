@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Yuk ingat kembali teori Instalasi OS!\n",
+  "hint": "Ingat jenis format partisi dan kehebatan Ventoy.",
+  "tasks": [
+    {
+      "id": "it-2-1",
+      "type": "quiz",
+      "params": {
+        "question": "Format file system (sistem berkas) apakah yang secara default digunakan oleh Sistem Operasi Windows modern untuk instalasi?",
+        "options": ["FAT32", "EXT4", "NTFS", "exFAT"],
+        "answer": 2
+      },
+      "hint": "Tiga huruf akhirnya 'TFS'."
+    },
+    {
+      "id": "it-2-2",
+      "type": "quiz",
+      "params": {
+        "question": "Keunggulan utama membuat Flashdisk Bootable menggunakan aplikasi Ventoy adalah...",
+        "options": ["Mempercepat kinerja komputer", "Menghapus virus di flashdisk secara otomatis", "Hanya bisa menginstal Windows XP", "Cukup copy-paste banyak file ISO (mentahan OS) ke flashdisk, dan semua opsi OS itu akan langsung tersedia di menu instalasi"],
+        "answer": 3
+      },
+      "hint": "Ventoy mendukung Multi-Booting (banyak OS sekaligus dalam 1 flashdisk)."
+    },
+    {
+      "id": "it-2-3",
+      "type": "quiz",
+      "params": {
+        "question": "Sistem tabel partisi modern yang wajib digunakan untuk hardware baru (menggantikan sistem MBR yang sudah jadul) adalah...",
+        "options": ["BIOS", "GPT (GUID Partition Table)", "Rufus", "USB Type-C"],
+        "answer": 1
+      },
+      "hint": "Namanya berawalan huruf G."
+    }
+  ]
+}

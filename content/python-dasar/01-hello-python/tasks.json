@@ -1,0 +1,30 @@
+{
+  "editor": "python",
+  "starter": "# Cetak salam pertamamu:\n\n",
+  "hint": "Gunakan print() dan pastikan huruf besar/kecil persis sama.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "python-output",
+      "params": {
+        "contains": "Halo TCC Academy!"
+      },
+      "hint": "Pastikan kodemu mencetak 'Halo TCC Academy!' lewat fungsi print(). Hati-hati case-sensitive."
+    },
+    {
+      "id": "t2",
+      "type": "quiz",
+      "params": {
+        "question": "Apa fungsi dari tanda pagar (#) dalam Python?",
+        "options": [
+          "Membuat tulisan menjadi tebal (bold).",
+          "Membuat teks setelahnya menjadi komentar yang diabaikan oleh komputer.",
+          "Sebagai penutup program.",
+          "Menghitung jumlah baris."
+        ],
+        "answer": 1
+      },
+      "hint": "Ingat cara kita meninggalkan pesan rahasia di kode."
+    }
+  ]
+}

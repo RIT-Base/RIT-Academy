@@ -1,0 +1,57 @@
+{
+  "editor": "html",
+  "starter": "<!-- Modul ini fokus kuis konsep internet & jaringan -->\n<h1>Internet & Jaringan</h1>",
+  "hint": "Baca ulang bagian IP address, DNS, dan server-client kalau masih ragu.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "quiz",
+      "params": {
+        "question": "IP address paling tepat diibaratkan sebagai...",
+        "options": ["Buku telepon", "Alamat rumah unik tiap perangkat", "Jalan raya", "Router WiFi"],
+        "answer": 1
+      },
+      "hint": "Lihat bagian 'IP Address: Alamat Rumah di Internet'."
+    },
+    {
+      "id": "t2",
+      "type": "quiz",
+      "params": {
+        "question": "Fungsi utama DNS adalah...",
+        "options": [
+          "Mengubah nama domain yang gampang diingat menjadi IP address tujuan",
+          "Menyimpan seluruh isi internet di satu tempat",
+          "Membuat WiFi sekolah lebih cepat",
+          "Menjadi pengganti dari server"
+        ],
+        "answer": 0
+      },
+      "hint": "Lihat bagian 'DNS: Buku Telepon Internet'."
+    },
+    {
+      "id": "t3",
+      "type": "quiz",
+      "params": {
+        "question": "Dalam hubungan client-server, siapa yang berperan meminta data?",
+        "options": ["Server", "Client", "DNS", "Router"],
+        "answer": 1
+      },
+      "hint": "Lihat bagian 'Server dan Client: Siapa Melayani Siapa'."
+    },
+    {
+      "id": "t4",
+      "type": "quiz",
+      "params": {
+        "question": "Kenapa WiFi sekolah bisa terasa lemot saat dipakai banyak siswa sekaligus?",
+        "options": [
+          "Karena DNS berhenti bekerja",
+          "Karena semua perangkat berebut jalur yang sama menuju internet, mirip jalan raya yang macet",
+          "Karena IP address di sekolah habis selamanya",
+          "Karena server selalu mati saat jam sekolah"
+        ],
+        "answer": 1
+      },
+      "hint": "Lihat bagian 'Sekilas WiFi dan Jaringan Lokal'."
+    }
+  ]
+}

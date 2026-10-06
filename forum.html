@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forum | TCC Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" href="data:,">
+</head>
+<body data-nav-active="forum.html">
+  <a href="#main" class="skip-link">Langsung ke konten utama</a>
+  <nav class="top-nav" aria-label="Navigasi utama">
+    <a href="index.html" class="brand"><span class="material-symbols-outlined" style="color: var(--color-primary); font-size: 28px;" aria-hidden="true">terminal</span> TCC Academy</a>
+    <ul class="top-nav__links">
+      <li><a href="index.html" data-nav-link="index.html">Beranda</a></li>
+      <li><a href="paths.html" data-nav-link="paths.html">Belajar</a></li>
+      <li><a href="tools.html" data-nav-link="tools.html">Tools</a></li>
+      <li><a href="forum.html" data-nav-link="forum.html" aria-current="page" style="color: var(--color-primary); font-weight: 700;">Forum</a></li>
+    </ul>
+    <div style="display: flex; align-items: center; padding-right: var(--space-4);">
+      <a href="profil.html" data-nav-link="profil.html" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; background-color: var(--color-primary); border-radius: 50%; color: #fff;">
+        <span class="material-symbols-outlined" style="font-size: 20px;">person</span>
+      </a>
+    </div>
+  </nav>
+
+  <main id="main" class="container page-section path-content">
+    <!-- Hero Forum -->
+    <div style="text-align: center; margin-bottom: var(--space-7); padding: var(--space-6) 0; border-bottom: 1px solid var(--color-border);">
+      <span style="display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 64px; background: var(--color-primary-light); color: var(--color-primary); border-radius: 50%; margin-bottom: var(--space-3);">
+        <span class="material-symbols-outlined" style="font-size: 32px;">forum</span>
+      </span>
+      <h1 style="font-size: var(--fs-2xl); margin-bottom: var(--space-2);">Forum TCC Academy</h1>
+      <p class="text-muted" style="max-width: 60ch; margin: 0 auto var(--space-5);">Tempat bertanya, berbagi solusi, dan memamerkan kodemu. Kita menggunakan platform diskusi resmi dari GitHub.</p>
+      
+      <a href="https://github.com/KazukiFujimaru/TCC-Academy/discussions" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 16px 32px; font-size: var(--fs-md);">
+        <span class="material-symbols-outlined">chat</span> Tanya di GitHub Discussions
+      </a>
+      <p style="font-size: var(--fs-xs); color: var(--color-text-faint); margin-top: var(--space-3);">Diskusi lewat GitHub sekalian melatih GitHub-mu — itu bagian dari kurikulum kita (modul 8–9) 😉</p>
+    </div>
+
+    <div class="grid grid-2">
+      <!-- Panduan -->
+      <div style="display: flex; flex-direction: column; gap: var(--space-3);">
+        <h2 style="font-size: var(--fs-lg); margin-bottom: var(--space-2); display: flex; align-items: center; gap: 8px;">
+          <span class="material-symbols-outlined" style="color: var(--color-accent);">help</span> Cara Bertanya yang Baik
+        </h2>
+        
+        <div class="card" style="padding: var(--space-4);">
+          <div style="font-weight: 700; margin-bottom: 4px;">1. Sertakan kode yang error</div>
+          <div class="text-muted" style="font-size: var(--fs-sm);">Jangan cuma bilang "kode saya rusak". Copy-paste kodenya atau berikan screenshot yang jelas.</div>
+        </div>
+        <div class="card" style="padding: var(--space-4);">
+          <div style="font-weight: 700; margin-bottom: 4px;">2. Ceritakan yang sudah kamu coba</div>
+          <div class="text-muted" style="font-size: var(--fs-sm);">Biar yang bantu nggak menebak-nebak dan mengulang solusi yang sudah gagal kamu lakukan.</div>
+        </div>
+        <div class="card" style="padding: var(--space-4);">
+          <div style="font-weight: 700; margin-bottom: 4px;">3. Cek pertanyaan lama</div>
+          <div class="text-muted" style="font-size: var(--fs-sm);">Gunakan fitur pencarian di GitHub Discussions dulu. Siapa tahu ada yang pernah mengalami error serupa.</div>
+        </div>
+        <div class="card" style="padding: var(--space-4);">
+          <div style="font-weight: 700; margin-bottom: 4px;">4. Satu pertanyaan per utas</div>
+          <div class="text-muted" style="font-size: var(--fs-sm);">Gunakan judul yang spesifik. Hindari judul seperti "Tolong Sensei", ganti dengan "Error saat loop di Python".</div>
+        </div>
+      </div>
+
+      <!-- Etika -->
+      <div style="display: flex; flex-direction: column; gap: var(--space-3);">
+        <h2 style="font-size: var(--fs-lg); margin-bottom: var(--space-2); display: flex; align-items: center; gap: 8px;">
+          <span class="material-symbols-outlined" style="color: var(--color-success);">gavel</span> Etika Komunitas
+        </h2>
+        
+        <div class="card" style="background: var(--color-surface-alt); padding: var(--space-4); display: flex; gap: var(--space-3);">
+          <span class="material-symbols-outlined" style="color: var(--color-success);">mood</span>
+          <div>
+            <div style="font-weight: 700; margin-bottom: 4px;">Sopan ke Semua Orang</div>
+            <div class="text-muted" style="font-size: var(--fs-sm);">Tidak ada pertanyaan bodoh. Hormati teman yang baru belajar dan mereka yang meluangkan waktu menjawab.</div>
+          </div>
+        </div>
+        <div class="card" style="background: var(--color-surface-alt); padding: var(--space-4); display: flex; gap: var(--space-3);">
+          <span class="material-symbols-outlined" style="color: var(--color-success);">schedule</span>
+          <div>
+            <div style="font-weight: 700; margin-bottom: 4px;">Hargai Waktu</div>
+            <div class="text-muted" style="font-size: var(--fs-sm);">Sensei dan teman-teman lain tidak on 24 jam. Bersabarlah menunggu jawaban, jangan spam/ping berkali-kali.</div>
+          </div>
+        </div>
+        <div class="card" style="background: var(--color-surface-alt); padding: var(--space-4); display: flex; gap: var(--space-3);">
+          <span class="material-symbols-outlined" style="color: var(--color-success);">local_library</span>
+          <div>
+            <div style="font-weight: 700; margin-bottom: 4px;">Belajar Sebelum Menyalahkan</div>
+            <div class="text-muted" style="font-size: var(--fs-sm);">Biasanya komputer tidak pernah salah. Periksa kembali kodenya titik koma (;) atau indentasi sebelum menyalahkan tools/materi.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" style="background: var(--color-surface); margin-top: 0; padding-bottom: calc(var(--nav-height-bottom) + var(--space-6)); border-top: 1px solid var(--color-border);">
+    <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-4);">
+      <div style="display: flex; align-items: center; gap: var(--space-2);">
+        <span class="material-symbols-outlined">terminal</span>
+        <strong style="font-size: var(--fs-xs); letter-spacing: 0.05em;">TCC ACADEMY &copy; <span data-year></span></strong>
+      </div>
+      <div style="display: flex; gap: var(--space-4);">
+        <a href="docs/CONTENT-GUIDE.md" style="font-size: var(--fs-sm); color: var(--color-text-muted);">Panduan Sensei</a>
+        <a href="forum.html" style="font-size: var(--fs-sm); color: var(--color-text-muted);">Forum Diskusi</a>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="bottom-nav" aria-label="Navigasi bawah">
+    <a href="index.html" data-nav-link="index.html"><span class="material-symbols-outlined icon" aria-hidden="true">home</span>Beranda</a>
+    <a href="paths.html" data-nav-link="paths.html"><span class="material-symbols-outlined icon" aria-hidden="true">school</span>Belajar</a>
+    <a href="tools.html" data-nav-link="tools.html"><span class="material-symbols-outlined icon" aria-hidden="true">build</span>Tools</a>
+    <a href="forum.html" data-nav-link="forum.html"><span class="material-symbols-outlined icon" aria-hidden="true">forum</span>Forum</a>
+    <a href="profil.html" data-nav-link="profil.html"><span class="material-symbols-outlined icon" aria-hidden="true">person</span>Profil</a>
+  </nav>
+
+  <script type="module" src="assets/js/app.js"></script>
+  <script type="module" src="assets/js/pages/forum.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "editor": "python",
+  "starter": "nama = input('Siapa namamu? ')\n# Cetak sapaan dengan nama tersebut\n",
+  "hint": "Gunakan perintah print() yang menggabungkan teks 'Halo ' dan isi variabel nama.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "python-output",
+      "params": {
+        "contains": "Halo"
+      },
+      "hint": "Pastikan hasil output-mu mengandung kata sapaan 'Halo'."
+    },
+    {
+      "id": "t2",
+      "type": "quiz",
+      "params": {
+        "question": "Mengapa kita menggunakan int() setelah meminta umur lewat input()?",
+        "options": [
+          "Karena input() selalu menghasilkan tipe Boolean.",
+          "Agar tulisan di terminal menjadi berwarna biru.",
+          "Karena input() selalu menghasilkan String (teks), sehingga perlu diubah menjadi angka untuk perhitungan.",
+          "Sebagai syarat wajib dari pembuat Python."
+        ],
+        "answer": 2
+      },
+      "hint": "Apa yang terjadi jika kita menjumlahkan teks dengan angka?"
+    }
+  ]
+}

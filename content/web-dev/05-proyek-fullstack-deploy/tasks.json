@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Checklist Launching Terakhir!\n",
+  "hint": "Ingat konsep CORS, pemisahan platform hosting, dan keamanan .env.",
+  "tasks": [
+    {
+      "id": "wd-5-1",
+      "type": "quiz",
+      "params": {
+        "question": "Sistem keamanan standar pada web browser yang akan memblokir request API Frontend jika berbeda domain/asal (kecuali diizinkan secara eksplisit oleh server backend) disebut dengan...",
+        "options": ["CORS (Cross-Origin Resource Sharing)", "JWT Token", "HTTPS Encryption", "SQL Injection"],
+        "answer": 0
+      },
+      "hint": "Sering menjadi mimpi buruk error pertama para programmer web pemula saat menyambungkan API."
+    },
+    {
+      "id": "wd-5-2",
+      "type": "quiz",
+      "params": {
+        "question": "Pendekatan/layanan modern di mana developer tidak perlu membuat server backend dan database dari nol karena semuanya (Autentikasi, Database, API) sudah disediakan otomatis oleh platform seperti Firebase atau Supabase disebut dengan arsitektur...",
+        "options": ["Desktop App", "BaaS (Backend-as-a-Service)", "Static Site Generation", "Localhost Networking"],
+        "answer": 1
+      },
+      "hint": "Singkatan dari Backend-as-a-Service."
+    },
+    {
+      "id": "wd-5-3",
+      "type": "quiz",
+      "params": {
+        "question": "Sebelum mem-publish (deploy) kodingan ke publik/GitHub, file rahasia yang berisi password database atau kunci API harus disembunyikan dan JANGAN PERNAH di-upload. Format file penyimpanan rahasia ini umumnya berekstensi...",
+        "options": [".html", ".js", ".env", ".css"],
+        "answer": 2
+      },
+      "hint": "Singkatan dari Environment (lingkungan)."
+    }
+  ]
+}

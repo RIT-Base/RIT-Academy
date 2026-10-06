@@ -1,0 +1,59 @@
+{
+  "editor": "html",
+  "starter": "<!-- Kuis + 1 task opsional dari blok kode di materi -->\n<h1>Cara Kerja Komputer</h1>",
+  "hint": "Task pertama menilai blok kode 'kalkulator mini' di materi (blok interaktif ke-1). Task lainnya kuis konsep.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "html-contains",
+      "params": { "selector": "#hasil" },
+      "hint": "Jangan hapus elemen dengan id 'hasil' di blok kode kalkulator mini — cukup ubah nilai angka1/angka2.",
+      "block": 1
+    },
+    {
+      "id": "t2",
+      "type": "quiz",
+      "params": {
+        "question": "Urutan pola dasar kerja komputer yang benar adalah...",
+        "options": [
+          "Output → Proses → Input",
+          "Input → Proses → Output",
+          "Proses → Input → Output",
+          "Input → Output → Proses"
+        ],
+        "answer": 1
+      },
+      "hint": "Lihat bagian 'Pola Dasar: Input → Proses → Output'."
+    },
+    {
+      "id": "t3",
+      "type": "quiz",
+      "params": {
+        "question": "RAM di komputer paling tepat diibaratkan sebagai...",
+        "options": [
+          "Lemari arsip permanen yang datanya tidak hilang saat mati",
+          "Meja kerja sementara yang dibersihkan total saat komputer dimatikan",
+          "Otak yang melakukan semua perhitungan",
+          "Manajer yang mengatur semua aplikasi"
+        ],
+        "answer": 1
+      },
+      "hint": "Lihat penjelasan RAM di bagian 'Tiga Organ Penting di Dalam Komputer'."
+    },
+    {
+      "id": "t4",
+      "type": "quiz",
+      "params": {
+        "question": "Tugas utama sistem operasi (OS) adalah...",
+        "options": [
+          "Mengganti CPU dengan yang lebih cepat",
+          "Mengatur aplikasi, RAM, dan storage supaya semua bagian komputer bekerja sama dengan rapi",
+          "Menyimpan foto dan video secara permanen",
+          "Menjadi satu-satunya aplikasi yang boleh dibuka di komputer"
+        ],
+        "answer": 1
+      },
+      "hint": "Lihat bagian 'Sistem Operasi: yang Mengatur Semuanya'."
+    }
+  ]
+}

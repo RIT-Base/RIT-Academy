@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis desain/kualitas/produk\n",
+  "hint": "Cermati tugas detektif spesialis dari tiap Tab menu (Elements, Console, Network) di DevTools.",
+  "tasks": [
+    {
+      "id": "qa-4-1",
+      "type": "quiz",
+      "params": {
+        "question": "Jika seorang Programmer Website (Frontend) tanpa sengaja salah melupakan huruf (typo nama fungsi) pada bahasa perantara logika JavaScript-nya sehingga sewaktu sebuah fitur utama diklik tidak memunculkan aksi apa-apa di layar browser. Maka, di tab menu DevTools manakah jejak saksi pendarahan (teks merah Error log/pesan peringatan hancurnya kode) tersebut dapat langsung dibaca dengan jelas oleh sang QA Tester?",
+        "options": ["Tab Performance", "Tab Network Traffic", "Tab Elements HTML", "Tab Console"],
+        "answer": 3
+      },
+      "hint": "Menu ini berfungsi seperti kotak obrolan curhat keluaran suara (Output log) bagi eksekusi mesin JS murni."
+    },
+    {
+      "id": "qa-4-2",
+      "type": "quiz",
+      "params": {
+        "question": "Di bilah menu DevTools, jika QA Tester ingin memanipulasi secara jahil 'Kecepatan Sinyal Kuota' pada browsernya sendiri (misal dengan mode 'Slow 3G' Simulation) guna menguji ketahanan desain loading kerangka rangka tulang web aplikasinya, maka fitur setelan tersebut berada pada area pelacakan di Tab menu...",
+        "options": ["Network (Jaringan)", "Elements", "Security SSL", "Console"],
+        "answer": 0
+      },
+      "hint": "Menu lalu lintas keluar-masuk lalu lalang sinyal internet (API)."
+    },
+    {
+      "id": "qa-4-3",
+      "type": "quiz",
+      "params": {
+        "question": "Saat melakukan inspeksi tangkap penyadapan lalu lintas (API Traffic) di tab 'Network'. Ternyata sang kurir JSON Fetch gagal menggapai tujuannya akibat 'Kunci Otentikasi Password JWT'-nya kadaluarsa/salah sandi gerbang (Bukan karena sisi Backend Servernya yang terbakar meleduk). Pesan sinyal sandi balasan (HTTP Status Code) berapakah yang akan dicatat terekam menolak merah oleh DevTools tab tersebut?",
+        "options": ["401 (Unauthorized)", "200 (Sukses Mulus OK)", "500 (Server Error Kiamat Api)", "301 (Pindah Rumah Permanen Redirect)"],
+        "answer": 0
+      },
+      "hint": "Gagal otentikasi kunci akses identitas/Hak Akses (Tidak Diotorisasi)."
+    }
+  ]
+}

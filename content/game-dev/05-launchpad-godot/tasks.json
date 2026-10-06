@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Persiapan terakhir sebelum menjadi indie game dev!\n",
+  "hint": "Ingat konsep utama Godot dan bahasa pemrogramannya.",
+  "tasks": [
+    {
+      "id": "gd-5-1",
+      "type": "quiz",
+      "params": {
+        "question": "Apa bahasa pemrograman utama yang digunakan dalam Godot Engine yang syntax-nya sangat mirip Python?",
+        "options": ["C++", "Java", "GDScript", "JavaScript"],
+        "answer": 2
+      },
+      "hint": "Namanya singkatan dari 'Godot Script'."
+    },
+    {
+      "id": "gd-5-2",
+      "type": "quiz",
+      "params": {
+        "question": "Konsep dasar bangunan (building blocks) di Godot Engine di mana segala objek tersusun dari hierarki disebut...",
+        "options": ["Loop & Render", "Node & Scene", "Hitbox & Hurtbox", "Class & Object"],
+        "answer": 1
+      },
+      "hint": "Semuanya berpusat pada N___ dan S____."
+    },
+    {
+      "id": "gd-5-3",
+      "type": "quiz",
+      "params": {
+        "question": "Platform toko digital (storefront) mana yang paling populer untuk mempublikasikan game buatan Indie Developer / hasil Game Jam?",
+        "options": ["Steam", "Epic Games", "PlayStore", "itch.io"],
+        "answer": 3
+      },
+      "hint": "Tempat di mana kamu bisa upload web-game HTML5 secara gratis."
+    }
+  ]
+}

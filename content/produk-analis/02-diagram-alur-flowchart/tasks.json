@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis desain/kualitas/produk\n",
+  "hint": "Cermati lagi aturan simbol suci standar internasional geometri ISO tersebut.",
+  "tasks": [
+    {
+      "id": "pa-2-1",
+      "type": "quiz",
+      "params": {
+        "question": "Jika seorang Analis Sistem di tengah-tengah alur desain kerangka gambar Flowchart miliknya perlu merepresentasikan tindakan 'Sistem melakukan pengecekan di belakang layar secara komputasi untuk menghitung jumlah total keranjang harga diskon barang'. Ikon bentuk standar geometri ISO manakah yang paling mewakili aktivitas Proses Perhitungan (Calculation Process) diam-diam tersebut?",
+        "options": ["Belah Ketupat / Wajik (Diamond)", "Kotak Persegi Panjang (Rectangle)", "Pil Oval (Terminator)", "Tabung Silinder Besar"],
+        "answer": 1
+      },
+      "hint": "Mewakili kegiatan proses aksi diam (Non-input/Output lisan)."
+    },
+    {
+      "id": "pa-2-2",
+      "type": "quiz",
+      "params": {
+        "question": "Kekuatan sejati sebuah Flowchart ada pada kemampuannya memberikan alternatif cabang nasib yang berbelok ('Apa yang terjadi jika ternyata user salah memasukkan ketikan password 3x?'). Ikon simbol geometri spesifik yang HANYA digunakan eksklusif untuk mengajukan sebuah pertanyaan bersyarat dengan mengeluarkan cabang luaran garis panah tegas (YA atau TIDAK / True or False) adalah wujud wujud ikon...",
+        "options": ["Jajar Genjang (Parallelogram)", "Kotak Persegi (Square)", "Wujud Wajik Berlian Belah Ketupat (Decision Diamond)", "Bulatan Lingkaran Penuh murni"],
+        "answer": 2
+      },
+      "hint": "Melambangkan sebuah Titik Keputusan / Syarat Kondisi (Decision)."
+    },
+    {
+      "id": "pa-2-3",
+      "type": "quiz",
+      "params": {
+        "question": "Seorang Siswa menggambar langkah alur sistem pembayaran GoPay dengan mengawali gambar Flowchart-nya menaruh teks tulisan 'Mulai Start' di dalam ikon bangun Jajar Genjang, lalu kemudian ia menutup gambar alur selesainya 'Tamat/Finish' dengan menaruhnya di dalam gambar Belah Ketupat Wajik. Di mana letak fatal kesalahan siswa tersebut menurut standar pembacaan skema global?",
+        "options": ["Teksnya kurang tebal", "Siswa tersebut menggunakan bentuk bentuk aneh, padahal untuk simbol mutlak pembukaan Start dan penutup End (Tamat), wajib hanya boleh memakai simbol bangunan Kapsul Pil Oval panjang (Terminator), dan tidak boleh ditukar fungsi dengan Jajar Genjang atau Wajik", "Harusnya pakai gambar Bintang untuk Start", "Siswa tersebut lupa menggambar foto wajah target penggunanya di sebelah Flowchart"],
+        "answer": 1
+      },
+      "hint": "Ikon awal pintu dan pintu penutup itu bentuk dan kodrat porsinya tak tergantikan (Eksklusif Terminator)."
+    }
+  ]
+}

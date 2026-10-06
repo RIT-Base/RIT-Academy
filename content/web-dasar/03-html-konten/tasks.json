@@ -1,0 +1,35 @@
+{
+  "editor": "html",
+  "starter": "<h1>Profil Anggota TCC</h1>\n<!-- Tambahkan gambar, link, dan daftar di bawah ini -->\n",
+  "hint": "Bikin halaman profil diri: tambahkan gambar (img), link (a), dan daftar (ul) sesuai contoh di materi.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "html-contains",
+      "params": { "selector": "img[src]" },
+      "hint": "Tambahkan elemen <img src=\"...\" alt=\"...\"> untuk foto profilmu."
+    },
+    {
+      "id": "t2",
+      "type": "html-contains",
+      "params": { "selector": "a[href]" },
+      "hint": "Tambahkan elemen <a href=\"...\">, misalnya link ke akun media sosialmu."
+    },
+    {
+      "id": "t3",
+      "type": "html-contains",
+      "params": { "selector": "ul li" },
+      "hint": "Tambahkan daftar hobi pakai <ul> yang berisi beberapa <li>."
+    },
+    {
+      "id": "t4",
+      "type": "quiz",
+      "params": {
+        "question": "Kamu mau bikin daftar langkah-langkah membuat mi instan, dari langkah 1 sampai 3. List jenis apa yang paling cocok?",
+        "options": ["<ul>, karena urutan tidak penting", "<ol>, karena urutannya penting", "<img>, karena berupa gambar", "<a>, karena berupa link"],
+        "answer": 1
+      },
+      "hint": "Ingat bedanya <ul> (tanpa urutan) dan <ol> (berurutan/bernomor)."
+    }
+  ]
+}

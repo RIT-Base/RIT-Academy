@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis keamanan/jaringan\n",
+  "hint": "Cermati berbedaan VM dan Docker, dan peran Dockerfile.",
+  "tasks": [
+    {
+      "id": "do-3-1",
+      "type": "quiz",
+      "params": {
+        "question": "Mengapa teknologi kontainer (seperti Docker) secara teknis berjalan jauh lebih ringan dan lebih cepat dibandingkan dengan teknologi Virtual Machine (VM)?",
+        "options": ["Karena Docker tidak menggunakan memori/RAM sama sekali", "Karena Kontainer saling berbagi (sharing) inti Kernel OS dengan komputer induk, sedangkan VM mengharuskan instalasi keseluruhan OS (Guest OS) yang rakus ukuran penyimpanannya secara utuh", "Karena Docker tidak memerlukan listrik", "Karena Docker berjalan di Cloud"],
+        "answer": 1
+      },
+      "hint": "Perbedaan utama adalah pada keberadaan OS utuh. VM mereplikasi mesin keras + OS."
+    },
+    {
+      "id": "do-3-2",
+      "type": "quiz",
+      "params": {
+        "question": "Sebuah file resep/skrip berformat teks yang berisikan urutan perintah spesifik instruksi bagi Docker untuk membangun (mencetak) lingkungan aplikasimu dinamakan...",
+        "options": ["Docker Image", "VirtualBox", "Dockerfile", "GitHub File"],
+        "answer": 2
+      },
+      "hint": "Sesuai dengan nama filenya: Docker____."
+    },
+    {
+      "id": "do-3-3",
+      "type": "quiz",
+      "params": {
+        "question": "Dalam hierarki ekosistem Docker, hasil cetakan beku (kumpulan file yang telah dibungkus rapi namun belum dihidupkan proses mesinnya) disebut 'Image'. Lalu, ketika Image tersebut dinyalakan/dijalankan dan siap beroperasi menerima tugas, istilah untuk wujud Image yang sedang hidup itu menjadi...",
+        "options": ["Virtual Engine", "Container", "Hypervisor", "Source Code"],
+        "answer": 1
+      },
+      "hint": "Sesuai dengan nama teknologi yang sedang dibahas di modul ini."
+    }
+  ]
+}

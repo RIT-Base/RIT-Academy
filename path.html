@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Course | TCC Academy</title>
+  <meta name="description" content="Roadmap bertahap untuk jalur belajar pilihanmu.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" href="data:,">
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh; background: var(--color-bg);">
+  <a href="#main" class="skip-link">Langsung ke konten utama</a>
+  
+  <!-- Navbar -->
+  <nav class="top-nav" aria-label="Navigasi utama">
+    <a href="index.html" class="brand">
+      <span class="material-symbols-outlined" style="color: var(--color-primary); font-size: 28px;" aria-hidden="true">terminal</span> 
+      TCC Academy
+    </a>
+    <ul class="top-nav__links">
+      <li><a href="index.html" data-nav-link="index.html">Beranda</a></li>
+      <li><a href="paths.html" data-nav-link="paths.html">Belajar</a></li>
+      <li><a href="tools.html" data-nav-link="tools.html">Tools</a></li>
+      <li><a href="forum.html" data-nav-link="forum.html">Forum</a></li>
+    </ul>
+    <div style="display: flex; align-items: center; padding-right: var(--space-4);">
+      <a href="profil.html" data-nav-link="profil.html" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; background-color: var(--color-primary); border-radius: 50%; color: #fff;">
+        <span class="material-symbols-outlined" style="font-size: 20px;">person</span>
+      </a>
+    </div>
+  </nav>
+
+  <main id="main" style="flex: 1; padding-bottom: var(--space-8);">
+    
+    <!-- Tempat Injeksi Header Banner -->
+    <div id="path-header-mount"></div>
+
+    <!-- Layout Dua Kolom (Syllabus & Sidebar) -->
+    <div class="container" style="display: flex; flex-wrap: wrap; gap: var(--space-6); margin-top: var(--space-6);">
+      
+      <!-- Stepper / Syllabus -->
+      <div style="flex: 1 1 300px; min-width: 0; max-width: 100%;">
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: var(--space-5);">
+          <span class="material-symbols-outlined" style="color: var(--color-primary); font-size: 24px;">map</span>
+          <h2 style="margin: 0; font-size: var(--fs-lg);">Syllabus Path</h2>
+        </div>
+        
+        <div id="path-stepper-mount" style="position: relative; padding-bottom: var(--space-6);">
+          <!-- Injeksi Modul dari path-detail.js -->
+        </div>
+      </div>
+
+      <!-- Sidebar Overview -->
+      <div style="flex: 1 1 280px; min-width: 0; max-width: 100%;">
+        <div id="path-sidebar-mount" style="position: sticky; top: 100px;">
+          <!-- Injeksi Sidebar dari path-detail.js -->
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Navigasi bawah">
+    <a href="index.html" data-nav-link="index.html"><span class="material-symbols-outlined icon" aria-hidden="true">home</span>Beranda</a>
+    <a href="paths.html" data-nav-link="paths.html"><span class="material-symbols-outlined icon" aria-hidden="true">school</span>Belajar</a>
+    <a href="tools.html" data-nav-link="tools.html"><span class="material-symbols-outlined icon" aria-hidden="true">build</span>Tools</a>
+    <a href="forum.html" data-nav-link="forum.html"><span class="material-symbols-outlined icon" aria-hidden="true">forum</span>Forum</a>
+    <a href="profil.html" data-nav-link="profil.html"><span class="material-symbols-outlined icon" aria-hidden="true">person</span>Profil</a>
+  </nav>
+
+  <script type="module" src="assets/js/app.js"></script>
+  <script type="module" src="assets/js/pages/path-detail.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Checklist Final Kelulusan Data Science!\n",
+  "hint": "Fokus pada etika privasi dan skema pengolahan.",
+  "tasks": [
+    {
+      "id": "da-5-1",
+      "type": "quiz",
+      "params": {
+        "question": "Urutan jalur pemrosesan data (Pipeline) paling ideal dari data mentah sebelum menjadi sebuah Data Dashboard interaktif adalah...",
+        "options": ["Visualisasi -> Pembersihan -> Koleksi", "Koleksi Ekstrak -> Transformasi/Pembersihan (Pandas) -> Visualisasi Load", "Transformasi -> Visualisasi -> Dibuang", "Koleksi Ekstrak -> Dihapus -> Visualisasi"],
+        "answer": 1
+      },
+      "hint": "Cari alur yang sangat logis, mulai dari mengambil barang mentah, membersihkannya, lalu menyajikannya."
+    },
+    {
+      "id": "da-5-2",
+      "type": "quiz",
+      "params": {
+        "question": "Jika perusahaan memintamu membuat Visualisasi Dashboard Terbuka untuk diakses publik, tindakan ETIS mutlak apa yang HARUS kamu lakukan terhadap kolom-kolom berisi nama lengkap, nomor KTP, dan nomor HP partisipan di dalam dataset mentahmu?",
+        "options": ["Memberikan warna merah pada teksnya agar cantik", "Membiarkannya agar informasinya lengkap detail", "Menjual kolom data tersebut ke platform marketing lain", "Melakukan tahap Anonymize (menyamarkan atau menghapus kolom privasi data diri alias PII) dari dataset publik tersebut"],
+        "answer": 3
+      },
+      "hint": "PII (Personally Identifiable Information) adalah data privasi tingkat tinggi yang sangat berbahaya jika bocor."
+    },
+    {
+      "id": "da-5-3",
+      "type": "quiz",
+      "params": {
+        "question": "Dalam kaitannya dengan pelatihan mesin kecerdasan buatan (Machine Learning AI), ada sebuah ungkapan terkenal: 'Garbage In = Garbage Out'. Maksud dari ungkapan di ranah Data-AI tersebut adalah...",
+        "options": ["Kamu bisa membuang sampah langsung ke dalam kode mesin", "Komputer AI terbuat dari bahan daur ulang (sampah elektronik)", "Jika kamu melatih algoritma mesin AI menggunakan dataset/data masuk yang 'sampah' (penuh bias, timpang, dan kotor), maka tebakan output AI tersebut juga akan menjadi 'sampah' (tidak adil/ngawur)", "Semua pekerjaan terkait Data Science pada akhirnya adalah pekerjaan yang sia-sia"],
+        "answer": 2
+      },
+      "hint": "Kualitas hasil akhir kecerdasan buatan, bergantung 100% pada bahan mentah data masukkannya."
+    }
+  ]
+}

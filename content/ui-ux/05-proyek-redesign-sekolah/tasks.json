@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis desain/kualitas/produk\n",
+  "hint": "Ingat konsep kerangka penceritaan studi kasus desain (Case Study).",
+  "tasks": [
+    {
+      "id": "ux-5-1",
+      "type": "quiz",
+      "params": {
+        "question": "Jika kamu ingin melamar pekerjaan/projek sebagai seorang UI/UX Designer, komponen apa yang PALING INGIN dilihat oleh Manajer HRD dan Perekrut di dalam Portofoliomu?",
+        "options": ["Satu gambar yang sangat cantik hasil buatan AI", "Foto selfie-mu di depan komputer yang menampilkan layar coding", "Dokumen Studi Kasus (Case Study) panjang yang menceritakan urutan logika bagaimana kamu memecahkan suatu masalah desain dari awal (riset) hingga akhir (prototipe solusi)", "Sertifikat kursus yang banyak tanpa melampirkan karya"],
+        "answer": 2
+      },
+      "hint": "Yang dijual dari profesi ini adalah urutan logika dan kerangka pemecahan masalah (Problem Solving)."
+    },
+    {
+      "id": "ux-5-2",
+      "type": "quiz",
+      "params": {
+        "question": "Di dalam kerangka penceritaan 5 Langkah metode Design Thinking, tahap di mana sang desainer pertama kali terjun meneliti, mengumpulkan keluhan, dan mencoba 'memahami penderitaan serta perasaan/kebutuhan' dari target penggunanya disebut dengan tahap...",
+        "options": ["Prototype", "Test", "Ideate", "Empathize"],
+        "answer": 3
+      },
+      "hint": "Berasal dari kata Empati (merasakan rasa)."
+    },
+    {
+      "id": "ux-5-3",
+      "type": "quiz",
+      "params": {
+        "question": "Seringkali, seorang UI/UX Designer menyusun dokumentasi portofolio Case Study UI/UX-nya dan mempublikasikannya secara luas dan profesional (berbentuk karya kompilasi memanjang dan bergambar tinggi) ke platform sosial khusus desainer dunia yaitu di website...",
+        "options": ["Behance atau Dribbble", "WhatsApp Status", "Buku Tamu Sekolah", "Blogger pribadi masa lalu"],
+        "answer": 0
+      },
+      "hint": "Platform raksasa milik Adobe dan rivalnya."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis keamanan/jaringan\n",
+  "hint": "Ingat Remote Access, htop, dan konsep reverse proxy.",
+  "tasks": [
+    {
+      "id": "do-2-1",
+      "type": "quiz",
+      "params": {
+        "question": "Protokol keamanan jaringan (dan juga nama perintah Linux-nya) yang digunakan oleh para System Administrator untuk mengakses/meremote server Linux Headless dari komputer / laptop pribadinya dari jarak jauh disebut...",
+        "options": ["HTTPS", "FTP", "SSH (Secure Shell)", "SMTP"],
+        "answer": 2
+      },
+      "hint": "Singkatan ini berawalan huruf S dan diakhiri huruf H."
+    },
+    {
+      "id": "do-2-2",
+      "type": "quiz",
+      "params": {
+        "question": "Software Web Server manakah di bawah ini yang sangat tangguh dan populer digunakan sebagai 'Satpam Penjaga Pintu Depan' alias Reverse Proxy untuk mengalihkan trafik (lalu lintas pengunjung internet) ke dalam port aplikasi internal (localhost)?",
+        "options": ["Chrome Browser", "Nginx", "Git", "VS Code"],
+        "answer": 1
+      },
+      "hint": "Dibaca: engine-ex."
+    },
+    {
+      "id": "do-2-3",
+      "type": "quiz",
+      "params": {
+        "question": "Jika sebuah server Linux tiba-tiba berjalan sangat lambat, perintah utilitas apakah di terminal yang paling pas digunakan oleh Administrator untuk melihat daftar grafik memantau aplikasi mana yang sedang menghabiskan (memonopoli) kapasitas RAM atau CPU secara real-time?",
+        "options": ["htop / top", "mkdir", "rm -rf", "ls -l"],
+        "answer": 0
+      },
+      "hint": "Fitur ini mirip seperti 'Task Manager' pada sistem Windows."
+    }
+  ]
+}

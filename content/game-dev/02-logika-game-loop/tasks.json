@@ -1,0 +1,25 @@
+{
+  "editor": "python",
+  "starter": "def update_state(tombol):\n    # TODO: Jika tombol 'W' ditekan kembalikan 'Jump',\n    # jika 'S' kembalikan 'Crouch', selain itu kembalikan 'Idle'\n    pass\n\nprint(update_state('W'))",
+  "hint": "Gunakan percabangan if...elif...else. Cek apakah variabel tombol bernilai 'W' atau 'S'.",
+  "tasks": [
+    {
+      "id": "gd-2-1",
+      "type": "python-output",
+      "params": {
+        "contains": "Jump"
+      },
+      "hint": "Pastikan fungsi mengembalikan string 'Jump' dan kamu melakukan print pada hasilnya."
+    },
+    {
+      "id": "gd-2-2",
+      "type": "quiz",
+      "params": {
+        "question": "Tahap mana dalam Game Loop yang bertugas menggambar ulang karakter ke layar?",
+        "options": ["Input", "Update", "Render", "State"],
+        "answer": 2
+      },
+      "hint": "Fokus pada kata 'menggambar' atau visualisasi."
+    }
+  ]
+}

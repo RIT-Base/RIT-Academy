@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tools / Sandbox | TCC Academy</title>
+  <meta name="description" content="HTML Lab, Python Lab, dan Blockly Lab - coba langsung tanpa login.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" href="data:,">
+  
+  <script type="importmap">
+    {
+      "imports": {
+        "style-mod": "https://esm.sh/style-mod",
+        "w3c-keyname": "https://esm.sh/w3c-keyname",
+        "crelt": "https://esm.sh/crelt",
+        "@marijn/find-cluster-break": "https://esm.sh/@marijn/find-cluster-break",
+        "@lezer/": "https://esm.sh/*@lezer/",
+        "@codemirror/": "https://esm.sh/*@codemirror/",
+        "codemirror": "https://esm.sh/*codemirror"
+      }
+    }
+  </script>
+
+  <style>
+    /* =========================================
+       LAYOUT IDE (Tools.html)
+       ========================================= */
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      /* Sisakan ruang khusus untuk navbar mobile */
+      padding-bottom: calc(var(--nav-height-bottom) + var(--space-4));
+      background: var(--color-bg);
+    }
+    @media (min-width: 768px) {
+      body {
+        padding-bottom: 0;
+        padding-top: var(--nav-height-top);
+      }
+    }
+    
+    #main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding-top: var(--space-4);
+      padding-bottom: var(--space-4);
+      /* Lebarkan dari default container agar luas di PC */
+      max-width: 1400px;
+      margin: 0 auto;
+      width: 100%;
+      padding-left: var(--page-padding-x);
+      padding-right: var(--page-padding-x);
+      box-sizing: border-box;
+    }
+
+    .ide-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      margin-top: var(--space-3);
+    }
+    
+    .tab-panel {
+      display: none;
+      flex-direction: column;
+    }
+    .tab-panel.is-active { display: flex; }
+    
+    /* Layout Sandbox proporsional */
+    .ide-layout {
+      height: 720px;
+      min-height: 520px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .ide-layout .editor-shell, 
+    .ide-layout .preview-shell, 
+    .ide-layout .output-shell {
+      border: none;
+      border-radius: 0;
+    }
+
+    /* Menyembunyikan Scrollbar yang terkait dengan Flyout Blockly */
+    .blocklyFlyoutScrollbar {
+      display: none !important;
+    }
+
+    @media (max-width: 767px) {
+      .tab-list {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 4px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+      }
+      .tab-list button {
+        padding: 6px 2px !important;
+        font-size: 11px !important;
+        justify-content: center !important;
+        text-align: center !important;
+        white-space: nowrap !important;
+      }
+      .ide-layout {
+        height: auto;
+        min-height: 480px;
+      }
+      .ide-layout.view-editor .lab-pane-top,
+      .ide-layout.view-output .lab-pane-bottom {
+        min-height: 440px;
+      }
+      footer.site-footer {
+        padding-bottom: calc(var(--nav-height-bottom) + var(--space-6)) !important;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .tab-list button {
+        padding: 6px 20px !important;
+        font-size: var(--fs-sm) !important;
+      }
+      .ide-layout {
+        height: 720px;
+      }
+    }
+  </style>
+</head>
+<body data-nav-active="tools.html">
+  <a href="#main" class="skip-link">Langsung ke konten utama</a>
+  
+  <nav class="top-nav" aria-label="Navigasi utama">
+    <a href="index.html" class="brand">
+      <span class="material-symbols-outlined" style="color: var(--color-primary); font-size: 28px;" aria-hidden="true">terminal</span> 
+      TCC Academy
+    </a>
+    <ul class="top-nav__links">
+      <li><a href="index.html" data-nav-link="index.html">Beranda</a></li>
+      <li><a href="paths.html" data-nav-link="paths.html">Belajar</a></li>
+      <li><a href="tools.html" data-nav-link="tools.html">Tools</a></li>
+      <li><a href="forum.html" data-nav-link="forum.html">Forum</a></li>
+    </ul>
+    <div style="display: flex; align-items: center; padding-right: var(--space-4);">
+      <a href="profil.html" data-nav-link="profil.html" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; background-color: var(--color-primary); border-radius: 50%; color: #fff;">
+        <span class="material-symbols-outlined" style="font-size: 20px;">person</span>
+      </a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: var(--space-3); flex-shrink: 0;">
+      <span class="material-symbols-outlined" style="color: var(--color-primary); font-size: 24px;">build</span>
+      <h1 style="margin: 0; font-size: var(--fs-xl);">Tools Sandbox</h1>
+    </div>
+
+    <!-- Tab Navigasi Ala Stitch -->
+    <div class="tab-list" role="tablist" aria-label="Pilih lab" style="display: flex; flex-wrap: wrap; gap: 4px; flex-shrink: 0; background: var(--color-surface-alt); padding: 4px; border-radius: var(--radius-pill); border: 1px solid var(--color-border); margin-bottom: 0; max-width: 100%;">
+      <button type="button" role="tab" id="tab-html" aria-controls="panel-html" aria-selected="true" style="border: none; padding: 6px 14px; border-radius: var(--radius-pill); font-size: var(--fs-xs); transition: all var(--transition-fast); display: flex; align-items: center; gap: 6px;">
+        <span class="material-symbols-outlined" style="font-size: 16px;">code</span> HTML Lab
+      </button>
+      <button type="button" role="tab" id="tab-python" aria-controls="panel-python" aria-selected="false" style="border: none; padding: 6px 14px; border-radius: var(--radius-pill); font-size: var(--fs-xs); transition: all var(--transition-fast); display: flex; align-items: center; gap: 6px;">
+        <span class="material-symbols-outlined" style="font-size: 16px;">terminal</span> Python Lab
+      </button>
+      <button type="button" role="tab" id="tab-blockly" aria-controls="panel-blockly" aria-selected="false" style="border: none; padding: 6px 14px; border-radius: var(--radius-pill); font-size: var(--fs-xs); transition: all var(--transition-fast); display: flex; align-items: center; gap: 6px;">
+        <span class="material-symbols-outlined" style="font-size: 16px;">extension</span> Blockly Lab
+      </button>
+    </div>
+
+    <!-- Wadah IDE Full Height -->
+    <div class="ide-container">
+      <section id="panel-html" class="tab-panel is-active" role="tabpanel" aria-labelledby="tab-html">
+        <div id="html-lab-mount" style="height: 100%;">
+          <p class="loading-indicator" style="padding: 24px;">Menyiapkan Editor Kode...</p>
+        </div>
+      </section>
+      
+      <section id="panel-python" class="tab-panel" role="tabpanel" aria-labelledby="tab-python">
+        <div id="python-lab-mount" style="height: 100%;"></div>
+      </section>
+      
+      <section id="panel-blockly" class="tab-panel" role="tabpanel" aria-labelledby="tab-blockly">
+        <div id="blockly-mount-root" style="height: 100%;"></div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" style="background: var(--color-surface); margin-top: var(--space-7); border-top: 1px solid var(--color-border);">
+    <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-4);">
+      <div style="display: flex; align-items: center; gap: var(--space-2);">
+        <span class="material-symbols-outlined">terminal</span>
+        <strong style="font-size: var(--fs-xs); letter-spacing: 0.05em;">TCC ACADEMY &copy; <span data-year></span></strong>
+      </div>
+      <div style="display: flex; gap: var(--space-4);">
+        <a href="docs/CONTENT-GUIDE.md" style="font-size: var(--fs-sm); color: var(--color-text-muted);">Panduan Sensei</a>
+        <a href="forum.html" style="font-size: var(--fs-sm); color: var(--color-text-muted);">Forum Diskusi</a>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="bottom-nav" aria-label="Navigasi bawah">
+    <a href="index.html" data-nav-link="index.html"><span class="material-symbols-outlined icon" aria-hidden="true">home</span>Beranda</a>
+    <a href="paths.html" data-nav-link="paths.html"><span class="material-symbols-outlined icon" aria-hidden="true">school</span>Belajar</a>
+    <a href="tools.html" data-nav-link="tools.html"><span class="material-symbols-outlined icon" aria-hidden="true">build</span>Tools</a>
+    <a href="forum.html" data-nav-link="forum.html"><span class="material-symbols-outlined icon" aria-hidden="true">forum</span>Forum</a>
+    <a href="profil.html" data-nav-link="profil.html"><span class="material-symbols-outlined icon" aria-hidden="true">person</span>Profil</a>
+  </nav>
+
+  <script type="module" src="assets/js/app.js"></script>
+  <script type="module" src="assets/js/pages/tools.js"></script>
+</body>
+</html>

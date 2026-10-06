@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis desain/kualitas/produk\n",
+  "hint": "Cermati lagi tiga strategi pengujian logika tersebut.",
+  "tasks": [
+    {
+      "id": "qa-2-1",
+      "type": "quiz",
+      "params": {
+        "question": "Ketika sedang menyusun dokumen Test Case untuk menguji sebuah Form Kolom Pengisian Tanggal Lahir berwujud Kotak Kalender. Tindakan sang QA Tester yang dengan iseng sengaja mengosongkan langsung tanpa memilih tangggal dan barbar menekan paksa tombol 'SUBMIT!' untuk melihat apakah web tersebut hancur memuntahkan kode atau sukses selamat terblokir memunculkan pesan teks Peringatan Berwarna Merah. Langkah QA tersebut secara teori digolongkan dalam klasifikasi metode uji...",
+        "options": ["BVA Extreme", "Regression Testing", "Negative Testing (Pengujian Negatif)", "Positive Testing (Pengujian Positif Lurus)"],
+        "answer": 2
+      },
+      "hint": "Kamu sedang melakukan tindakan yang keliru / berlawanan dengan arah jarum jam secara sengaja."
+    },
+    {
+      "id": "qa-2-2",
+      "type": "quiz",
+      "params": {
+        "question": "Pendekatan ajaib para Quality Assurance di mana mereka berfokus mati-matian hanya menginput nilai yang letaknya persis bersebelahan di tepian batas ambang toleransi syarat logika (Limit), karena secara empiris celah kode programmer paling banyak salah pada logika 'lebih besar dari sama dengan', adalah strategi teknik yang dinamakan...",
+        "options": ["Boundary Value Analysis (BVA)", "Brute Force Password", "Agile Flow", "SQL Injection"],
+        "answer": 0
+      },
+      "hint": "Bahasa terjemahannya: Analisa Nilai Batasan pinggir."
+    },
+    {
+      "id": "qa-2-3",
+      "type": "quiz",
+      "params": {
+        "question": "Jika syarat aplikasi Pendaftaran SIM Online menyatakan: 'Umur pendaftar dilarang kurang dari 17 Tahun'. Menurut logika murni dari teknik strategi Boundary Value Analysis (BVA), himpunan 2 angka berurutan manakah di pinggir jurang batasan tersebut yang paling akurat WAJIB kamu jadikan materi input serangan tesmu di dalam Excel Test Case?",
+        "options": ["10 dan 20", "16 dan 17", "0 dan 100", "5 dan 6"],
+        "answer": 1
+      },
+      "hint": "Angka mana yang akan mengukur keakuratan apakah Programmer tersebut pakai rumus '>' atau '>=17'."
+    }
+  ]
+}

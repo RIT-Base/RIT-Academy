@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis desain/kualitas/produk\n",
+  "hint": "Cermati lagi perbedaan Keyframe Linear vs teori Easing/Interpolasi Fisika.",
+  "tasks": [
+    {
+      "id": "dg-4-1",
+      "type": "quiz",
+      "params": {
+        "question": "Seni cabang dari desain yang secara esensial berfokus dalam menghidupkan atau menggerakkan aset grafis vektor statis (seperti teks infografis, logo, atau ilustrasi 2D shape) agar lebih dinamis untuk disajikan ke dalam media format video dinamakan...",
+        "options": ["Fotografi Jurnalistik", "Mural Canvas", "3D Rendering Modeling", "Motion Graphics"],
+        "answer": 3
+      },
+      "hint": "Grafik yang bergerak maju/berubah bentuk."
+    },
+    {
+      "id": "dg-4-2",
+      "type": "quiz",
+      "params": {
+        "question": "Konsep fitur di dalam setiap aplikasi animasi/editing video (seperti After Effects/Premiere/CapCut) yang fungsinya untuk mengunci dua titik penanda kondisi awal dan kondisi akhir sebuah perubahan (misal: penanda waktu di mana detik ke 1 posisinya di Kiri, lalu di detik ke 3 diikat posisinya berada di Kanan) sehingga sisa rentang ruang durasinya akan disulap digerakkan secara otomatis oleh komputer disebut...",
+        "options": ["Keyframe", "Masking Outline", "Auto Render", "Color Grading"],
+        "answer": 0
+      },
+      "hint": "Bingkai/titik kunci."
+    },
+    {
+      "id": "dg-4-3",
+      "type": "quiz",
+      "params": {
+        "question": "Jika kamu memberikan perintah agar animasi teks logomu melaju ke arah tengah layar dengan kecepatan grafik EASE-OUT (Interpolasi). Bagaimana sifat kelajuan pergerakan pengereman animasinya saat tulisan tersebut akan tiba pada titik akhir tujuan yang telah kamu setting di tengah layar?",
+        "options": ["Teks akan hancur meledak", "Teks melaju stabil dengan kecepatan mutlak konstan terus menerus lalu berhenti tiba-tiba kaku tanpa aba-aba ibarat menabrak dinding", "Teks akan bergerak ngebut liar di depan namun pergerakan lajunya akan semakin mengerem pelan (melambat halus dan mulus estetik) saat detik-detik kepingannya merapat menuju posisi titik pengereman akhirnya", "Teks akan berjalan memutar acak liar mundur"],
+        "answer": 2
+      },
+      "hint": "Coba bayangkan mobil sport yang ingin berhenti sempurna halus pelan-pelan (Out) di dalam area garis lampu merah tanpa membuat kaget penumpangnya."
+    }
+  ]
+}

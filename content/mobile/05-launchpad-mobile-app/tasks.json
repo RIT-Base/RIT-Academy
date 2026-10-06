@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Checklist Launching App Mobile-mu!\n",
+  "hint": "Cek kembali materi mengenai tahapan persiapan, build file, dan publishing.",
+  "tasks": [
+    {
+      "id": "mob-5-1",
+      "type": "quiz",
+      "params": {
+        "question": "Jika aplikasimu memiliki fitur Scanner Barcode tapi saat tombol kameranya diklik aplikasi tersebut selalu tiba-tiba mati sendiri (Force Close/Crash), langkah penting apa yang kemungkinan besar lupa kamu atur sebelum mem-build aplikasinya?",
+        "options": ["Mengganti App Icon", "Mendeklarasikan Permission (Izin Akses Kamera) di file konfigurasi AndroidManifest", "Mengganti nama package aplikasi", "Menghapus cache HP"],
+        "answer": 1
+      },
+      "hint": "Sistem operasi sangat melindungi privasi penggunanya, sehingga aplikasi dilarang keras memakai hardware jika belum minta izin tertulis."
+    },
+    {
+      "id": "mob-5-2",
+      "type": "quiz",
+      "params": {
+        "question": "Perintah mode apa yang harus dijalankan saat mengkompilasi kode aplikasi (Build) agar menghasilkan file APK dengan performa paling cepat dan ukuran paling ringkas untuk disebarkan ke publik?",
+        "options": ["Debug Mode", "Test Mode", "Release Mode", "Profile Mode"],
+        "answer": 2
+      },
+      "hint": "Rilis ke publik."
+    },
+    {
+      "id": "mob-5-3",
+      "type": "quiz",
+      "params": {
+        "question": "Keterbatasan paling signifikan jika kamu ingin merilis (publish) aplikasi cross-platform-mu langsung ke App Store milik Apple (iOS) adalah...",
+        "options": ["Aplikasi Flutter tidak bisa dikompilasi jadi aplikasi iOS sama sekali", "File sizenya mencapai ber-Gigabyte", "Kode Dart harus ditulis ulang semua pakai Swift", "Wajib melakukan proses kompilasi kode (Build) menggunakan perangkat bersistem operasi macOS (Macbook/iMac) dan membayar biaya akun developer tahunan"],
+        "answer": 3
+      },
+      "hint": "Ekosistem Apple (iOS) sangat tertutup dan eksklusif, mengharuskan hardware khusus mereka untuk proses validasi akhir."
+    }
+  ]
+}

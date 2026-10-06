@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis keamanan/jaringan\n",
+  "hint": "Gunakan insting detektif dari kombinasi urut Ping, Tracert, dan Nslookup.",
+  "tasks": [
+    {
+      "id": "jar-4-1",
+      "type": "quiz",
+      "params": {
+        "question": "Jika seorang administrator jaringan kantoran ingin memeriksa rekam jejak titik lokasi Router persis 'di persimpangan kota manakah atau di gedung bagian manakah sebuah perjalanan pengiriman transfer paket internet itu terhenti lenyap (lost drop) menabrak dinding?', alat perintah ajaib di terminal apa yang semestinya diketikkan ke dalam CLI layarnya?",
+        "options": ["ping", "ipconfig /all", "tracert (Traceroute)", "chkdsk"],
+        "answer": 2
+      },
+      "hint": "Fitur ini melacak/menelusuri rute rentetan jejak kardus (Hop)."
+    },
+    {
+      "id": "jar-4-2",
+      "type": "quiz",
+      "params": {
+        "question": "Seorang pengguna mengeluhkan koneksi blank putus: 'Web browser saya kalau dibuat membuka tulisan alamat www.youtube.com selalu gagal Error Page Not Found, tapi anehnya kalau di terminal saya iseng ping tembak angka ke 8.8.8.8 hasilnya malah selalu membalas replay sukses dan cepat'. Apa kesimpulan logis paling mungkin terkait bagian rute manakah sumber errornya?",
+        "options": ["Alat hardware Router fisik sedang terbakar", "Kabel Fiber Optik telkom terpotong alat berat di jalanan raya", "Laptop sang penanya belum hidup kabel powernya", "Sistem pengaturan terjemahan buku telepon server DNS-nya sedang terganggu kacau gagal menerjemahkan tulisan abjad huruf manusia menjadi alamat angka IP tujuan"],
+        "answer": 3
+      },
+      "hint": "Angka jaringan internet aslinya sukses terhubung sempurna, yang cacat cuma fasilitas si tukang terjemahannya (Buku Alamat Abjad)."
+    },
+    {
+      "id": "jar-4-3",
+      "type": "quiz",
+      "params": {
+        "question": "Pola langkah urutan uji detektif pertama terpenting SOP internasional jika menemui keluhan 'Internet Lemot / Putus' di kantor sekolah agar kerjanya metodis runtut efisien tak asal nebak hardware, ditunjukkan pada tahapan runtutan berikut, KECUALI arah aliran langkah yang mana?",
+        "options": ["Tahap ketiga: Terakhir Ping peluru panjang ke alamat dunia lautan bebas (Server internet luar benua misalnya alamat IP Google terluar)", "Langkah Pertama yang wajib di Ping murni adalah menguji target tembak alamat kartu jaringannya diri komputernya sendiri (Localhost 127.0.0.1) untuk meninjau rusak/tidaknya Hardware Chip komponen dalam Laptop user tersebut.", "Tahap kedua dilanjutkan dengan menembakkan uji Ping ke alamat Gerbang batas depan perumahan, yakni menguji alamat IP Router gerbang lokal terdekatnya di ruangan kantor tersebut.", "Langkah pertama wajib langsung mematikan sumber meteran gardu daya listrik seisi perusahaan/sekolah agar routernya kerestart dari 0 dan menuduh server Google yang mati."],
+        "answer": 3
+      },
+      "hint": "Cari jawaban tindakan reaktif konyol yang sama sekali bukan bagian dari tahapan deduksi rasional."
+    }
+  ]
+}

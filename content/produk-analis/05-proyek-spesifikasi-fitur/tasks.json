@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis desain/kualitas/produk\n",
+  "hint": "Ingat konsep perangkuman utuh kitab PRD (Product Requirement Document).",
+  "tasks": [
+    {
+      "id": "pa-5-1",
+      "type": "quiz",
+      "params": {
+        "question": "Kitab panduan dokumentasi keramat rujukan tertulis terpadu yang memuat deklarasi seluruh kriteria perwujudan arah tuntutan syarat pembangunan rincian sistem fitur aplikasi (mulai dari pemaparan latar alasan masalah, user story, flowchart, dan batas QA Kriteria uji), yang ditugaskan sebagai patokan kompas tunggal arahan kejelasan eksekusi agar tidak ada kesesatan kesalahpahaman arah imajinasi antara tim Programmer, QA, dan Tim Designer disebut dokumen...",
+        "options": ["User Acceptance Test Agreement", "Buku Manual Jaringan OSI", "ERD (Entity Relational Diagram)", "PRD (Product Requirements Document)"],
+        "answer": 3
+      },
+      "hint": "Dokumen Syarat Permintaan Penciptaan Produk."
+    },
+    {
+      "id": "pa-5-2",
+      "type": "quiz",
+      "params": {
+        "question": "Dalam hierarki ekosistem peradaban organisasi startup pengembang software Agile IT, profesi entitas utama manakah yang murni secara mandiri memikul beban pundak meracik menjembatani riset tumpahan penulisan narasi rumusan penuangan dokumen kitab rujukan PRD (Product Requirements Document) tersebut?",
+        "options": ["Backend Programmer Database", "Product Manager (Sang Manajer Analis Haluan Visi Produk)", "Network Administrator Kabel Fiber", "UI/UX Graphic Designer Illustrator"],
+        "answer": 1
+      },
+      "hint": "Dia bukanlah sekadar kuli pengetik syntax kode yang murni berdiam diri melainkan sang panglima penentu visi kemudi alur strategi tujuan fitur."
+    },
+    {
+      "id": "pa-5-3",
+      "type": "quiz",
+      "params": {
+        "question": "Sesuai dengan anatomi elemen ideal pendukung sebuah naskah rumusan perancangan panduan proyek, jika seorang PM secara visual mengguratkan lampiran gambar arsitektur bentuk bangun ruang Kotak Entitas data yang saling dikerangkeng pertalian hubungan ikat wajik tali Kardinalitasnya untuk menjelaskan isi wujud porsi ukuran ruang penyimpanan gudang datanya kelak ke Programmer, apa nama cetak biru arsitektur spesifik tersebut?",
+        "options": ["ERD (Entity-Relationship Diagram)", "Flowchart Flow Logika Arah Waktu", "Sprint Backlog Gant Chart", "Mockup Screen Figma Resolusi Penuh"],
+        "answer": 0
+      },
+      "hint": "Struktur peta asmara kotak entitas dunia pendataan relasional SQL gudang maya belakang (Backend)."
+    }
+  ]
+}

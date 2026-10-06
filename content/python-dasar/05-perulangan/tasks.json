@@ -1,0 +1,30 @@
+{
+  "editor": "python",
+  "starter": "# Buat perulangan for dengan range(1, 4) lalu cetak angkanya\n",
+  "hint": "Gunakan sintaks: for i in range(1, 4):",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "python-output",
+      "params": {
+        "contains": "3"
+      },
+      "hint": "Jika loop benar, ia harus mencetak urutan angka 1, 2, dan berhenti mencetak angka 3."
+    },
+    {
+      "id": "t2",
+      "type": "quiz",
+      "params": {
+        "question": "Fungsi range(5) pada Python akan mulai berhitung dari angka berapa?",
+        "options": [
+          "1",
+          "0",
+          "5",
+          "-1"
+        ],
+        "answer": 1
+      },
+      "hint": "Zero-indexed! Komputer tidak berhitung mulai dari satu."
+    }
+  ]
+}

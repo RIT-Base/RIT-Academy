@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Waktunya review arsitektur komponen!\n",
+  "hint": "Ingat perumpamaan balok Lego, Props, dan State.",
+  "tasks": [
+    {
+      "id": "wd-3-1",
+      "type": "quiz",
+      "params": {
+        "question": "Pendekatan dalam framework frontend modern (seperti React/Vue) di mana bagian-bagian UI dipisah menjadi potongan kecil yang bisa dipakai berulang kali disebut dengan arsitektur...",
+        "options": ["Single Page Object", "Component-Based (Komponen)", "HTML Tradisional", "Backend Server"],
+        "answer": 1
+      },
+      "hint": "Ibarat menyusun balok lego."
+    },
+    {
+      "id": "wd-3-2",
+      "type": "quiz",
+      "params": {
+        "question": "Mekanisme/cara kita mengirimkan data yang berbeda-beda ke dalam sebuah Komponen cetakan yang sama (misal mengirim teks 'Baju' dan 'Topi' ke Komponen KartuProduk) disebut...",
+        "options": ["State", "Props (Properties)", "DOM", "Variable Const"],
+        "answer": 1
+      },
+      "hint": "Singkatan dari Properties."
+    },
+    {
+      "id": "wd-3-3",
+      "type": "quiz",
+      "params": {
+        "question": "Mengapa kita membutuhkan konsep 'State' di dalam sebuah komponen React?",
+        "options": ["Untuk menampung variabel yang nilainya bisa berubah akibat interaksi pengguna (dan langsung mengubah tampilan web tanpa direfresh)", "Untuk mengambil data dari database SQL langsung", "Untuk mengirim data antar server", "Untuk menghiasi teks menjadi berwarna warni"],
+        "answer": 0
+      },
+      "hint": "State adalah 'ingatan' dari sebuah komponen yang menentukan apa yang harus ditampilkan secara real-time."
+    }
+  ]
+}

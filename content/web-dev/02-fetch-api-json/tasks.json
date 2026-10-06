@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Yuk uji pemahamanmu tentang Fetch & JSON!\n",
+  "hint": "Ingat konsep Async/Await dan format pertukaran data.",
+  "tasks": [
+    {
+      "id": "wd-2-1",
+      "type": "quiz",
+      "params": {
+        "question": "Format teks paling populer yang digunakan untuk mentransfer data antar aplikasi dan API di internet adalah...",
+        "options": ["HTML", "JSON", "XML", "CSV"],
+        "answer": 1
+      },
+      "hint": "Singkatan dari JavaScript Object Notation."
+    },
+    {
+      "id": "wd-2-2",
+      "type": "quiz",
+      "params": {
+        "question": "Mengapa kita perlu menambahkan kata kunci 'await' di depan perintah fetch()?",
+        "options": ["Agar server mempercepat pengiriman datanya", "Karena proses meminta data membutuhkan waktu (jaringan), sehingga kode harus menunggu sejenak tanpa membuat halaman web macet (freeze)", "Agar browser tahu bahwa data yang diminta adalah gambar", "Itu hanya hiasan penulisan standar"],
+        "answer": 1
+      },
+      "hint": "Proses yang membutuhkan waktu pada jaringan internet."
+    },
+    {
+      "id": "wd-2-3",
+      "type": "quiz",
+      "params": {
+        "question": "Metode (HTTP Method) apa yang biasanya digunakan saat kita ingin mengirimkan data baru ke server (misalnya form pendaftaran/registrasi)?",
+        "options": ["GET", "PULL", "POST", "DELETE"],
+        "answer": 2
+      },
+      "hint": "GET untuk mengambil, P__T untuk menaruh/mengirim data."
+    }
+  ]
+}

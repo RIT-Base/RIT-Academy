@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis desain/kualitas/produk\n",
+  "hint": "Cermati lagi kelemahan masa lalu Waterfall vs Kelincahan mental Agile, serta anatomi komponen papan geser Kanban Trello.",
+  "tasks": [
+    {
+      "id": "pa-4-1",
+      "type": "quiz",
+      "params": {
+        "question": "Kejatuhan dan alasan terkuat mengapa metode pengorganisasian pola arsitektur gaya lampau industri 'Waterfall (Air Terjun)' mulai digugat dan ditinggalkan oleh rata-rata ekosistem perusahaan Startup teknologi pembuatan App yang serba gesit (Agile) saat ini adalah...",
+        "options": ["Karena Waterfall terlalu mahal menyewa banyak tenaga QA", "Karena programmer jaman sekarang malas bekerja berbulan bulan panjang", "Karena pendekatan gaya sekuensial turun lurus Waterfall yang sangat amat menjunjung kaku kesempurnaan produk tamat utuh seutuhnya murni 100% rilis di akhir fase ujung bulan tahun, ternyata di lapangan tidak bisa dengan cepat menerima interupsi adaptasi/merevisi belokan arah kebutuhan selera tren pasar User di tengah perjalanan panjangnya itu.", "Karena Waterfall tidak menggunakan diagram ERD"],
+        "answer": 2
+      },
+      "hint": "Terlalu kaku terjun lurus satu arah tak bisa menengok fleksibel balik melawan putar arus haluan kembali dengan cepat jika dirasa ada fitur yang tiba-tiba tak dibutuhkan dunia per pasarannya."
+    },
+    {
+      "id": "pa-4-2",
+      "type": "quiz",
+      "params": {
+        "question": "Dalam teater keagamaan penganutan ekosistem ajaran kerja SCRUM. Entitas peran sosok manusia spesifik tunggal siapakah yang secara hukum resmi satu-satunya harus paling bertanggung jawab dalam menjaga menimbang porsi visi keselarasan prioritas rincian nilai permintaan bisnisnya Klien Publik (Mengelola isi tumpukan Karung Product Backlog) terhadap kejelasan pengerjaannya oleh Tim di masa depan?",
+        "options": ["Pekerja Developers Frontend", "Product Owner (Sang Pemilik Produk)", "QA Engineer Manual Test", "Scrum Master (Sang Wasit Terapis)"],
+        "answer": 1
+      },
+      "hint": "Dia yang menjembatani ego para Bos investor agar impian tersebut ditranslasikan dalam skala rasional bagi tim kuli ketiknya."
+    },
+    {
+      "id": "pa-4-3",
+      "type": "quiz",
+      "params": {
+        "question": "Metode manajemen visualisasi pantauan transparansi proyek alur pelacakan tiket kartu tugas yang memungkinkan perpindahan fisik penyeretan (Drag Drop lembar Post It status) melompat antarkolom dari jeratan status kolom diam mangkrak 'To Do', bergeser pindah lari ke lorong kolom dieksekusi 'In Progress', hingga beristirahat ria di tonggak keberhasilan akhir lorong 'Done' dinamakan teknik manajemen pergerakan panggung papan...",
+        "options": ["Papan ERD Database", "Papan Kanban Board (Kanban/Trello)", "Papan Flowchart Diagram", "Papan Visual Hierarchy"],
+        "answer": 1
+      },
+      "hint": "Ilmu manufaktur pabrikan kuno asal jepang Toyota yang disadur merevolusi pelacakan dunia Software IT."
+    }
+  ]
+}

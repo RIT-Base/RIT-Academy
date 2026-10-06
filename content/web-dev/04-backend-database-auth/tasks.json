@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Waktunya menjadi ahli keamanan server!\n",
+  "hint": "Ingat konsep Hashing, JWT, dan Kode HTTP.",
+  "tasks": [
+    {
+      "id": "wd-4-1",
+      "type": "quiz",
+      "params": {
+        "question": "Mengapa menyimpan password dalam format teks asli (Plain Text) di dalam Database merupakan kesalahan keamanan yang fatal?",
+        "options": ["Karena membuat kapasitas database cepat penuh", "Karena teks asli susah dibaca oleh programmer", "Jika database berhasil diretas (bocor), hacker bisa langsung melihat dan menggunakan password asli semua pengguna", "Karena database SQL tidak mendukung penyimpanan teks panjang"],
+        "answer": 2
+      },
+      "hint": "Pikirkan skenario terburuk jika databasemu berhasil dijebol orang tak dikenal."
+    },
+    {
+      "id": "wd-4-2",
+      "type": "quiz",
+      "params": {
+        "question": "Metode paling populer di dunia web modern untuk memberikan 'tiket identitas' kepada Frontend setelah proses Login sukses (sehingga server tahu siapa yang me-request data selanjutnya) dinamakan...",
+        "options": ["IP Address Locking", "JSON Web Token (JWT)", "HTML LocalStorage", "SQL Relationship"],
+        "answer": 1
+      },
+      "hint": "Singkatannya dari JSON Web Token."
+    },
+    {
+      "id": "wd-4-3",
+      "type": "quiz",
+      "params": {
+        "question": "Saat terjadi kesalahan karena pengguna memasukkan email atau password yang salah pada form login, Kode HTTP Status berapakah yang secara standar akan dikembalikan oleh Backend?",
+        "options": ["200 OK", "404 Not Found", "500 Internal Server Error", "401 Unauthorized"],
+        "answer": 3
+      },
+      "hint": "401 berarti 'Tidak memiliki izin/otorisasi' (Unauthorized)."
+    }
+  ]
+}

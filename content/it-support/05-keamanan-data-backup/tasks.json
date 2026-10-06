@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Pastikan data ini aman dengan mengingat konsep Backup!\n",
+  "hint": "Ingat Aturan 3-2-1 dan alasannya.",
+  "tasks": [
+    {
+      "id": "it-5-1",
+      "type": "quiz",
+      "params": {
+        "question": "Jenis virus mematikan yang tidak menghapus data, melainkan mengunci (enkripsi) file milik korban lalu meminta tebusan uang untuk membukanya disebut...",
+        "options": ["Adware", "Trojan Horse", "Ransomware", "Spyware"],
+        "answer": 2
+      },
+      "hint": "Namanya mengandung kata yang berarti uang tebusan (ransom)."
+    },
+    {
+      "id": "it-5-2",
+      "type": "quiz",
+      "params": {
+        "question": "Dalam Aturan Backup 3-2-1, makna dari angka '1' (Satu) adalah...",
+        "options": ["Menggunakan 1 aplikasi backup saja", "Melakukan backup 1 kali dalam setahun", "Menyimpan data cadangan pada 1 folder rahasia di Local Disk C", "Menyimpan minimal 1 salinan di lokasi fisik berbeda (Offsite / Cloud)"],
+        "answer": 3
+      },
+      "hint": "Ini untuk mengantisipasi jika rumah/kantor mengalami musibah kebakaran atau kemalingan perangkat lokal."
+    },
+    {
+      "id": "it-5-3",
+      "type": "quiz",
+      "params": {
+        "question": "Mengapa menyimpan cadangan ke Harddisk Eksternal yang ditaruh di dalam satu tas bersama dengan Laptop utama dianggap BUKAN langkah perlindungan data yang tepat?",
+        "options": ["Karena Harddisk akan membuat Laptop cepat panas di dalam tas", "Karena jika tas tersebut dicuri atau hilang, maka data utama beserta seluruh cadangannya akan ikut lenyap", "Karena konektor USB-nya bisa rusak tergencet", "Karena kapasitas Harddisk eksternal lebih kecil"],
+        "answer": 1
+      },
+      "hint": "Single Point of Failure (Satu titik kegagalan yang fatal)."
+    }
+  ]
+}

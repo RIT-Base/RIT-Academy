@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda | TCC Academy</title>
+  <meta name="description" content="TCC Academy - belajar IT dari nol untuk anggota ekskul komputer TCC SMAN 15 Garut, langsung praktik di browser.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Icon Material Symbols (Estetika Stitch) -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <a href="#main" class="skip-link">Langsung ke konten utama</a>
+  
+  <nav class="top-nav" aria-label="Navigasi utama">
+    <a href="index.html" class="brand">
+      <span class="material-symbols-outlined" style="color: var(--color-primary); font-size: 28px;" aria-hidden="true">terminal</span> 
+      TCC Academy
+    </a>
+    <ul class="top-nav__links">
+      <li><a href="index.html" data-nav-link="index.html">Beranda</a></li>
+      <li><a href="paths.html" data-nav-link="paths.html">Belajar</a></li>
+      <li><a href="tools.html" data-nav-link="tools.html">Tools</a></li>
+      <li><a href="forum.html" data-nav-link="forum.html">Forum</a></li>
+    </ul>
+    <div style="display: flex; align-items: center; padding-right: var(--space-4);">
+      <a href="profil.html" data-nav-link="profil.html" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; background-color: var(--color-primary); border-radius: 50%; color: #fff;">
+        <span class="material-symbols-outlined" style="font-size: 20px;">person</span>
+      </a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero container path-content">
+      <!-- Pill style mengikuti Stitch -->
+      <div style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 16px; background: var(--color-primary-light); color: var(--color-primary-dark); border-radius: var(--radius-pill); font-weight: 700; font-size: var(--fs-xs); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: var(--space-4);">
+        <span class="material-symbols-outlined" style="font-size: 16px;">school</span>
+        Platform Belajar Eksklusif
+      </div>
+      
+      <h1 style="max-width: 22ch; margin: 0 auto var(--space-3); font-size: calc(var(--fs-2xl) + 0.5rem); letter-spacing: -0.02em;">
+        Gerbang Dunia IT untuk Siswa <span style="color: var(--color-primary);">SMAN 15 Garut</span>
+      </h1>
+      
+      <p class="lead" style="max-width: 58ch; margin: 0 auto var(--space-5);">
+        Mulai perjalanan digitalmu di sini. TCC Academy menyediakan kurikulum terstruktur, komunitas suportif, dan tools modern untuk membantumu menguasai teknologi masa depan.
+      </p>
+      
+      <div class="hero-actions">
+        <a href="paths.html" class="btn btn-primary" style="padding: 16px 32px; font-size: var(--fs-base);">
+          Mulai Belajar <span class="material-symbols-outlined" style="font-size: 20px;">arrow_forward</span>
+        </a>
+        <a href="tools.html" class="btn btn-outline" style="padding: 16px 32px; font-size: var(--fs-base); background: var(--color-surface); box-shadow: var(--shadow-sm);">
+          <span class="material-symbols-outlined" style="font-size: 20px; color: var(--color-text-muted);">play_circle</span> Lihat Tools
+        </a>
+      </div>
+      
+      <!-- Stats mini ala Stitch -->
+      <div style="display: flex; justify-content: center; align-items: center; gap: var(--space-2); margin-top: var(--space-6); padding-top: var(--space-5); border-top: 1px solid var(--color-border);">
+        <div style="display: flex; margin-right: var(--space-2);">
+          <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--color-surface-alt); border: 2px solid var(--color-surface); margin-right: -10px; display: flex; align-items: center; justify-content: center; z-index: 3;"><span class="material-symbols-outlined" style="font-size: 16px; color: var(--color-text-faint);">person</span></div>
+          <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--color-surface-alt); border: 2px solid var(--color-surface); margin-right: -10px; display: flex; align-items: center; justify-content: center; z-index: 2;"><span class="material-symbols-outlined" style="font-size: 16px; color: var(--color-text-faint);">person</span></div>
+          <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--color-surface-alt); border: 2px solid var(--color-surface); display: flex; align-items: center; justify-content: center; z-index: 1;"><span class="material-symbols-outlined" style="font-size: 16px; color: var(--color-text-faint);">person</span></div>
+        </div>
+        <span class="text-muted" style="font-size: var(--fs-sm);"><strong style="color: var(--color-text);">TCC</strong> SMAN 15 Garut</span>
+      </div>
+    </section>
+
+    <!-- Alur Pembelajaran -->
+    <section class="page-section container path-content">
+      <div class="section-title" style="flex-direction: column; align-items: center; text-align: center; margin-bottom: var(--space-6);">
+        <h2 style="margin-bottom: var(--space-2);">Alur Pembelajaran</h2>
+        <p class="text-muted" style="max-width: 65ch; margin: 0 auto;">Sistematis dan terarah. Kami mendesain kurikulum yang membantumu berkembang dari nol hingga siap membuat project nyata.</p>
+      </div>
+      
+      <div class="grid grid-3">
+        <div class="card card-hover" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <div style="width: 64px; height: 64px; border-radius: 50%; background: var(--color-primary-light); color: var(--color-primary-dark); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-4);">
+            <span class="material-symbols-outlined" style="font-size: 32px;">lightbulb</span>
+          </div>
+          <span class="eyebrow" style="color: var(--color-primary); margin-bottom: 4px;">TAHAP 1</span>
+          <h3>Kenal IT</h3>
+          <p class="text-muted">Pahami konsep dasar komputasi, cara kerja internet, dan pengenalan dunia digital secara interaktif.</p>
+        </div>
+        
+        <div class="card card-hover" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <div style="width: 64px; height: 64px; border-radius: 50%; background: var(--color-accent-light); color: var(--color-accent); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-4);">
+            <span class="material-symbols-outlined" style="font-size: 32px;">code</span>
+          </div>
+          <span class="eyebrow" style="color: var(--color-accent); margin-bottom: 4px;">TAHAP 2</span>
+          <h3>Dasar Pemrograman</h3>
+          <p class="text-muted">Pelajari logika dasar, algoritma, dan sintaks bahasa pemrograman pertama melalui mini project.</p>
+        </div>
+        
+        <div class="card card-hover" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <div style="width: 64px; height: 64px; border-radius: 50%; background: var(--color-surface-alt); color: var(--color-primary); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-4);">
+            <span class="material-symbols-outlined" style="font-size: 32px;">route</span>
+          </div>
+          <span class="eyebrow" style="color: var(--color-primary); margin-bottom: 4px;">TAHAP 3</span>
+          <h3>Pilih Path</h3>
+          <p class="text-muted">Fokus pada minatmu: Web Development, Data Science, atau AI. Bangun portofolio dari sekarang.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kelas Unggulan -->
+    <section class="page-section container" style="background: var(--color-surface-alt); border-radius: var(--radius-lg); padding: var(--space-6); margin-bottom: var(--space-6);">
+      <div class="section-title">
+        <h2 class="mt-0">Kelas Unggulan</h2>
+        <a href="paths.html" style="display: inline-flex; align-items: center; gap: 4px; font-weight: 700; font-size: var(--fs-sm);">
+          Lihat Semua <span class="material-symbols-outlined" style="font-size: 18px;">arrow_forward</span>
+        </a>
+      </div>
+      <!-- Injeksi script home.js masuk di sini -->
+      <div class="grid grid-3" id="home-course-cards">
+        <p class="loading-indicator">Memuat daftar course...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" style="background: var(--color-surface); margin-top: 0; padding-bottom: calc(var(--nav-height-bottom) + var(--space-6)); border-top: 1px solid var(--color-border);">
+    <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-4);">
+      <div style="display: flex; align-items: center; gap: var(--space-2);">
+        <span class="material-symbols-outlined">terminal</span>
+        <strong style="font-size: var(--fs-xs); letter-spacing: 0.05em;">TCC ACADEMY &copy; <span data-year></span></strong>
+      </div>
+      <div style="display: flex; gap: var(--space-4);">
+        <a href="docs/CONTENT-GUIDE.md" style="font-size: var(--fs-sm); color: var(--color-text-muted);">Panduan Sensei</a>
+        <a href="forum.html" style="font-size: var(--fs-sm); color: var(--color-text-muted);">Forum Diskusi</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Navigasi Mobile Bawah -->
+  <nav class="bottom-nav" aria-label="Navigasi bawah">
+    <a href="index.html" data-nav-link="index.html"><span class="material-symbols-outlined icon" aria-hidden="true">home</span>Beranda</a>
+    <a href="paths.html" data-nav-link="paths.html"><span class="material-symbols-outlined icon" aria-hidden="true">school</span>Belajar</a>
+    <a href="tools.html" data-nav-link="tools.html"><span class="material-symbols-outlined icon" aria-hidden="true">build</span>Tools</a>
+    <a href="forum.html" data-nav-link="forum.html"><span class="material-symbols-outlined icon" aria-hidden="true">forum</span>Forum</a>
+    <a href="profil.html" data-nav-link="profil.html"><span class="material-symbols-outlined icon" aria-hidden="true">person</span>Profil</a>
+  </nav>
+  
+  <script type="module" src="assets/js/app.js"></script>
+  <script type="module" src="assets/js/pages/home.js"></script>
+</body>
+</html>

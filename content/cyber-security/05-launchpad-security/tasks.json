@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis keamanan/jaringan\n",
+  "hint": "Ingat konsep 2FA, Phishing, dan bahaya password berulang.",
+  "tasks": [
+    {
+      "id": "cs-5-1",
+      "type": "quiz",
+      "params": {
+        "question": "Teknik manipulasi yang digunakan hacker dengan cara membuat halaman login palsu (seakan-akan terlihat seperti web resmi Bank/Sosial Media) agar korban tertipu untuk memasukkan username dan passwordnya disebut dengan metode...",
+        "options": ["Phishing", "SQL Injection", "Brute Force", "Malware"],
+        "answer": 0
+      },
+      "hint": "Berasal dari kata memancing (Fishing)."
+    },
+    {
+      "id": "cs-5-2",
+      "type": "quiz",
+      "params": {
+        "question": "Mengapa menggunakan kombinasi password yang sama persis (misal 'kucing123') untuk seluruh akun (Email, Game, Toko Online, Sosmed) adalah kebiasaan yang sangat membahayakan?",
+        "options": ["Karena membuat sistem database menjadi berat", "Karena jika satu website kecil tersebut diretas dan passwordnya bocor, hacker bisa langsung mencoba password tersebut untuk mengambil alih semua akun pentingmu di platform lain", "Karena dilarang oleh pemerintah", "Karena kamu akan lebih mudah melupakannya"],
+        "answer": 1
+      },
+      "hint": "Efek Domino dari kebocoran data (Data Breach)."
+    },
+    {
+      "id": "cs-5-3",
+      "type": "quiz",
+      "params": {
+        "question": "Fitur keamanan wajib yang akan meminta lapisan pengesahan kedua (seperti kode OTP SMS atau kode dari Google Authenticator di HP) setelah kita berhasil memasukkan password disebut...",
+        "options": ["Antivirus Software", "Firewall Router", "VPN (Virtual Private Network)", "2FA (Two-Factor Authentication)"],
+        "answer": 3
+      },
+      "hint": "Otentikasi Dua Faktor."
+    }
+  ]
+}

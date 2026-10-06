@@ -1,0 +1,52 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis studi kasus diagnosa troubleshooting PC\n",
+  "hint": "Ingat perbedaan gejala hardware vs software, serta arti kode Beep dan sensor S.M.A.R.T.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "quiz",
+      "params": {
+        "question": "Sebuah PC menyala, kipas berputar, tetapi layar monitor tetap hitam (No Display) dan motherboard membunyikan bip panjang berulang kali. Komponen apa yang paling mungkin bermasalah?",
+        "options": [
+          "Sistem Operasi Windows terkena virus",
+          "Kabel mouse belum terpasang",
+          "RAM kendor atau kotor kena debu",
+          "Harddisk penuh data game"
+        ],
+        "answer": 2
+      },
+      "hint": "Bunyi bip panjang berulang pada proses POST umumnya menandakan masalah memori RAM."
+    },
+    {
+      "id": "t2",
+      "type": "quiz",
+      "params": {
+        "question": "Ketika aplikasi CrystalDiskInfo menunjukkan status 'Caution' (Kuning) pada harddisk, tindakan pertama yang paling bijak adalah...",
+        "options": [
+          "Membeli monitor baru",
+          "Segera lakukan backup (salin) file-file penting ke tempat lain",
+          "Melakukan instal ulang sistem operasi berkali-kali",
+          "Membiarkannya karena masih bisa menyala"
+        ],
+        "answer": 1
+      },
+      "hint": "Status Caution berarti media penyimpanan mulai memiliki bad sector dan berisiko kehilangan data."
+    },
+    {
+      "id": "t3",
+      "type": "quiz",
+      "params": {
+        "question": "Jika komputer berhasil menyala sampai muncul logo Windows tetapi selalu macet (bootloop) atau muncul BSOD, masalah tersebut masuk ke dalam kategori...",
+        "options": [
+          "Masalah Software / Sistem Operasi & Driver",
+          "Kabel power listrik PLN putus",
+          "Layar monitor rusak total",
+          "Keyboard kehabisan baterai"
+        ],
+        "answer": 0
+      },
+      "hint": "Jika POST berhasil dan logo OS muncul, perangkat keras dasar bekerja tetapi OS/driver mengalami kegagalan."
+    }
+  ]
+}

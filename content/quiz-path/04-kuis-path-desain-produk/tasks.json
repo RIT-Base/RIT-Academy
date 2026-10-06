@@ -1,0 +1,52 @@
+{
+  "editor": "html",
+  "starter": "<!-- Kuis Studi Kasus Jalur Desain & Manajemen Produk -->\n",
+  "hint": "Gunakan empati pengguna, kepekaan visual, dan standar mutu software.",
+  "tasks": [
+    {
+      "id": "prod-q1",
+      "type": "quiz",
+      "params": {
+        "question": "Seorang desainer UI menaruh teks warna abu-abu sangat muda di atas background putih, sehingga pengguna lansia atau di bawah sinar matahari kesulitan membaca tulisan. Prinsip desain apa yang dilanggar?",
+        "options": [
+          "Skalabilitas database",
+          "Color Contrast Ratio (Aksesibilitas Visual WCAG)",
+          "Compiler Optimization",
+          "Virtual DOM Diffing"
+        ],
+        "answer": 1
+      },
+      "hint": "Kontras warna antara teks dan latar belakang."
+    },
+    {
+      "id": "prod-q2",
+      "type": "quiz",
+      "params": {
+        "question": "Dalam pengujian QA (Quality Assurance), apa yang dimaksud dengan 'Edge Case'?",
+        "options": [
+          "Pengguna yang memakai browser Microsoft Edge saja",
+          "Skenario pengujian yang tidak biasa atau kondisi ekstrem (misal input angka negatif, nama 10.000 karakter, atau koneksi mati mendadak)",
+          "Menghapus database produksi",
+          "Desain tombol yang memiliki sudut tajam"
+        ],
+        "answer": 1
+      },
+      "hint": "Kondisi batas ekstrim yang jarang terpikirkan tapi sering membuat sistem crash."
+    },
+    {
+      "id": "prod-q3",
+      "type": "quiz",
+      "params": {
+        "question": "Seorang Product Manager (PM) menerima permintaan dari 5 divisi berbeda secara bersamaan. Alat bantu apa yang paling tepat untuk menentukan mana yang harus dikerjakan terlebih dahulu?",
+        "options": [
+          "Matriks Prioritisasi (seperti RICE Scoring atau MoSCoW Framework)",
+          "Menolak semua permintaan tanpa alasan",
+          "Melempar koin undian",
+          "Mengerjakan semuanya dalam 1 malam tanpa tidur"
+        ],
+        "answer": 0
+      },
+      "hint": "Kerangka kerja evaluasi dampak (Reach/Impact) vs beban usaha (Effort)."
+    }
+  ]
+}

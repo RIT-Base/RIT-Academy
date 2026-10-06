@@ -1,0 +1,47 @@
+{
+  "editor": "html",
+  "starter": "<!-- Modul ini fokus kuis pengenalan peralatan IT -->\n<h1>Peralatan IT Penting</h1>",
+  "hint": "Baca ulang bagian text editor, terminal, dan GitHub kalau masih ragu.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "quiz",
+      "params": {
+        "question": "VS Code adalah contoh dari...",
+        "options": ["Terminal", "Text editor khusus untuk menulis kode", "Layanan hosting website", "Sistem operasi"],
+        "answer": 1
+      },
+      "hint": "Lihat bagian 'Text Editor: Tempat Nulis Kode'."
+    },
+    {
+      "id": "t2",
+      "type": "quiz",
+      "params": {
+        "question": "Terminal paling tepat diartikan sebagai...",
+        "options": [
+          "Cara memberi perintah ke komputer lewat teks, bukan klik-klik ikon",
+          "Aplikasi khusus untuk mendesain tampilan",
+          "Nama lain dari GitHub",
+          "Alat untuk mengecek kecepatan internet"
+        ],
+        "answer": 0
+      },
+      "hint": "Lihat bagian 'Terminal: Ngobrol Langsung dengan Komputer'."
+    },
+    {
+      "id": "t3",
+      "type": "quiz",
+      "params": {
+        "question": "Fungsi utama GitHub (dengan Git di baliknya) adalah...",
+        "options": [
+          "Menyimpan, mengelola, dan berbagi kode, lengkap dengan riwayat perubahannya",
+          "Menjalankan game online",
+          "Mengganti fungsi text editor sepenuhnya",
+          "Menghubungkan WiFi ke internet"
+        ],
+        "answer": 0
+      },
+      "hint": "Lihat bagian 'GitHub: Tempat Nyimpan & Berbagi Kode'."
+    }
+  ]
+}

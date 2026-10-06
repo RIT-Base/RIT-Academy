@@ -1,0 +1,25 @@
+{
+  "editor": "python",
+  "starter": "y_pos = 50\ny_velocity = 5\ngravity = 2\n\n# TODO: Update nilai y_velocity dengan menambahkan gravity\n# TODO: Update nilai y_pos dengan menambahkan y_velocity terbaru\n\nprint(y_pos)",
+  "hint": "Ingat rumusnya: y_velocity = y_velocity + gravity, lalu y_pos = y_pos + y_velocity",
+  "tasks": [
+    {
+      "id": "gd-3-1",
+      "type": "python-output",
+      "params": {
+        "contains": "57"
+      },
+      "hint": "Cek perhitungannya: velocity baru adalah 5 + 2 = 7. Posisi baru adalah 50 + 7 = 57."
+    },
+    {
+      "id": "gd-3-2",
+      "type": "quiz",
+      "params": {
+        "question": "Konsep kotak kasat mata yang membungkus karakter untuk mengecek tabrakan disebut...",
+        "options": ["Velocity Box", "Bounding Box", "Render Box", "State Box"],
+        "answer": 1
+      },
+      "hint": "Kata depannya 'Bounding'."
+    }
+  ]
+}

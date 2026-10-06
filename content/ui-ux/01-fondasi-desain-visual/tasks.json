@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis desain/kualitas/produk\n",
+  "hint": "Ingat konsep Whitespace, Hierarki, dan Mental Model.",
+  "tasks": [
+    {
+      "id": "ux-1-1",
+      "type": "quiz",
+      "params": {
+        "question": "Istilah desain untuk memberikan area kosong yang lega di sekitar teks atau tombol agar antarmuka tidak terlihat penuh/sesak dan membantu memisahkan kelompok informasi disebut...",
+        "options": ["Mental Model", "Whitespace (Negative Space)", "Grid Layout", "Contrast Checker"],
+        "answer": 1
+      },
+      "hint": "Namanya Ruang Putih (kosong)."
+    },
+    {
+      "id": "ux-1-2",
+      "type": "quiz",
+      "params": {
+        "question": "Prinsip menggunakan perbedaan ukuran font, ketebalan (bold/light), dan warna terang-gelap untuk menuntun arah mata pengguna membaca dari hal yang paling penting ke hal yang kurang penting dinamakan...",
+        "options": ["Hierarki Visual", "Typography Error", "Wireframing", "Call to Action"],
+        "answer": 0
+      },
+      "hint": "Seperti tingkatan kasta/struktur jabatan (H1, H2, dst)."
+    },
+    {
+      "id": "ux-1-3",
+      "type": "quiz",
+      "params": {
+        "question": "Seorang UX Designer bersikeras menaruh tombol 'X' (Tutup Aplikasi) di sudut kiri bawah layar dengan alasan 'Ingin tampil beda dan inovatif'. Akibatnya, banyak user kesal karena tidak bisa menemukan tombol keluarnya. Desainer tersebut telah melanggar prinsip...",
+        "options": ["Kontras Warna", "Aturan Hak Cipta", "Mental Model (Ekspektasi kebiasaan alami pengguna)", "Whitespace"],
+        "answer": 2
+      },
+      "hint": "Orang sudah terbiasa kalau tombol (X) selalu ada di Pojok Kanan Atas."
+    }
+  ]
+}

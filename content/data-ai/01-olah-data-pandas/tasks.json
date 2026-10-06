@@ -1,0 +1,25 @@
+{
+  "editor": "python",
+  "starter": "# Yuk uji dasar-dasar olah datamu!\n# (Karena simulasi, kita pakai List/Dictionary Python biasa ya)\n\nnilai = [70, 85, 90, 65, 80, 100]\n\n# TODO: Cari nilai tertinggi (Max) di dalam kumpulan data nilai tersebut\nnilai_tertinggi = 0\n\nprint(f\"Nilai maksimal adalah: {nilai_tertinggi}\")",
+  "hint": "Gunakan fungsi bawaan Python yaitu max() terhadap variabel nilai.",
+  "tasks": [
+    {
+      "id": "da-1-1",
+      "type": "python-output",
+      "params": {
+        "contains": "100"
+      },
+      "hint": "Pastikan hasil akhirnya nge-print angka 100."
+    },
+    {
+      "id": "da-1-2",
+      "type": "quiz",
+      "params": {
+        "question": "Sebutan untuk struktur tabel dua-dimensi (baris dan kolom) yang digunakan oleh library Pandas untuk menampung data di dalam memori komputer adalah...",
+        "options": ["JSON Array", "Excel Sheet", "DataFrame", "HTML Table"],
+        "answer": 2
+      },
+      "hint": "Namanya berawalan kata Data."
+    }
+  ]
+}

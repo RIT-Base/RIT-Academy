@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Waktunya review Anatomi PC!\n",
+  "hint": "Coba bayangkan perumpamaan organ tubuh atau ruang kerja tadi.",
+  "tasks": [
+    {
+      "id": "it-1-1",
+      "type": "quiz",
+      "params": {
+        "question": "Jika PC milikmu terasa sangat lambat saat membuka terlalu banyak aplikasi atau puluhan tab browser secara bersamaan, komponen apa yang kemungkinan besar kapasitasnya sudah penuh?",
+        "options": ["CPU (Prosesor)", "PSU (Power Supply)", "RAM (Random Access Memory)", "GPU (VGA Card)"],
+        "answer": 2
+      },
+      "hint": "Ini diibaratkan seperti 'Meja Kerja' sementara untuk aplikasi yang sedang aktif."
+    },
+    {
+      "id": "it-1-2",
+      "type": "quiz",
+      "params": {
+        "question": "Penyimpanan jenis apa yang bentuknya kecil menyerupai permen karet dan memiliki kecepatan baca-tulis jauh lebih tinggi daripada Harddisk (HDD) lama?",
+        "options": ["RAM Dual-Channel", "SSD NVMe", "SATA Kabel", "CPU Socket"],
+        "answer": 1
+      },
+      "hint": "Singkatan dari Solid State Drive tipe terbaru."
+    },
+    {
+      "id": "it-1-3",
+      "type": "quiz",
+      "params": {
+        "question": "Apa yang dimaksud dengan kondisi 'Bottleneck' pada komputer?",
+        "options": ["Komputer terlalu panas sehingga harus dimatikan", "Kerusakan pada colokan kabel monitor", "Semua komponen bekerja maksimal tanpa masalah", "Kinerja sistem terhambat karena ada satu komponen lambat yang tidak seimbang dengan komponen canggih lainnya"],
+        "answer": 3
+      },
+      "hint": "Ibarat jalan tol 4 jalur yang tiba-tiba menyempit jadi 1 jalur."
+    }
+  ]
+}

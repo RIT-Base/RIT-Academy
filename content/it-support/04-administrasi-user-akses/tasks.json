@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Mari uji kebijakan keamanan aksesmu!\n",
+  "hint": "Ingat Prinsip Least Privilege dan perbedaan jenis user.",
+  "tasks": [
+    {
+      "id": "it-4-1",
+      "type": "quiz",
+      "params": {
+        "question": "Seorang murid menggunakan komputer Lab Sekolah untuk mengerjakan tugas. Jika menggunakan aturan keamanan IT yang baik, akun jenis apakah yang sebaiknya diberikan kepadanya?",
+        "options": ["Root", "Administrator", "Super User", "Standard User"],
+        "answer": 3
+      },
+      "hint": "Murid tidak perlu hak untuk menginstal atau mengubah pengaturan dasar OS lab komputer."
+    },
+    {
+      "id": "it-4-2",
+      "type": "quiz",
+      "params": {
+        "question": "Prinsip keamanan IT yang menyatakan 'Berikan izin sebatas fungsi yang sangat diperlukan user untuk bekerja (dan tidak lebih)' disebut...",
+        "options": ["Maximum Security Policy", "Principle of Least Privilege", "S.M.A.R.T Backup", "Standard Execution Protocol"],
+        "answer": 1
+      },
+      "hint": "Dalam bahasa Indonesia: Prinsip Hak Istimewa Paling Sedikit."
+    },
+    {
+      "id": "it-4-3",
+      "type": "quiz",
+      "params": {
+        "question": "Dalam pengaturan Permission Windows/Linux, izin (hak akses) apa yang memungkinkan seseorang mengedit atau menghapus isi dari sebuah file?",
+        "options": ["Read", "Execute", "Write", "View Only"],
+        "answer": 2
+      },
+      "hint": "Dalam bahasa Indonesia disebut izin 'Menulis'."
+    }
+  ]
+}

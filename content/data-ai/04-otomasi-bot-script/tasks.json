@@ -1,0 +1,35 @@
+{
+  "editor": "python",
+  "starter": "pesan_grup = \"Besok jadwalnya ngumpulin apaan sih ges? PR bukan?\"\n\n# TODO: Buat logika IF. Jika kata \"PR\" (tanpa peduli besar/kecil huruf) ada di dalam pesan_grup,\n# maka print \"INGAT BESOK ADA TUGAS!\"\n# Tips: pakai keyword 'in' dan .lower()\n",
+  "hint": "Gunakan percabangan if 'pr' in pesan_grup.lower(): lalu cetak pesannya.",
+  "tasks": [
+    {
+      "id": "da-4-1",
+      "type": "python-output",
+      "params": {
+        "contains": "INGAT BESOK ADA TUGAS!"
+      },
+      "hint": "Cek huruf kapital perintah cetaknya ya."
+    },
+    {
+      "id": "da-4-2",
+      "type": "quiz",
+      "params": {
+        "question": "Logika inti perancangan bot chat berbasis pemrograman asinkron (misal discord.py), di mana bot senantiasa menunggu diam dan 'hanya akan mengeksekusi kode perintah JIKA terjadi hal tertentu di grup chat' (misalnya saat ada orang yang mengirim pesan baru, atau saat ada yang bergabung) dikenal dengan pendekatan bernama...",
+        "options": ["Procedural Driven", "Object Oriented Driven", "Event Driven", "HTML Driven"],
+        "answer": 2
+      },
+      "hint": "Bot menanti sebuah 'Kejadian'."
+    },
+    {
+      "id": "da-4-3",
+      "type": "quiz",
+      "params": {
+        "question": "Ketika mendaftarkan Bot ke Telegram lewat BotFather, kamu akan diberikan deretan string acak yang berfungsi sebagai Kunci identitas tunggal bahwa bot itu adalah milikmu. String rahasia ini disebut...",
+        "options": ["Kunci Gembok", "Email Address", "JSON String", "API Token (Token API)"],
+        "answer": 3
+      },
+      "hint": "Kunci utama untuk mengakses layanan API sistem luar."
+    }
+  ]
+}

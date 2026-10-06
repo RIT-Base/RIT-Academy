@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis keamanan/jaringan\n",
+  "hint": "Ingat bahwa CTF adalah tempat berlatih legal dengan format kompetisi.",
+  "tasks": [
+    {
+      "id": "cs-4-1",
+      "type": "quiz",
+      "params": {
+        "question": "Ajang kompetisi permainan komputer yang dirancang khusus secara legal agar para penggiat Cybersecurity dapat berlatih mengeksploitasi celah kemanan dan memecahkan puzzle logika kriptografi dinamakan...",
+        "options": ["Esports E-Games", "Capture The Flag (CTF)", "Game Jam", "Hackathon Web"],
+        "answer": 1
+      },
+      "hint": "Merebut sebuah bendera (kode teks unik)."
+    },
+    {
+      "id": "cs-4-2",
+      "type": "quiz",
+      "params": {
+        "question": "Jika dalam kompetisi CTF kamu ditantang untuk mencari sebuah potongan pesan teks bendera yang disembunyikan secara rahasia di dalam sebuah file foto pemandangan berekstensi .JPG, maka soal tersebut masuk ke dalam kategori...",
+        "options": ["Web Exploitation", "Reverse Engineering", "Digital Forensics", "Hardware Exploit"],
+        "answer": 2
+      },
+      "hint": "Ini ibarat pekerjaan detektif polisi di tempat kejadian perkara digital."
+    },
+    {
+      "id": "cs-4-3",
+      "type": "quiz",
+      "params": {
+        "question": "Mengapa penting bagi calon pakar keamanan siber untuk sering bermain CTF daripada meretas sistem website yang ada di dunia nyata?",
+        "options": ["Karena meretas sistem asli tanpa kontrak persetujuan adalah tindakan ilegal / kriminal, sedangkan CTF aman dan legal.", "Karena CTF menghasilkan hadiah uang yang lebih besar", "Karena website di dunia nyata terlalu mudah untuk di-hack", "Karena bermain game lebih menyenangkan dari bekerja"],
+        "answer": 0
+      },
+      "hint": "Ini berkaitan dengan Etika White-Hat hacker dari Modul 1."
+    }
+  ]
+}

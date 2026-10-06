@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis keamanan/jaringan\n",
+  "hint": "Ini adalah pengulangan teori di materi alat hardware sebelum-sebelumnya yang kita aplikasikan di kanvas Software.",
+  "tasks": [
+    {
+      "id": "jar-5-1",
+      "type": "quiz",
+      "params": {
+        "question": "Saat bermain di Software Cisco Packet Tracer untuk menguji coba koneksi sambungan. Fitur ajaib fungsional berbentuk wujud gambar ikon 'Amplop Surat tertutup' yang ketika diklik akan menirukan animasi terbang visual pengiriman ping (menggantikan tulisan teks perintah murni ping hitam putih), dikenal dengan sebutan fitur alat uji apa?",
+        "options": ["Surat Kabel LAN", "File TXT Data", "Objek Add PDU (Protocol Data Unit)", "Paket OS Image"],
+        "answer": 2
+      },
+      "hint": "Namanya berkaitan dengan satuan penggalan data (Unit)."
+    },
+    {
+      "id": "jar-5-2",
+      "type": "quiz",
+      "params": {
+        "question": "Di dalam arsitektur simulasi rancang topologimu, jika kelompok area Gedung Lab A memiliki identitas konfigurasi suntikan IP di kisaran kepala depan Network ID (192.168.10.x), dan grup area Gedung Lab B di ujung yang lain beralamatkan wilayah kepala beda (192.168.20.x). Supaya paket data si Amplop PDU tersebut secara magis bisa terbang sukses meretas silang masuk nyebrang menembus komunikasi obrolan ke gedung tetangga, maka kotak alat perangkat fisik jaringan apa yang mutlak hukumnya dipasang di posisi penengah kanvas jaringannya?",
+        "options": ["Server Monitor", "Hanya kabel USB Panjang", "Hanya Switch Layer 2 standar", "Router Pintar (Default Gateway)"],
+        "answer": 3
+      },
+      "hint": "Tanpa alat pembaca gerbang kota rute silang (Beda Network), persilangan data antargedung tersebut akan tertolak mentah-mentah membentur batasan dinding."
+    },
+    {
+      "id": "jar-5-3",
+      "type": "quiz",
+      "params": {
+        "question": "Jika simulasi kanvas Cisco Packet Tracer menampilkan lampu indikator sambungan kabel berbentuk SEGITIGA berwarna MERAH murni menyala di ujung kabel penghubung punggung Router dan Switch, sedangkan kondisi semua alatnya sudah menyala dicolokkan ke listrik. Faktor diagnosa eror apakah yang paling mungkin sedang menjadi tersangka penyebab terbesarnya menurut teori Jaringan Dasar?",
+        "options": ["Interface Port pada punggung lubang hardware perangkat Router/Switch tersebut status mesin port-nya masih tertidur belum kamu ketikkan instruksi CLI perintah (no shutdown / turn on) ke posisi aktif hijau", "Software Cisco mengalami serangan malware Ransomware dan terenkripsi macet", "Kamu menggunakan terlalu banyak kabel RAM pada memori komputermu", "Ada hantu di dalam simulasi game"],
+        "answer": 0
+      },
+      "hint": "Mesin dan komponen kabel Switch dan Router Cisco asli biasanya mematikan sistem colokan pintu lubang LAN kabel secara sengaja (terkunci Default keamanan Administratif merah statis) sampai sang teknisi bersabda perintah buka paksa dari CLI OS."
+    }
+  ]
+}

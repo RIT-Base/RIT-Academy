@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis desain/kualitas/produk\n",
+  "hint": "Cermati lagi mentalitas dasar pekerjaan tim QA Tester vs ruginya memelihara kutu Bug.",
+  "tasks": [
+    {
+      "id": "qa-1-1",
+      "type": "quiz",
+      "params": {
+        "question": "Perbedaan filosofi tugas inti yang mendasar (Mindset) antara seorang Programmer/Software Engineer Murni dengan seorang staf QA (Quality Assurance) Tester di dalam alur pengembangan aplikasi perusahaan adalah...",
+        "options": ["Programmer bertugas menjual produk ke klien, QA Tester bertugas mendesain logo grafis aplikasi", "QA bertugas membersihkan virus di laptop Programmer", "Programmer fokus pada pembangunan (Maker) fungsional instruksi sistem kode dari 0; sedangkan QA Tester fokus pada pengujian batas (Breaker/Checker) secara brutal mencari titik error sistem sebelum rilis", "Keduanya memiliki tugas yang sama 100% tanpa beda sama sekali"],
+        "answer": 2
+      },
+      "hint": "Ingat konsep Maker (Pembuat) vs Breaker (Pengetes batas hancur)."
+    },
+    {
+      "id": "qa-1-2",
+      "type": "quiz",
+      "params": {
+        "question": "Prinsip hukum finansial paling terkenal di dunia rekayasa perangkat lunak (Software Engineering) menyatakan bahwa membasmi kutu kesalahan sistem (Bug) ketika aplikasi sudah dalam status 'Rilis Beredar Publik' akan...",
+        "options": ["Menghabiskan kerugian biaya / waktu (Cost) yang jauh berlipat ganda lebih membengkak kerugiannya jika dibandingkan dengan menumpasnya di awal masa pengembangan tertutup pabrik", "Membuat aplikasi menjadi semakin cepat memuat loading webnya", "Jauh lebih murah dan menguntungkan kantong perusahaan karena diperbaiki sambil berpromosi", "Akan langsung ditutup otomatis oleh Google"],
+        "answer": 0
+      },
+      "hint": "Biaya kerugian publisitas netizen komplain, dan kerugian penarikan server."
+    },
+    {
+      "id": "qa-1-3",
+      "type": "quiz",
+      "params": {
+        "question": "Di dalam siklus tiket penelusuran pelaporan silsilah sistem (Bug Life Cycle). Jika Programmer mengklaim bahwa error tersebut 'Sudah saya perbaiki (Fixed) dan silahkan dicek ulang' di tiket aplikasi Jira. Status tahapan fase wajib apakah yang harus dilakukan secara langsung oleh Sang Pelapor (QA) untuk merespon lemparan bola balik tiket kodingan tersebut?",
+        "options": ["Tahapan Re-Test (Menguji Ulang kebenaran omongan programmer dengan mengulangi skenario eror yang persis sama)", "Memecat programmer tersebut", "Mengklik langsung Close/Tutup tanpa memeriksanya karena programmer tidak pernah bohong", "Tahap New (Membuat Bug baru yang lain lagi)"],
+        "answer": 0
+      },
+      "hint": "Menguji ulang."
+    }
+  ]
+}

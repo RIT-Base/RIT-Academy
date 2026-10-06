@@ -1,0 +1,62 @@
+{
+  "editor": "html",
+  "starter": "<!-- Modul ini fokus kuis fakta peran IT -->\n<h1>Siapa yang Ngoding?</h1>",
+  "hint": "Bagian 'Refleksi Diri' tidak dinilai — task di bawah ini menguji fakta dari materi 'IT ≠ Cuma Programmer' dan 'Contoh Alur Tim'.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "quiz",
+      "params": {
+        "question": "Manakah pernyataan yang paling tepat tentang peran di IT?",
+        "options": [
+          "Semua orang yang bekerja di IT harus jago menulis kode program",
+          "IT punya peran coding-heavy, hybrid, dan non-coding — semuanya penting",
+          "Hanya programmer yang dianggap bekerja di bidang IT",
+          "UI/UX designer tidak termasuk bidang IT"
+        ],
+        "answer": 1
+      },
+      "hint": "Lihat bagian 'IT ≠ Cuma Programmer'."
+    },
+    {
+      "id": "t2",
+      "type": "quiz",
+      "params": {
+        "question": "Dalam alur tim bikin aplikasi di materi, siapa yang merancang fitur dan alur (termasuk ERD) di awal?",
+        "options": ["QA", "Analis", "Security", "UI/UX"],
+        "answer": 1
+      },
+      "hint": "Lihat langkah 1 di 'Contoh Alur Tim Bikin Aplikasi'."
+    },
+    {
+      "id": "t3",
+      "type": "quiz",
+      "params": {
+        "question": "Dalam alur tim bikin aplikasi, tugas QA adalah...",
+        "options": [
+          "Mendesain warna dan tombol aplikasi",
+          "Menguji aplikasi untuk mencari error sebelum dipakai siswa lain",
+          "Merancang data pembeli dan penjual",
+          "Menulis dokumen kebutuhan pertama kali"
+        ],
+        "answer": 1
+      },
+      "hint": "Lihat langkah 4 di 'Contoh Alur Tim Bikin Aplikasi'."
+    },
+    {
+      "id": "t4",
+      "type": "quiz",
+      "params": {
+        "question": "Contoh peran non-coding yang disebutkan di materi adalah...",
+        "options": [
+          "Software engineer",
+          "UI/UX designer",
+          "Backend developer",
+          "Frontend developer"
+        ],
+        "answer": 1
+      },
+      "hint": "Lihat daftar kelompok 'non-coding' di bagian 'IT ≠ Cuma Programmer'."
+    }
+  ]
+}

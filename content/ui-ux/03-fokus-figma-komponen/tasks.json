@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis desain/kualitas/produk\n",
+  "hint": "Cermati tiga fitur emas figma: Frame, Component, Auto Layout.",
+  "tasks": [
+    {
+      "id": "ux-3-1",
+      "type": "quiz",
+      "params": {
+        "question": "Fitur ajaib pada Figma (shortcut: Shift+A) yang membuat sebuah kotak atau wadah elemen bisa memanjang / menyusut secara responsif dan otomatis mengikuti ukuran panjang-pendek konten teks di dalamnya disebut dengan...",
+        "options": ["Smart Animate", "Auto Layout", "Grouping", "Masking"],
+        "answer": 1
+      },
+      "hint": "Layout otomatis."
+    },
+    {
+      "id": "ux-3-2",
+      "type": "quiz",
+      "params": {
+        "question": "Saat mendesain aplikasi yang memiliki ratusan tombol sama di puluhan halaman layar yang berbeda, fitur Figma manakah yang harus kamu gunakan dari awal agar jika klien meminta pergantian warna tombol (dari biru ke merah), kamu cukup mengganti SATU warna induk saja dan ratusan tombol sisanya berubah otomatis?",
+        "options": ["Color Picker", "Figma Components (Main Component)", "Boolean Operation", "Export Assets"],
+        "answer": 1
+      },
+      "hint": "Konsep cetakan batu bata / lego yang bisa diduplikat massal."
+    },
+    {
+      "id": "ux-3-3",
+      "type": "quiz",
+      "params": {
+        "question": "Dalam hierarki pembungkusan (wrapping) antar elemen di Figma, manakah yang sifat kerjanya lebih mirip dan mewakili kontainer/div (sebuah wadah batas kotak terukur) sesungguhnya pada ilmu pemrograman web, ketimbang sekadar 'menyambungkan objek' sesaat?",
+        "options": ["Frame", "Rectangle Tool", "Group", "Slice Tool"],
+        "answer": 0
+      },
+      "hint": "Jangan gunakan Group."
+    }
+  ]
+}

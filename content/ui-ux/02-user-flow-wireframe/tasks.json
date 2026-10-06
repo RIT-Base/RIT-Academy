@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis desain/kualitas/produk\n",
+  "hint": "Cermati tujuan Wireframe dan User Flow.",
+  "tasks": [
+    {
+      "id": "ux-2-1",
+      "type": "quiz",
+      "params": {
+        "question": "Peta visual langkah-demi-langkah (diagram alur klik) yang menunjukkan perjalanan seorang pengguna dari awal membuka aplikasi hingga ia berhasil menyelesaikan tujuannya (misal: checkout barang) disebut...",
+        "options": ["User Flow", "Wireframe", "Color Palette", "Mental Model"],
+        "answer": 0
+      },
+      "hint": "Bahasa Inggris dari Alur."
+    },
+    {
+      "id": "ux-2-2",
+      "type": "quiz",
+      "params": {
+        "question": "Tahapan perancangan UI di mana sang desainer hanya menggunakan warna hitam-putih/abu-abu (berupa sketsa kotak dan garis) tanpa peduli keindahan estetika sama sekali, dinamakan...",
+        "options": ["High-Fidelity Design", "Front-End Coding", "Low-Fidelity Wireframing", "User Persona"],
+        "answer": 2
+      },
+      "hint": "Kualitas tingkat kerumitannya masih Rendah (Low)."
+    },
+    {
+      "id": "ux-2-3",
+      "type": "quiz",
+      "params": {
+        "question": "Alasan psikologis paling utama mengapa tahap Wireframe harus dibiarkan tampak 'kasar' dan tanpa warna saat dipresentasikan ke Klien/Tim di rapat perdana adalah...",
+        "options": ["Agar Desainer bisa hemat kuota internet", "Agar Klien/Tim bisa fokus memberikan masukan murni pada tata letak/fungsi/alur, tanpa terdistraksi memperdebatkan pilihan warna atau font", "Karena aplikasi Figma belum mendukung pemberian warna", "Agar Klien mengira desainnya sudah selesai 100%"],
+        "answer": 1
+      },
+      "hint": "Manusia mudah sekali teralihkan (distraksi) oleh warna."
+    }
+  ]
+}

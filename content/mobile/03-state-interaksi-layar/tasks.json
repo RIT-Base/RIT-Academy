@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Waktunya menguji ingatanmu tentang State di Flutter!\n",
+  "hint": "Fokus pada perbedaan Stateless dan Stateful, serta cara memanggil update UI.",
+  "tasks": [
+    {
+      "id": "mob-3-1",
+      "type": "quiz",
+      "params": {
+        "question": "Jenis Widget manakah di Flutter yang paling tepat digunakan jika kita ingin membuat tombol 'Counter' yang angkanya bisa bertambah setiap kali ditekan?",
+        "options": ["StatelessWidget", "ScaffoldWidget", "StatefulWidget", "NavigatorWidget"],
+        "answer": 2
+      },
+      "hint": "Membutuhkan widget yang memiliki 'ingatan' (State) yang bisa berubah-ubah di tengah jalan."
+    },
+    {
+      "id": "mob-3-2",
+      "type": "quiz",
+      "params": {
+        "question": "Fungsi sakti bawaan Flutter apa yang wajib dipanggil agar UI (tampilan layar) mau me-render ulang dirinya untuk menampilkan data variabel yang baru saja berubah?",
+        "options": ["refreshScreen()", "setState()", "updateUI()", "reload()"],
+        "answer": 1
+      },
+      "hint": "Namanya diawali dengan kata 'set'."
+    },
+    {
+      "id": "mob-3-3",
+      "type": "quiz",
+      "params": {
+        "question": "Dalam sistem navigasi perpindahan layar Flutter, jika kamu sedang berada di halaman Home dan ingin membuka halaman Profil (sehingga nanti user bisa menekan tombol Back fisik di HP untuk kembali ke Home), perintah apa yang digunakan?",
+        "options": ["Navigator.pop()", "Navigator.delete()", "Navigator.push()", "Screen.open()"],
+        "answer": 2
+      },
+      "hint": "Ini ibarat 'mendorong' / menumpuk halaman baru ke atas halaman lama."
+    }
+  ]
+}

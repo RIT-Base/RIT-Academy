@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis desain/kualitas/produk\n",
+  "hint": "Cermati lagi anatomi pembentukan tiket bug report (Priority, Expected, Steps to reproduce).",
+  "tasks": [
+    {
+      "id": "qa-3-1",
+      "type": "quiz",
+      "params": {
+        "question": "Bagian sub-menu apakah pada anatomi pelaporan tiket Bug Report yang memegang kedudukan peran PALING vital krusial (Karena berisikan komando rincian kronologi klik panduan langkah agar sang Programmer sukses ikut-ikutan bisa memancing dan merasakan penampakan Error tersebut muncul di layar laptop komputernya sendiri)?",
+        "options": ["Severity Levels", "Expected Results", "Title Name", "Steps to Reproduce (Langkah Memancing Ulang Kejadian)"],
+        "answer": 3
+      },
+      "hint": "Sang programmer harus bisa melihat setan (bug) itu muncul di depannya sendiri sebelum ia bisa mengusirnya."
+    },
+    {
+      "id": "qa-3-2",
+      "type": "quiz",
+      "params": {
+        "question": "Bagian deskripsi pada tiket pelaporan Bug yang dikhususkan agar sang desainer atau QA tester menjabarkan 'Bagaimana sejatinya perilaku wajar/kebenaran teori sistem dari fitur yang benar yang dicita-citakan' (bukan kondisi realita eror pahit saat ini), ditulis pada tajuk section apa?",
+        "options": ["Actual Results", "Expected Results (Hasil Kebenaran yang Diharapkan)", "Steps to Clone", "Attachments Video"],
+        "answer": 1
+      },
+      "hint": "Ekspektasi."
+    },
+    {
+      "id": "qa-3-3",
+      "type": "quiz",
+      "params": {
+        "question": "Jika seorang QA Tester melaporkan sebuah kesalahan desain aplikasi di mana 'Sebuah tombol teks di halaman profil warna birunya agak sedikit lebih gelap meleset dari warna birunya logo perusahaan, namun fitur aplikasinya tetap bisa dipencet bekerja 100% normal tak menghambat'. Level penilaian Keparahan Bencana (Severity) manakah yang paling akurat untuk mengelompokkan kutu Bug ringan tersebut?",
+        "options": ["Tingkat Severity : Critical (Darurat Mati Kiamat)", "Tingkat Severity : Minor (Rendah / Kosmetik)", "Bug Laporan Palsu Tak Penting", "Tingkat Severity : High (Tinggi Sekali)"],
+        "answer": 1
+      },
+      "hint": "Itu hanya cacat kecil di wajah (kosmetik/typo font) yang tidak membakar/menghentikan operasi jantung server aplikasinya."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "editor": "python",
+  "starter": "# Refleksi & eksplorasi proyek akhir\n",
+  "hint": "Mari selesaikan kuis refleksi akhir untuk mengukuhkan fondasi Computational Thinking-mu!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "quiz",
+      "params": {
+        "question": "Kenapa kita perlu menguasai konsep dasar (seperti variabel, list, kondisi, loop) sebelum lompat belajar membuat Game atau AI?",
+        "options": [
+          "Hanya formalitas dari sekolah.",
+          "Konsep dasar ini bersifat universal. Memahaminya membuat pembelajaran skill spesifik (Web/Game/AI) jauh lebih cepat seperti sekadar mengartikan ulang konsep.",
+          "Karena Game dan AI terlalu membosankan.",
+          "Supaya tidak mudah kena hacker."
+        ],
+        "answer": 1
+      },
+      "hint": "Pilih jawaban yang paling esensial mengenai tujuan TCC Academy."
+    },
+    {
+      "id": "t2",
+      "type": "quiz",
+      "params": {
+        "question": "Kata kunci untuk menghentikan paksa sebuah Infinite Loop atau loop 'while' di tengah jalan adalah...",
+        "options": [
+          "stop",
+          "halt",
+          "break",
+          "exit()"
+        ],
+        "answer": 2
+      },
+      "hint": "Coba cek kode mini game 'Tebak Angka Rahasia' di bagian atas materi."
+    },
+    {
+      "id": "t3",
+      "type": "quiz",
+      "params": {
+        "question": "Pesan apa yang disampaikan saat kamu menemui Error di tengah menulis kode?",
+        "options": [
+          "Laptop atau komputermu akan rusak sebentar lagi.",
+          "Kamu tidak berbakat jadi programmer.",
+          "Error adalah petunjuk jujur bagian mana yang harus dipelajari dan diperbaiki. Ia teman belajarmu.",
+          "Ulang instalasi sistem operasi Windows/Linux-mu secepatnya."
+        ],
+        "answer": 2
+      },
+      "hint": "Lihat bagian penutup di katalog rekomendasi."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Analisa kasus balancing ini!\n",
+  "hint": "Coba posisikan dirimu sebagai pemain. Apa yang bikin main jadi seru tapi tetap adil?",
+  "tasks": [
+    {
+      "id": "gd-4-1",
+      "type": "quiz",
+      "params": {
+        "question": "Jika sebuah senjata di dalam game memiliki Damage yang sangat besar (bisa 1 hit mati), penyeimbang (balancing) apa yang paling tepat?",
+        "options": ["Membuat pelurunya tidak terbatas", "Memberikan Cooldown / waktu reload yang sangat lama", "Membuat karakter berlari lebih cepat saat memegangnya", "Mengurangi HP musuh"],
+        "answer": 1
+      },
+      "hint": "Senjata kuat harus memiliki kelemahan yang signifikan agar tidak OP (Overpowered)."
+    },
+    {
+      "id": "gd-4-2",
+      "type": "quiz",
+      "params": {
+        "question": "Kondisi di mana pemain merasa tantangan game seimbang dengan skill yang mereka miliki disebut...",
+        "options": ["Boredom", "Frustration", "State of Flow", "Overpowered"],
+        "answer": 2
+      },
+      "hint": "Ini adalah zona nyaman yang menjadi target para game designer."
+    },
+    {
+      "id": "gd-4-3",
+      "type": "quiz",
+      "params": {
+        "question": "Cara paling efektif untuk mengetahui apakah gamemu sudah seimbang adalah...",
+        "options": ["Memainkannya sendiri menggunakan cheat", "Menulis kode yang sangat panjang", "Melakukan Playtesting dengan orang lain", "Hanya menghitung di atas kertas"],
+        "answer": 2
+      },
+      "hint": "Kamu butuh opini nyata dari pemain sesungguhnya, karena kamu (sebagai dev) pasti sudah terlalu jago main game buatanmu sendiri."
+    }
+  ]
+}

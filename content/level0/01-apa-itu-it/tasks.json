@@ -1,0 +1,67 @@
+{
+  "editor": "html",
+  "starter": "<!-- Modul ini fokus kuis konsep, editor cuma buat jaga-jaga -->\n<h1>Aku baru belajar IT</h1>",
+  "hint": "Baca ulang bagian 'IT Itu Apa, Sebenarnya?' dan 'IT vs Komputer' kalau masih ragu.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "quiz",
+      "params": {
+        "question": "Manakah yang paling tepat menjelaskan apa itu IT?",
+        "options": [
+          "IT adalah nama lain dari komputer",
+          "IT adalah bidang tentang menyimpan, mengolah, dan mengirim informasi lewat alat elektronik",
+          "IT hanya soal menulis kode program",
+          "IT adalah merek laptop tertentu"
+        ],
+        "answer": 1
+      },
+      "hint": "Lihat definisi di bagian 'IT Itu Apa, Sebenarnya?'."
+    },
+    {
+      "id": "t2",
+      "type": "quiz",
+      "params": {
+        "question": "Kenapa main game online bareng teman termasuk contoh IT?",
+        "options": [
+          "Karena ada server yang mengatur supaya pemain bisa terhubung dan main bareng",
+          "Karena game selalu butuh HP baru",
+          "Karena game cuma bisa dimainkan sendirian",
+          "Karena game tidak berhubungan dengan internet"
+        ],
+        "answer": 0
+      },
+      "hint": "Baca lagi contoh 'main game online' di bagian penjelasan IT."
+    },
+    {
+      "id": "t3",
+      "type": "quiz",
+      "params": {
+        "question": "Apa perbedaan komputer dan IT?",
+        "options": [
+          "Tidak ada bedanya, keduanya sama persis",
+          "Komputer adalah perangkat/alat, IT adalah bidang ilmu dan pekerjaan yang menggunakan alat itu",
+          "Komputer hanya ada di sekolah, IT hanya ada di kantor",
+          "IT adalah nama lain dari internet"
+        ],
+        "answer": 1
+      },
+      "hint": "Lihat analogi 'obeng dan tukang' di bagian 'IT vs Komputer'."
+    },
+    {
+      "id": "t4",
+      "type": "quiz",
+      "params": {
+        "question": "Ngoding (coding) itu paling tepat diartikan sebagai...",
+        "options": [
+          "Satu-satunya pekerjaan yang ada di IT",
+          "Cara memberi instruksi ke komputer memakai bahasa pemrograman",
+          "Kegiatan memperbaiki HP yang rusak",
+          "Nama aplikasi chatting"
+        ],
+        "answer": 1
+      },
+      "hint": "Baca bagian 'Sekilas: Ngoding Itu Apa?'."
+    }
+  ]
+}

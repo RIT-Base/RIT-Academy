@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis desain/kualitas/produk\n",
+  "hint": "Cermati lagi tentang esensi tujuan Product Manager, wujud kalimat User Story, dan Acceptance Criteria.",
+  "tasks": [
+    {
+      "id": "pa-1-1",
+      "type": "quiz",
+      "params": {
+        "question": "Jika seorang Programmer fokus berurusan dengan cara eksekusi baris 'BAGAIMANA (How) aplikasi ini dibangun', maka seorang komandan Product Manager (Analis Produk) memfokuskan porsi pekerjaannya pada wilayah analisa strategis di ranah pertanyaan...",
+        "options": ["'DI MANA' (Where) letak server luar negeri yang murah disewa", "'APA' (What) masalah utama dari pengguna yang paling krusial untuk diselesaikan solusinya, dan 'MENGAPA' (Why) fitur aplikasi tersebut layak diciptakan untuk bisnis", "'SIAPA' (Who) investor pemberi dana suntikan saham terbesar", "'KAPAN' (When) Desainer UI/UX mau gajian"],
+        "answer": 1
+      },
+      "hint": "Fokus pencarian What (Esensi Produk Fitur) & Why (Kenapa diciptakan)."
+    },
+    {
+      "id": "pa-1-2",
+      "type": "quiz",
+      "params": {
+        "question": "Berdasarkan kerangka patokan standar dunia manajerial industri, formula struktur penyusunan kalimat *User Story* (Cerita Pengguna) yang paling sempurna wujud pelafalan presisinya ditunjukkan oleh opsi...",
+        "options": ["Tolong buatkan saya aplikasi peta agar saya dapat membacanya sebagai pengunjung.", "Sebagai pengunjung toko buta arah, tolong buatkan peta denah toko agar tidak pusing.", "Sebagai seorang [Admin Petugas Gudang], Saya ingin [bisa memfilter daftar barang masuk yang berstatus rusak], Agar [saya lebih hemat waktu cepat memisahkan mana yang harus dikembalikan ke Supplier].", "Buatkan fitur Filter barang rusak, khusus Admin gudang, agar cepat dipisah dan tak dibuang."],
+        "answer": 2
+      },
+      "hint": "Ikuti kaidah 3 pilar urut: Sebagai (Peran), Ingin (Aksi spesifik), Agar (Manfaat Alasan)."
+    },
+    {
+      "id": "pa-1-3",
+      "type": "quiz",
+      "params": {
+        "question": "Selain membuat kalimat User Story pendek di atas, Product Manager dan tim harus wajib melampirkan daftar 'Persyaratan Batas Kelulusan Mutlak (Checklist)' sebagai rincian kepastian kondisi yang menyatakan bukti bahwa fitur tersebut resmi tamat / berhasil selesai sesuai standar. Batasan ceklis kelulusan ini kelak menjadi buku panduan pengujian para tim *QA Tester*. Hal ini disebut...",
+        "options": ["Terms and Conditions", "Privacy Policy", "Acceptance Criteria (Kriteria Penerimaan Lulus Test)", "Bug Life Cycle Report"],
+        "answer": 2
+      },
+      "hint": "Kriteria diterima kelulusannya."
+    }
+  ]
+}

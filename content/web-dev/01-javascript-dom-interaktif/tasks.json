@@ -1,0 +1,26 @@
+{
+  "editor": "html",
+  "starter": "<h1 id=\"judul\">Teks Lama</h1>\n<button id=\"tombol\">Ubah Teks!</button>\n\n<script>\n  const tombol = document.querySelector('#tombol');\n  const judul = document.querySelector('#judul');\n\n  // TODO: Tambahkan event listener click pada tombol untuk mengubah textContent judul menjadi \"Teks Baru!\"\n</script>",
+  "hint": "Gunakan tombol.addEventListener('click', function() { judul.textContent = '...'; });",
+  "tasks": [
+    {
+      "id": "wd-1-1",
+      "type": "html-contains",
+      "params": {
+        "selector": "script",
+        "text": "addEventListener"
+      },
+      "hint": "Pastikan kamu menggunakan fungsi addEventListener pada tombol."
+    },
+    {
+      "id": "wd-1-2",
+      "type": "quiz",
+      "params": {
+        "question": "Konsep struktur hirarki (pohon) yang digunakan browser untuk memetakan semua elemen HTML agar bisa dimanipulasi oleh JavaScript disebut...",
+        "options": ["API", "CSSOM", "DOM", "JSON"],
+        "answer": 2
+      },
+      "hint": "Singkatan dari Document Object Model."
+    }
+  ]
+}

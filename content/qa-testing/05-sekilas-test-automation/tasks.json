@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis desain/kualitas/produk\n",
+  "hint": "Cermati apa tujuan sejati dibalik penciptaan robot tester (QA Automation) ini untuk melawan penyakit error regresi.",
+  "tasks": [
+    {
+      "id": "qa-5-1",
+      "type": "quiz",
+      "params": {
+        "question": "Penyakit kelainan misterius dalam dunia pengembangan Software, di mana ketika programmer menambahkan sekumpulan blok kode fitur-fitur pembaruan aplikasi baru, eh ternyata hal itu secara tak sengaja malah mengusik merusak struktur kestabilan tatanan blok kodingan fungsional lama (yang padahal bulan lalu normal aman-aman saja). Gangguan hancurnya tatanan lawas tersebut dikenal dengan istilah...",
+        "options": ["Cross-Platform Bugs", "Server Down Error", "Regression Error (Error Regresi)", "Logic Loop Bugs"],
+        "answer": 2
+      },
+      "hint": "Kemunduran (Regress)."
+    },
+    {
+      "id": "qa-5-2",
+      "type": "quiz",
+      "params": {
+        "question": "Manakah di bawah ini daftar piranti lunak penguasa industri global (Framework Tool) yang spesifik bertugas diciptakan menjadi 'Otak Skrip Robot Sang Hantu Browser Penguji' andalan para QA Automation Engineer modern?",
+        "options": ["Adobe Photoshop dan Corel Draw", "Figma dan Canva Web", "Microsoft Word dan Excel Pivot", "Selenium, Cypress, dan Playwright"],
+        "answer": 3
+      },
+      "hint": "Alat ini punya perintah perintah ajaib pengendali elemen DOM browser secara buta/headless automation."
+    },
+    {
+      "id": "qa-5-3",
+      "type": "quiz",
+      "params": {
+        "question": "Dibandingkan menyewa ratusan manusia (QA Manual) yang bekerja lembur untuk mengeklik ribuan tes skenario setiap kali akan rilis pembaruan, mengapa pergeseran berinvestasi beralih menciptakan Skrip QA Test Automation (QA Otomasi) itu sangat diagungkan di berbagai startup decacorn raksasa?",
+        "options": ["Karena robot bisa secara instan, cepat, konsisten mengeksekusi tes berulang-ulang tanpa lelah manusiawi (human error kelewatan klik), yang berarti amat efisien memangkas waktu mencegah penyakit regression.", "Karena QA Automation Engineer gajinya paling rendah", "Karena sistem otomasi tidak memerlukan pembuatan skenario", "Karena perintah otomasi sanggup langsung menulis kodingan aplikasinya dengan AI"],
+        "answer": 0
+      },
+      "hint": "Mesin tidak pernah berbohong telat bangun atau asal isi lapor absen asal klik karena matanya mulai mengantuk, ia repetitif."
+    }
+  ]
+}

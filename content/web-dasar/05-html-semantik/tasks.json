@@ -1,0 +1,46 @@
+{
+  "editor": "html",
+  "starter": "<!-- Susun halaman ini pakai header, nav, main, dan footer -->\n<h1>Portofolio Budi</h1>\n<a href=\"#proyek\">Proyek</a>\n<h2>Proyek Saya</h2>\n<p>Ini daftar proyek yang pernah aku buat.</p>\n<p>&copy; 2026</p>",
+  "hint": "Pindahkan tiap bagian ke dalam tag semantik yang sesuai: judul situs ke header, link menu ke nav, isi konten ke main, dan info hak cipta ke footer.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "html-contains",
+      "params": { "selector": "header" },
+      "hint": "Bungkus bagian judul situs dengan <header>."
+    },
+    {
+      "id": "t2",
+      "type": "html-contains",
+      "params": { "selector": "nav" },
+      "hint": "Bungkus link menu dengan <nav>."
+    },
+    {
+      "id": "t3",
+      "type": "html-contains",
+      "params": { "selector": "main" },
+      "hint": "Bungkus konten utama (judul proyek + paragraf) dengan <main>."
+    },
+    {
+      "id": "t4",
+      "type": "html-contains",
+      "params": { "selector": "footer" },
+      "hint": "Bungkus info hak cipta di bagian paling bawah dengan <footer>."
+    },
+    {
+      "id": "t5",
+      "type": "quiz",
+      "params": {
+        "question": "Kenapa pakai <header>, <nav>, <main>, dan <footer> lebih baik daripada cuma pakai <div> untuk semua bagian?",
+        "options": [
+          "Karena tampilannya otomatis jadi lebih berwarna",
+          "Karena browser lama tidak mendukung <div>",
+          "Karena memberi makna pada tiap bagian, membantu SEO dan screen reader",
+          "Karena wajib dipakai supaya HTML valid dan bisa dibuka"
+        ],
+        "answer": 2
+      },
+      "hint": "Baca ulang bagian 'Kenapa Makna Itu Penting?'."
+    }
+  ]
+}

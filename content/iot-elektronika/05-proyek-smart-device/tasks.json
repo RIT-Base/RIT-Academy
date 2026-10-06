@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Waktunya review arsitektur proyek nyata!\n",
+  "hint": "Ingat studi kasus Smart Greenhouse dan Alarm Kebakaran.",
+  "tasks": [
+    {
+      "id": "iot-5-1",
+      "type": "quiz",
+      "params": {
+        "question": "Mengapa logika 'membunyikan alarm kebakaran jika ada asap' sebaiknya diprogram agar berjalan langsung di otak alat (ESP32), bukan di server Cloud?",
+        "options": ["Agar biaya server lebih murah", "Karena server tidak bisa mengirim notifikasi", "Agar alarm tetap bisa berbunyi seketika walaupun koneksi internet sedang terputus", "Karena ESP32 tidak bisa terhubung ke internet"],
+        "answer": 2
+      },
+      "hint": "Coba bayangkan bahayanya jika internet putus saat ada kebakaran."
+    },
+    {
+      "id": "iot-5-2",
+      "type": "quiz",
+      "params": {
+        "question": "Komponen yang paling tepat menjadi 'Input' pada sistem Smart Greenhouse adalah...",
+        "options": ["Aplikasi HP dan Server Cloud", "Kipas Angin dan Pompa Air", "Buzzer Alarm", "Sensor Suhu dan Sensor Kelembapan Tanah"],
+        "answer": 3
+      },
+      "hint": "Input berfungsi merasakan kondisi lingkungan, bukan melakukan aksi/output."
+    },
+    {
+      "id": "iot-5-3",
+      "type": "quiz",
+      "params": {
+        "question": "Dalam desain arsitektur IoT end-to-end, di mana tempat pemilik sistem (User) melihat grafik perkembangan suhu kebunnya?",
+        "options": ["Di dalam alat mikrokontroler", "Di aplikasi antarmuka/dashboard (seperti Blynk) yang mengambil data dari Cloud Server", "Dari bunyi Buzzer", "Dari kedipan lampu LED"],
+        "answer": 1
+      },
+      "hint": "Data dari alat dikirim ke Cloud lalu disajikan visual kepada User melalui aplikasi."
+    }
+  ]
+}

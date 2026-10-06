@@ -1,0 +1,30 @@
+{
+  "editor": "python",
+  "starter": "# Buat fungsi sapa(nama) yang mengembalikan 'Halo ' + nama\n",
+  "hint": "Gunakan sintaks def sapa(nama): lalu berikan perintah return.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "python-output",
+      "params": {
+        "contains": "Halo"
+      },
+      "hint": "Kamu harus menguji sendiri memanggil fungsi tersebut, misalnya dengan print(sapa('Budi'))."
+    },
+    {
+      "id": "t2",
+      "type": "quiz",
+      "params": {
+        "question": "Mengapa perintah 'return' jauh lebih disarankan dalam fungsi matematika dibandingkan sekadar 'print()'?",
+        "options": [
+          "Karena print() memakan banyak memori laptop.",
+          "Karena return mengembalikan murni datanya ke tempat fungsi dipanggil sehingga bisa diolah lagi, sedangkan print sekadar mencetak teks layar mati.",
+          "Karena return lebih keren ditulis dalam bahasa Inggris.",
+          "Sebenarnya tidak ada bedanya sama sekali."
+        ],
+        "answer": 1
+      },
+      "hint": "Pikirkan apa yang terjadi kalau kamu ingin menjumlahkan hasil fungsi A dengan hasil fungsi B."
+    }
+  ]
+}

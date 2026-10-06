@@ -1,0 +1,226 @@
+{
+  "quizType": "sorting",
+  "hint": "Pilih jawaban yang paling mencerminkan gaya berpikir dan minat pribadimu saat menghadapi situasi berikut.",
+  "questions": [
+    {
+      "id": "sq-1",
+      "question": "1. Ketika kamu menggunakan aplikasi atau website kampus yang lambat dan tampilannya berantakan, apa refleks pertamamu?",
+      "options": [
+        {
+          "text": "Gatal ingin merapikan tata letak, warna, dan navigasinya agar nyaman dan intuitif dilihat.",
+          "scores": { "ui-ux": 3, "desain-grafis": 2, "web-dev": 1 }
+        },
+        {
+          "text": "Penasaran di mana masalahnya: apakah query database lambat, API error, atau server kekurangan resource.",
+          "scores": { "web-dev": 2, "devops": 3, "jaringan": 2 }
+        },
+        {
+          "text": "Penasaran menginspeksi: apakah enkripsi data aman dan ada celah input yang belum difilter?",
+          "scores": { "cyber-security": 3, "qa-testing": 2 }
+        },
+        {
+          "text": "Mencoba mencari pola skenario rusak (edge cases) dan mencatat apa saja yang harus diperbaiki tim developer.",
+          "scores": { "qa-testing": 3, "produk-analis": 2, "it-support": 1 }
+        }
+      ]
+    },
+    {
+      "id": "sq-2",
+      "question": "2. Di sebuah proyek kelompok, peran mana yang paling membuatmu bersemangat dan betah berjam-jam?",
+      "options": [
+        {
+          "text": "Membuat aplikasi interaktif di browser atau smartphone yang bisa langsung disentuh dan dicoba teman.",
+          "scores": { "web-dev": 3, "mobile": 3 }
+        },
+        {
+          "text": "Merancang alur cerita, karakter, animasi visual, dan mekanisme tantangan logika yang seru.",
+          "scores": { "game-dev": 3, "desain-grafis": 2 }
+        },
+        {
+          "text": "Mengolah data mentah (misal spreadsheet survei) menjadi grafik wawasan dan model prediksi cerdas.",
+          "scores": { "data-ai": 3, "produk-analis": 1 }
+        },
+        {
+          "text": "Menghubungkan sensor fisik, lampu indikator, atau mikrokontroler agar merespons keadaan ruangan nyata.",
+          "scores": { "iot-elektronika": 3, "it-support": 1 }
+        }
+      ]
+    },
+    {
+      "id": "sq-3",
+      "question": "3. Jika kamu disuruh memilih meja kerja impianmu, suasana mana yang paling cocok?",
+      "options": [
+        {
+          "text": "Meja dengan monitor besar, penuh art-board Figma, palet warna, dan aset ilustrasi visual yang estetik.",
+          "scores": { "desain-grafis": 3, "ui-ux": 3 }
+        },
+        {
+          "text": "Meja dengan solder, kabel jumper, papan sirkuit mikrokontroler (ESP32/Arduino), dan komponen elektronik.",
+          "scores": { "iot-elektronika": 3, "it-support": 2 }
+        },
+        {
+          "text": "Dual-monitor: satu menampilkan terminal Linux hitam dengan running logs/metrik, satu lagi arsitektur jaringan.",
+          "scores": { "devops": 3, "jaringan": 3, "cyber-security": 2 }
+        },
+        {
+          "text": "Papan Kanban interaktif, dokumen spesifikasi kebutuhan produk, roadmap rilis, dan diagram alur kerja pengguna.",
+          "scores": { "produk-analis": 3, "qa-testing": 2 }
+        }
+      ]
+    },
+    {
+      "id": "sq-4",
+      "question": "4. Bagaimana pandanganmu tentang smartphone dan perangkat mobile saat ini?",
+      "options": [
+        {
+          "text": "HP adalah pusat hidup manusia modern. Membangun aplikasi Android/iOS yang halus di tangan adalah seni tertinggi.",
+          "scores": { "mobile": 3, "ui-ux": 1 }
+        },
+        {
+          "text": "HP itu pintu gerbang web. Website yang responsif di browser HP jauh lebih universal dibanding instal aplikasi.",
+          "scores": { "web-dev": 3 }
+        },
+        {
+          "text": "HP adalah remote kontrol untuk mengendalikan peralatan rumah pintar (smart home) dan sensor IoT jarak jauh.",
+          "scores": { "iot-elektronika": 3, "mobile": 1 }
+        },
+        {
+          "text": "HP adalah perangkat yang rentan disadap jika tersambung ke WiFi publik tanpa pengamanan protokol yang ketat.",
+          "scores": { "cyber-security": 3, "jaringan": 2 }
+        }
+      ]
+    },
+    {
+      "id": "sq-5",
+      "question": "5. Saat kamu mendengar istilah 'Kecerdasan Buatan (AI) & Machine Learning', apa yang paling memicu rasa ingin tahumu?",
+      "options": [
+        {
+          "text": "Bagaimana matematika dan statistik di balik algoritma bisa mengenali pola tersembunyi dari jutaan baris data.",
+          "scores": { "data-ai": 3, "web-dev": 1 }
+        },
+        {
+          "text": "Bagaimana cara mengintegrasikan API model AI ke dalam aplikasi web/mobile agar menjadi fitur berguna bagi user.",
+          "scores": { "web-dev": 2, "mobile": 2, "produk-analis": 1 }
+        },
+        {
+          "text": "Bagaimana NPC (karakter komputer) dalam game bisa merespons tindakan pemain secara cerdas dan tak terduga.",
+          "scores": { "game-dev": 3 }
+        },
+        {
+          "text": "Ancaman keamanan: bagaimana hacker menggunakan AI untuk serangan siber dan bagaimana bertahan melawannya.",
+          "scores": { "cyber-security": 3 }
+        }
+      ]
+    },
+    {
+      "id": "sq-6",
+      "question": "6. Temanmu mengeluh: 'Laptopku tiba-tiba gak bisa connect ke WiFi kampus dan lemot banget!' Apa responmu?",
+      "options": [
+        {
+          "text": "Langsung cek IP address, gateway, DNS, dan ping ke router untuk mengetahui titik putus jaringannya.",
+          "scores": { "jaringan": 3, "it-support": 2 }
+        },
+        {
+          "text": "Cek Task Manager, kesehatan RAM/Storage, dan proses mencurigakan yang jalan di background sistem operasi.",
+          "scores": { "it-support": 3, "devops": 1 }
+        },
+        {
+          "text": "Waspada! Bisa jadi ada serangan Man-in-the-Middle (MITM) atau malware/adware yang menjangkit sistemnya.",
+          "scores": { "cyber-security": 3 }
+        },
+        {
+          "text": "Membantunya dengan empati, lalu mendokumentasikan langkah penanganan agar orang lain bisa self-troubleshoot.",
+          "scores": { "it-support": 2, "produk-analis": 2 }
+        }
+      ]
+    },
+    {
+      "id": "sq-7",
+      "question": "7. Ketika memainkan sebuah video game, apa aspek yang paling sering kamu perhatikan atau komentari?",
+      "options": [
+        {
+          "text": "Mekanika fisika, hit-box karakter, keseimbangan tingkat kesulitan (game balance), dan serunya loop permainan.",
+          "scores": { "game-dev": 3 }
+        },
+        {
+          "text": "Desain visual karakter, konsistensi warna dunia, efek partikel, dan animasi transisi antar menu.",
+          "scores": { "desain-grafis": 3, "ui-ux": 2 }
+        },
+        {
+          "text": "Stabilitas server multiplayer, latency/ping jaringan saat baku hantam antar tim.",
+          "scores": { "jaringan": 2, "devops": 3 }
+        },
+        {
+          "text": "Menemukan bug konyol (glitch menembus dinding atau infinite item) dan cara mereproduksinya.",
+          "scores": { "qa-testing": 3, "game-dev": 1 }
+        }
+      ]
+    },
+    {
+      "id": "sq-8",
+      "question": "8. Apa filosofimu mengenai sebuah perangkat lunak (software) yang sukses?",
+      "options": [
+        {
+          "text": "Software yang menyelesaikan masalah nyata user dengan tepat, punya arah fitur yang jelas, dan terus bertumbuh.",
+          "scores": { "produk-analis": 3, "ui-ux": 1 }
+        },
+        {
+          "text": "Software yang bebas dari bug kritis, berjalan stabil di berbagai skenario ekstrim, dan lolos uji mutu.",
+          "scores": { "qa-testing": 3, "devops": 1 }
+        },
+        {
+          "text": "Software yang arsitektur servernya tangguh, auto-scaling saat traffic membludak, dan pipeline deploy-nya mulus.",
+          "scores": { "devops": 3, "jaringan": 1 }
+        },
+        {
+          "text": "Software yang tampilannya memukau, membuat orang yang memakainya merasa pintar dan senang.",
+          "scores": { "ui-ux": 3, "web-dev": 1 }
+        }
+      ]
+    },
+    {
+      "id": "sq-9",
+      "question": "9. Di dunia coding, teka-teki logika seperti apa yang paling bikin kamu tertantang?",
+      "options": [
+        {
+          "text": "Membongkar pesan terenkripsi, memecahkan teka-teki binary/hex, atau menemukan kelemahan logika autentikasi.",
+          "scores": { "cyber-security": 3 }
+        },
+        {
+          "text": "Mengotomasi alur berulang dengan script: dari commit Git langsung test, build container, dan deploy tanpa sentuhan tangan.",
+          "scores": { "devops": 3, "web-dev": 1 }
+        },
+        {
+          "text": "Mengatur state interaksi yang kompleks di antarmuka agar semua animasi dan data sinkron tanpa flickering.",
+          "scores": { "web-dev": 2, "mobile": 2, "ui-ux": 1 }
+        },
+        {
+          "text": "Mencari korelasi statistik dari dataset besar untuk menemukan tren yang belum pernah disadari orang.",
+          "scores": { "data-ai": 3 }
+        }
+      ]
+    },
+    {
+      "id": "sq-10",
+      "question": "10. Apa target terbesarmu setelah melewati fase fondasi di RIT Academy?",
+      "options": [
+        {
+          "text": "Punya portofolio website atau aplikasi mobile publik berdomain sendiri yang siap dipamerkan.",
+          "scores": { "web-dev": 3, "mobile": 3 }
+        },
+        {
+          "text": "Bisa ikut kompetisi CTF (Capture The Flag) atau berkontribusi menjaga keamanan sistem organisasi.",
+          "scores": { "cyber-security": 3 }
+        },
+        {
+          "text": "Membuat prototipe alat fisik otomatis berbasis IoT atau game indie buatan sendiri.",
+          "scores": { "iot-elektronika": 3, "game-dev": 3 }
+        },
+        {
+          "text": "Menjadi pengatur strategi produk/UI-UX atau insinyur reliabilitas sistem dan QA yang diandalkan tim.",
+          "scores": { "produk-analis": 3, "ui-ux": 2, "qa-testing": 2, "devops": 2 }
+        }
+      ]
+    }
+  ]
+}

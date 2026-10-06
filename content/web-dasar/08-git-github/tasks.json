@@ -1,0 +1,52 @@
+{
+  "editor": "html",
+  "starter": "<!-- Modul ini fokus kuis konsep Git & GitHub -->\n<h1>Belajar Git</h1>\n",
+  "hint": "Coba baca lagi bagian perbedaan Git vs GitHub serta 4 perintah utamanya.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "quiz",
+      "params": {
+        "question": "Apa perbedaan utama antara Git dan GitHub?",
+        "options": [
+          "Git adalah versi berbayar, GitHub adalah versi gratis.",
+          "Git adalah sistem operasi, GitHub adalah bahasa pemrograman.",
+          "Git adalah alat pencatat versi di komputer lokal, GitHub adalah layanan awan untuk menyimpannya.",
+          "Tidak ada perbedaan, keduanya adalah hal yang sama."
+        ],
+        "answer": 2
+      },
+      "hint": "Ingat perumpamaan alat vs tempat penyimpanan (seperti Google Drive)."
+    },
+    {
+      "id": "t2",
+      "type": "quiz",
+      "params": {
+        "question": "Jika diumpamakan dengan sebuah Video Game, perintah 'git commit' sama fungsinya dengan...",
+        "options": [
+          "Mengubah grafis game menjadi 3D.",
+          "Membuat Checkpoint (Save State) yang permanen.",
+          "Menghapus karakter utama.",
+          "Menjalankan game (Play)."
+        ],
+        "answer": 1
+      },
+      "hint": "Apa yang programmer lakukan agar kodenya tidak rusak permanen jika membuat kesalahan besok hari?"
+    },
+    {
+      "id": "t3",
+      "type": "quiz",
+      "params": {
+        "question": "Perintah apa yang digunakan untuk mengirim kodemu dari laptop ke server GitHub di internet?",
+        "options": [
+          "git pull",
+          "git add",
+          "git push",
+          "git init"
+        ],
+        "answer": 2
+      },
+      "hint": "Ingat perumpamaan 'menerbangkan/mendorong' kodemu ke awan."
+    }
+  ]
+}

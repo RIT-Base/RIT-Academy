@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis desain/kualitas/produk\n",
+  "hint": "Cermati sifat dasar perbedaan Vektor vs Pixel(Raster).",
+  "tasks": [
+    {
+      "id": "dg-2-1",
+      "type": "quiz",
+      "params": {
+        "question": "Mengapa industri grafis sangat mengharamkan dan melarang pembuatan Master File LOGO sebuah perusahaan dirancang menggunakan Adobe Photoshop dengan format penyimpanan standar JPG / PNG murni?",
+        "options": ["Karena logo JPG mudah dicuri oleh hacker", "Karena Photoshop dan file Raster (JPG/PNG) aslinya memetakan gambar sebagai susunan petak-petak titik piksel mati, sehingga akan pecah (blur kotak-kotak) jika perusahaan ingin mencetaknya membesar skala Baliho Raksasa 10 meter", "Karena Photoshop hanya bisa menggambar foto warna hitam putih", "Karena dilarang pemerintah"],
+        "answer": 1
+      },
+      "hint": "Fokus pada fleksibilitas pembesaran ukuran (Scaling) dari kedua jenis teknologi pemetaan gambar tersebut."
+    },
+    {
+      "id": "dg-2-2",
+      "type": "quiz",
+      "params": {
+        "question": "Tool/senjata ukir paling ikonik dan fundamental di seluruh software Vektor (Illustrator/Corel/Inkscape) yang berfungsi menjangkar titik-titik node koordinat (Anchor point) dan menariknya dengan sumbu handler untuk menciptakan lengkungan kurva buatan yang presisi halus adalah...",
+        "options": ["Eraser Tool", "Brush Paint Tool", "The Pen Tool", "Cropping Tool"],
+        "answer": 2
+      },
+      "hint": "Namanya alat Pulpen."
+    },
+    {
+      "id": "dg-2-3",
+      "type": "quiz",
+      "params": {
+        "question": "Jika sebuah logo didesain terlalu rumit, banyak gradasi 3D dan detailnya terlalu berdesakan kecil, hukum ujian standar apa yang kemungkinan besar GAGAL dilewati logo tersebut?",
+        "options": ["Ujian diubah menjadi format warna hitam putih solid 100% dan ujian dikecilkan seukuran prangko/favicon", "Ujian kecepatan server database", "Ujian penyimpanan di dalam File RAR", "Ujian animasi video YouTube"],
+        "answer": 0
+      },
+      "hint": "Logo yang kuat adalah logo yang bentuk siluet hitam-putih murninya saja sudah langsung dikenali alam bawah sadar pengamat (seperti ceklisan sepatu atau siluet buah yang digigit)."
+    }
+  ]
+}

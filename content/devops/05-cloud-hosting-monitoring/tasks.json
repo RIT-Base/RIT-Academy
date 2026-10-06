@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis keamanan/jaringan\n",
+  "hint": "Coba pelajari lagi istilah DNS, SSL, VPS, dan Cloud Monitoring.",
+  "tasks": [
+    {
+      "id": "do-5-1",
+      "type": "quiz",
+      "params": {
+        "question": "Layanan penyewaan mesin komputer (server virtual) yang mana penyedia Cloud akan menyerahkan hak akses Linux penuh (Root) kepadamu dengan sistem tagihan fleksibel harian/bulanan disebut sebagai...",
+        "options": ["Shared Hosting Panel", "VPN Server", "Localhost", "VPS (Virtual Private Server)"],
+        "answer": 3
+      },
+      "hint": "Singkatan Tiga Huruf."
+    },
+    {
+      "id": "do-5-2",
+      "type": "quiz",
+      "params": {
+        "question": "Sistem ('buku telepon' dunia internet) yang bertugas mentranslasikan nama domain website yang mudah dibaca manusia (seperti 'google.com') menjadi bentuk angka Alamat IP server aslinya dinamakan...",
+        "options": ["HTTPS", "DNS (Domain Name System)", "SSL / TLS", "DHCP Protocol"],
+        "answer": 1
+      },
+      "hint": "Namanya Sistem Penamaan Domain."
+    },
+    {
+      "id": "do-5-3",
+      "type": "quiz",
+      "params": {
+        "question": "Agar alamat websitemu memiliki tanda gembok gembok hijau yang mengindikasikan koneksi terenkripsi aman antar pengunjung dan server (berpindah jalur dari http ke HTTPS), apa sertifikat khusus yang harus kamu konfigurasi dan instal di server (misal melalui Let's Encrypt)?",
+        "options": ["Sertifikat Kelulusan Bootcamp", "File Docker", "Sertifikat SSL/TLS", "File SSH Key Public"],
+        "answer": 2
+      },
+      "hint": "Sertifikat yang diawali huruf S."
+    }
+  ]
+}

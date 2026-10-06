@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis keamanan/jaringan\n",
+  "hint": "Ingat konsep kerja CI, kerja CD, dan bagaimana GitHub Actions dijalankan.",
+  "tasks": [
+    {
+      "id": "do-4-1",
+      "type": "quiz",
+      "params": {
+        "question": "Fase dalam alur pipeline di mana sistem secara otomatis akan menjalankan tes (pengujian kode) terhadap baris kode baru yang baru saja di-push developer (guna mencegah kode error masuk dan merusak aplikasi utama) disebut dengan tahap...",
+        "options": ["CD (Continuous Deployment)", "CI (Continuous Integration)", "Load Balancing", "Dockerizing"],
+        "answer": 1
+      },
+      "hint": "Fase awal untuk menyatukan dan mengecek integritas (Integration)."
+    },
+    {
+      "id": "do-4-2",
+      "type": "quiz",
+      "params": {
+        "question": "Jika perusahaan menggunakan layanan GitHub Actions untuk membangun sistem CI/CD, bahasa format file apakah yang wajib digunakan untuk menulis skrip (alur kerja robot) pipeline tersebut?",
+        "options": ["HTML", "XML", "YAML (.yml)", "SQL"],
+        "answer": 2
+      },
+      "hint": "Bahasa format data dengan ekstensi file tiga huruf Y _ _ L."
+    },
+    {
+      "id": "do-4-3",
+      "type": "quiz",
+      "params": {
+        "question": "Saat robot GitHub Actions bertugas untuk menyalin aplikasi (fase Deployment CD) ke server rahasia produksi milik perusahaan, tindakan manakah yang secara etika DevOps sangat BERBAHAYA dan dilarang keras?",
+        "options": ["Memberi tahu tim melalui Slack bahwa deploy sukses", "Menuliskan Password dan alamat IP server secara langsung di dalam file teks YAML pipeline (Hardcoding)", "Menjalankan testing", "Menggunakan fasilitas GitHub Secrets untuk menyamarkan password"],
+        "answer": 1
+      },
+      "hint": "Ingat, file YAML akan terekspos di repo GitHub. Hardcoding adalah praktik memasukkan variabel teks rahasia ke dalam kode."
+    }
+  ]
+}

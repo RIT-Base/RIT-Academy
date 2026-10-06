@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Mari review struktur penyusunan UI ala Flutter!\n",
+  "hint": "Ingat konsep Semua Adalah Widget dan tata letak Row/Column.",
+  "tasks": [
+    {
+      "id": "mob-2-1",
+      "type": "quiz",
+      "params": {
+        "question": "Mantra utama dan konsep paling inti dalam mendesain User Interface (UI) menggunakan framework Flutter adalah...",
+        "options": ["Gunakan HTML untuk layout", "Semuanya adalah Widget", "Desain harus selalu menggunakan CSS", "Pisahkan file logika dan file UI secara tegas"],
+        "answer": 1
+      },
+      "hint": "Bahkan spasi kosong (Padding) saja dihitung sebagai bentuk blok ini."
+    },
+    {
+      "id": "mob-2-2",
+      "type": "quiz",
+      "params": {
+        "question": "Jika kamu ingin menyusun daftar 3 gambar profil temanmu berjejer ke samping secara horizontal dari kiri ke kanan, Widget Layout apakah yang paling tepat digunakan?",
+        "options": ["Column", "Stack", "Row", "ListView"],
+        "answer": 2
+      },
+      "hint": "Bahasa inggrisnya 'Baris'."
+    },
+    {
+      "id": "mob-2-3",
+      "type": "quiz",
+      "params": {
+        "question": "Apa fungsi membungkus sebuah Column dengan Widget 'SingleChildScrollView' atau 'ListView'?",
+        "options": ["Agar aplikasi tidak terkena virus", "Agar layout teks yang sangat panjang ke bawah bisa di-scroll / digulir tanpa menyebabkan error Overflow (keluar dari batas tinggi layar HP)", "Agar gambar menjadi beresolusi HD", "Mengubah warna tema aplikasi menjadi Dark Mode"],
+        "answer": 1
+      },
+      "hint": "Perhatikan kata 'Scroll' pada nama widget tersebut."
+    }
+  ]
+}

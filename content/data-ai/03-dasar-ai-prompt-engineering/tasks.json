@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Waktunya review teori cara kerja dan komunikasi LLM!\n",
+  "hint": "Ingat bahwa AI bahasa bekerja dengan perhitungan kata (Token) bukan logika murni manusia, dan ingat 4 formula perintahnya.",
+  "tasks": [
+    {
+      "id": "da-3-1",
+      "type": "quiz",
+      "params": {
+        "question": "Istilah teknis yang digunakan ketika sebuah AI (LLM) dengan penuh rasa percaya diri memberikan jawaban fiktif, salah, atau mengarang bebas padahal fakta aslinya tidak seperti itu disebut...",
+        "options": ["Malfunction", "Blue Screen", "Tokenization", "AI Hallucination (Halusinasi AI)"],
+        "answer": 3
+      },
+      "hint": "Sama seperti manusia yang melihat bayangan fatamorgana di padang pasir."
+    },
+    {
+      "id": "da-3-2",
+      "type": "quiz",
+      "params": {
+        "question": "Teknik menyusun dan merancang instruksi / pertanyaan teks dengan sangat spesifik agar model AI mampu memproduksi output yang presisi dan berkualitas tinggi disebut...",
+        "options": ["Machine Learning", "Prompt Engineering", "Data Crawling", "Deep Fake"],
+        "answer": 1
+      },
+      "hint": "Rekayasa Perintah."
+    },
+    {
+      "id": "da-3-3",
+      "type": "quiz",
+      "params": {
+        "question": "Di dalam formula anatomi Prompt (Role, Task, Context, Format), kalimat 'Tolong balas hasilnya dalam bentuk Tabel yang memiliki 3 buah kolom!' termasuk ke dalam elemen...",
+        "options": ["Role (Peran)", "Context (Konteks)", "Format", "Task (Tugas)"],
+        "answer": 2
+      },
+      "hint": "Hal ini berkaitan erat dengan bentuk wujud rupa (struktur fisik teks) saat jawaban disajikan."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "editor": "html",
+  "starter": "<style>\n  .container {\n    /* Tambahkan display: flex; dan gap di sini */\n  }\n  .kartu {\n    padding: 16px;\n    border: 2px solid navy;\n  }\n</style>\n\n<div class=\"container\">\n  <div class=\"kartu\">Kartu 1</div>\n  <div class=\"kartu\">Kartu 2</div>\n  <div class=\"kartu\">Kartu 3</div>\n</div>",
+  "hint": "Tambahkan display: flex; di dalam .container supaya ketiga kartu berjejer rapi, dan pastikan strukturnya (container + 3 kartu) tetap ada.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "html-contains",
+      "params": { "selector": ".container" },
+      "hint": "Pastikan ada elemen pembungkus dengan class=\"container\"."
+    },
+    {
+      "id": "t2",
+      "type": "html-contains",
+      "params": { "selector": ".container .kartu" },
+      "hint": "Pastikan ada elemen ber-class \"kartu\" di dalam .container — susun ketiga kartunya di dalam container yang sama."
+    },
+    {
+      "id": "t3",
+      "type": "quiz",
+      "params": {
+        "question": "Properti CSS apa yang kamu pasang di elemen pembungkus supaya elemen-elemen di dalamnya berjejer, bukan ketumpuk ke bawah?",
+        "options": ["color: flex;", "display: flex;", "border: flex;", "font-size: flex;"],
+        "answer": 1
+      },
+      "hint": "Baca ulang bagian 'display: flex — Menyalakan Mode Flexbox'."
+    },
+    {
+      "id": "t4",
+      "type": "quiz",
+      "params": {
+        "question": "Baris <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> di <head> berguna untuk apa?",
+        "options": [
+          "Mengubah warna latar belakang halaman",
+          "Menampilkan halaman sesuai lebar layar asli perangkat, terutama di HP",
+          "Mengaktifkan mode flexbox secara otomatis",
+          "Menambahkan gambar favicon ke tab browser"
+        ],
+        "answer": 1
+      },
+      "hint": "Baca ulang bagian 'Sekilas Responsive'."
+    }
+  ]
+}

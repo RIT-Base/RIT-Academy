@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis desain/kualitas/produk\n",
+  "hint": "Cermati lagi tentang Mockup, Lisensi Aset, dan platform pajangan desainer pro.",
+  "tasks": [
+    {
+      "id": "dg-5-1",
+      "type": "quiz",
+      "params": {
+        "question": "Metode penyajian pintar dalam presentasi portofolio di mana sang Desainer 'menempelkan' gambar logo format kotak kaku mentahannya ke dalam wujud foto simulasi tiruan benda nyata (seperti mencetak logonya otomatis merapat mengikuti lipatan kain foto t-shirt kosong atau layar HP sungguhan) agar hasil karyanya terlihat nyata, profesional, dan meyakinkan di mata klien disebut dengan...",
+        "options": ["Filter Blur", "Motion Graphic", "Mockup", "Layer Masking"],
+        "answer": 2
+      },
+      "hint": "Berarti Simulasi Wujud Asli/Maket Cetakan."
+    },
+    {
+      "id": "dg-5-2",
+      "type": "quiz",
+      "params": {
+        "question": "Demi menghindari risiko denda pidana raksasa pelanggaran Hak Cipta (Copyright) akibat sembarangan mengambil gambar milik fotografer lain di Google Image untuk keperluan jualan desain grafis komersial/bisnis, maka seorang Desainer wajib mengunduh stok aset elemen foto/grafis HD hanya dari sumber yang memegang lisensi bebas biaya komersil tipe CC0 (Creative Commons 0). Salah satu website penampungan raksasa yang legal dan terkenal akan aturan tersebut adalah...",
+        "options": ["Unsplash atau Pexels", "Wikipedia", "Facebook Group", "Google Image Search biasa"],
+        "answer": 0
+      },
+      "hint": "Cari jawaban dengan dua platform terbesar kumpulan foto kualitas tinggi tak berhak cipta."
+    },
+    {
+      "id": "dg-5-3",
+      "type": "quiz",
+      "params": {
+        "question": "Jika kamu berniat membangun reputasi profesional untuk di lirik HRD, platform 'Media Sosial' manakah yang menjadi wadah utama standar global bagi para pekerja seni, ilustrator, dan Desainer Grafis murni untuk menyusun etalase portofolio studinya agar dikomparasi secara luas?",
+        "options": ["Behance atau Dribbble", "LinkedIn (Khusus CV tulisan teks)", "Twitter / X (Untuk obrolan bebas tulisan)", "WhatsApp Status 24 Jam"],
+        "answer": 0
+      },
+      "hint": "Dua raksasa wadah kompilasi ilustrator."
+    }
+  ]
+}

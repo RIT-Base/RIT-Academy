@@ -1,0 +1,52 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis logika, editor untuk eksplorasi bebas\n",
+  "hint": "Ingat kembali analogi resep mi instan saat menjawab soal algoritma.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "quiz",
+      "params": {
+        "question": "Jika urutan langkah memecahkan masalah diubah secara sembarangan, apa yang akan terjadi?",
+        "options": [
+          "Program akan berjalan lebih cepat karena komputer pintar.",
+          "Program gagal berjalan dengan semestinya atau error.",
+          "Komputer otomatis membetulkan kesalahan tersebut.",
+          "Algoritma akan berubah menjadi bahasa lain."
+        ],
+        "answer": 1
+      },
+      "hint": "Ingat analogi merebus mi instan dan menaburkan bumbu."
+    },
+    {
+      "id": "t2",
+      "type": "quiz",
+      "params": {
+        "question": "Situasi 'Jika mendung, bawa payung' adalah contoh konsep komputasional...",
+        "options": [
+          "Loop (Perulangan)",
+          "Sequence (Urutan)",
+          "Condition (Percabangan)",
+          "Debugging (Memperbaiki error)"
+        ],
+        "answer": 2
+      },
+      "hint": "Baca ulang bagian Logika Keputusan."
+    },
+    {
+      "id": "t3",
+      "type": "quiz",
+      "params": {
+        "question": "Apa itu algoritma?",
+        "options": [
+          "Bahasa pemrograman terbaru dari Google",
+          "Komponen keras di dalam otak komputer",
+          "Langkah-langkah sistematis dan berurutan untuk memecahkan sebuah masalah",
+          "Seni mendekorasi kode agar terlihat rapi"
+        ],
+        "answer": 2
+      },
+      "hint": "Baca sub-judul 'Resep Algoritma di Dunia Nyata'."
+    }
+  ]
+}

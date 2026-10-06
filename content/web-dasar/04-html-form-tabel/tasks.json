@@ -1,0 +1,29 @@
+{
+  "editor": "html",
+  "starter": "<form>\n  <!-- Tambahkan label dan input pendaftaran di sini -->\n\n  <button type=\"submit\">Daftar</button>\n</form>",
+  "hint": "Bikin form pendaftaran sederhana: pasangkan setiap <label for=\"...\"> dengan <input id=\"...\"> yang id-nya sama.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "html-contains",
+      "params": { "selector": "input" },
+      "hint": "Tambahkan minimal satu elemen <input> di dalam form, misalnya <input type=\"text\" id=\"nama\">."
+    },
+    {
+      "id": "t2",
+      "type": "html-contains",
+      "params": { "selector": "label[for]" },
+      "hint": "Tambahkan <label for=\"...\"> yang atribut for-nya sama dengan id input-mu."
+    },
+    {
+      "id": "t3",
+      "type": "quiz",
+      "params": {
+        "question": "Kamu mau bikin daftar nilai siswa yang tersusun dalam baris dan kolom. Tag apa yang paling cocok jadi judul kolom (misalnya 'Nama' dan 'Nilai')?",
+        "options": ["<td>", "<th>", "<tr>", "<label>"],
+        "answer": 1
+      },
+      "hint": "Ingat: <th> untuk judul kolom, <td> untuk data biasa, keduanya ada di dalam <tr>."
+    }
+  ]
+}

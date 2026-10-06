@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis keamanan/jaringan\n",
+  "hint": "Pelajari fungsi unik Hub/Switch vs fungsi sejati kotak Router.",
+  "tasks": [
+    {
+      "id": "jar-3-1",
+      "type": "quiz",
+      "params": {
+        "question": "Perangkat ajaib wujud kotak besi yang perannya 'Terbatas' hanya mampu mempertemukan dan menghubungkan alur kabel banyak perangkat (PC A berkomunikasi LAN ke PC B) secara lokalan sempit pada alamat IP Network blok keluarga yang SETIPE/SAMA, adalah wujud utama tugas peran sebuah perangkat apa?",
+        "options": ["Access Point", "Modem Indihome", "Switch (atau Hub)", "Router Pusat"],
+        "answer": 2
+      },
+      "hint": "Menghubungkan grup satu alamat subnet keluarga/perumahan yang sejenis tipe."
+    },
+    {
+      "id": "jar-3-2",
+      "type": "quiz",
+      "params": {
+        "question": "Sedangkan, jika ditantang untuk bisa menghubungkan komunikasi silang yang menyeberang keluar (mengalihkan data paket dari suatu wilayah alamat Jaringan A yang sempit, agar paketnya lolos diterbangkan keluar menyatu menuju blok wilayah jaringan internet raya B yang jauh BERBEDA alamatnya). Perangkat spesifik perbatasan gerbang mutlak jenis apa yang menjadi dalang solusi satu-satunya untuk membedah masalah silang area jalur tersebut?",
+        "options": ["Wireless Access Point WiFi", "Router", "Colokan Kabel LAN RJ-45", "Kabel Menyilang (Cross-over)"],
+        "answer": 1
+      },
+      "hint": "Alat ini punya fungsi dasar bernama Route (Pencari Jalan Rute)."
+    },
+    {
+      "id": "jar-3-3",
+      "type": "quiz",
+      "params": {
+        "question": "Jika suatu hari seorang teknisi nekat menyambungkan ujung kabel UTP Ethernet (LAN) untuk menyambung mulut laptopnya langsung secara barbar ke laptop temannya yang duduk di seberang mejanya (Penyambungan koneksi Perangkat Identik Sejawat). Maka untuk menghindari error transfer silang data, aturan pemasangan urutan rona warna pin kabel UTP yang seharusnya dipatok wajib merujuk tipe kabel apa?",
+        "options": ["Kabel Melingkar Listrik", "Kabel Lurus (Straight-through)", "Fiber Kaca Bawah Laut Optik", "Kabel Silang (Crossover)"],
+        "answer": 3
+      },
+      "hint": "Hubungan device sejawat / sama rata."
+    }
+  ]
+}

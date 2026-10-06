@@ -1,0 +1,30 @@
+{
+  "editor": "python",
+  "starter": "inventori = ['Pedang', 'Perisai']\n# Tambahkan 'Peta' lalu cetak item pertama (indeks 0)\n",
+  "hint": "Pakai inventori.append('Peta') lalu print elemen pertama list tersebut.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "python-output",
+      "params": {
+        "contains": "Pedang"
+      },
+      "hint": "Elemen indeks 0 adalah isi pertama list, yaitu Pedang."
+    },
+    {
+      "id": "t2",
+      "type": "quiz",
+      "params": {
+        "question": "Jika list bernilai: warna = ['Merah', 'Kuning', 'Hijau'], apakah hasil dari warna[2]?",
+        "options": [
+          "Kuning",
+          "Merah",
+          "Hijau",
+          "Akan menghasilkan Error"
+        ],
+        "answer": 2
+      },
+      "hint": "Ingat hitungan indeks List dimulai dari 0."
+    }
+  ]
+}

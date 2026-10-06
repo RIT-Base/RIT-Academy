@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis desain/kualitas/produk\n",
+  "hint": "Cermati lagi fitur Prototype Figma dan konsep testing ke user.",
+  "tasks": [
+    {
+      "id": "ux-4-1",
+      "type": "quiz",
+      "params": {
+        "question": "Proses menghidupkan kumpulan desain layar statis (gambar mati) dengan menambahkan interaksi klik dan garis navigasi antar-halaman sehingga terasa seperti aplikasi sungguhan (untuk keperluan simulasi presentasi ke tim) disebut...",
+        "options": ["Prototyping", "Backend Programming", "Wireframing", "Color Grading"],
+        "answer": 0
+      },
+      "hint": "Membuat purwarupa / prototipe."
+    },
+    {
+      "id": "ux-4-2",
+      "type": "quiz",
+      "params": {
+        "question": "Jika kamu menguji coba prototipe buatanmu ke temanmu (Usability Testing), dan temanmu kebingungan serta tidak bisa menyelesaikan misi yang kamu berikan karena tombolnya sulit dicari. Sikap (Mindset) apa yang HARUS kamu miliki sebagai seorang UI/UX Designer?",
+        "options": ["Menyalahkan temanmu karena kurang pintar bermain aplikasi", "Meyakinkan diri sendiri bahwa desainmu yang paling benar dan menolak saran", "Mencatat kebingungan tersebut sebagai kelemahan desain (Pain Point) dan segera melakukan perbaikan (Iterasi) rancangan layar tersebut", "Mengabaikan hasil tes tersebut karena hanya berupa simulasi"],
+        "answer": 2
+      },
+      "hint": "Jika user salah/bingung, maka yang salah adalah Desainernya."
+    },
+    {
+      "id": "ux-4-3",
+      "type": "quiz",
+      "params": {
+        "question": "Fitur ajaib pada setingan Prototype Figma yang mana sistem akan secara otomatis mencarikan perbedaan ukuran/posisi elemen yang sama di antara dua buah frame layar dan membuatkan animasi pergerakan transisi halus tanpa perlu campur tangan coding animasi manual adalah...",
+        "options": ["Frame Transition", "Auto Layout", "Component Variant", "Smart Animate"],
+        "answer": 3
+      },
+      "hint": "Animasi yang cerdas."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "editor": "html",
+  "starter": "<!DOCTYPE html>\n<html>\n<head>\n  <title>Portofolio Pribadi</title>\n  <style>\n    body { font-family: sans-serif; }\n    .container { display: flex; gap: 10px; }\n  </style>\n</head>\n<body>\n  <header>\n    <h1>Nama Kamu</h1>\n    <p>Bio singkat tentang minatmu di dunia IT</p>\n  </header>\n  <main>\n    <!-- Tambahkan bagian kartu atau link sosialmu di sini! -->\n    \n  </main>\n</body>\n</html>\n",
+  "hint": "Coba periksa lagi tag HTML semantik di editormu. Pastikan <header> dan <main> masih ada.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "html-contains",
+      "params": {
+        "selector": "header h1"
+      },
+      "hint": "Pastikan terdapat elemen <h1> yang ada di dalam elemen <header> (jangan dihapus struktur dari starternya)."
+    },
+    {
+      "id": "t2",
+      "type": "html-contains",
+      "params": {
+        "selector": "main"
+      },
+      "hint": "Pastikan kamu memiliki tag semantik <main> di dalam body dokumentasimu."
+    },
+    {
+      "id": "t3",
+      "type": "quiz",
+      "params": {
+        "question": "Mengapa memiliki karya 'Portofolio' jauh lebih disarankan di dunia IT modern ketimbang hanya sekadar sertifikat ujian teori?",
+        "options": [
+          "Karena membuat portofolio lebih murah dibanding ikut ujian sertifikat.",
+          "Karena portofolio membuktikan hasil kerja (bukti nyata problem-solving) yang bisa dinilai langsung oleh tim industri.",
+          "Karena portofolio adalah satu-satunya syarat lulus sekolah.",
+          "Sertifikat sebenarnya lebih berharga dari portofolio."
+        ],
+        "answer": 1
+      },
+      "hint": "Apa yang paling membuktikan bahwa kamu benar-benar bisa membuat website?"
+    }
+  ]
+}

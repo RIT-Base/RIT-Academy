@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis desain/kualitas/produk\n",
+  "hint": "Cermati lagi tentang 3 Rasio Kardinalitas (1toM, dll) dan pemahaman mutlak konsep uniknya kasta Primary Key.",
+  "tasks": [
+    {
+      "id": "pa-3-1",
+      "type": "quiz",
+      "params": {
+        "question": "Jika seorang desainer rancang database sedang kebingungan mendata tumpukan ribuan mobil pelanggan di bengkel yang warna catnya sering sama dan jenis merk mobilnya sering kembar. Sang arsitek butuh memberikan penanda Atribut spesial elit yang bertugas untuk memastikan 100% identifikasi pembeda presisi sebuah mobil tanpa tertukar selamanya dengan mobil lain dari Sabang sampai Merauke. Manakah atribut data di bawah ini yang PALING LAYAK dinobatkan posisinya sebagai Atribut Primary Key (PK) untuk mobil tersebut?",
+        "options": ["Atribut Tipe Roda Ban Mobil", "Atribut Warna Bodi Mobil", "Atribut Plat Nomor Kendaraan Polisi / Nomor Rangka Mesin", "Atribut Tahun Beli Mobil"],
+        "answer": 2
+      },
+      "hint": "Cari data pengenal identitas unik legal yang tidak akan mungkin sama persis dipakai bersamaan di mobil lain di seluruh negeri."
+    },
+    {
+      "id": "pa-3-2",
+      "type": "quiz",
+      "params": {
+        "question": "Rasio pertalian ikatan (Relationship Cardinality) logis alami apakah yang sejatinya terbentuk dari Entitas Trik Pengamatan skenario nyata peradaban antara (Entitas 1 Seorang BAPAK IBU KEPALA KELUARGA UTAMA) dihubungkan tali dengan (Entitas KELOMPOK PARA ANAK KANDUNG KETURUNANNYA)?",
+        "options": ["Hubungan Many-to-Many (N to M)", "Hubungan One-to-Many (1 ke Banyak/N)", "Hubungan Zero-to-One", "Hubungan One-to-One (1 ke 1)"],
+        "answer": 1
+      },
+      "hint": "Analisa: Satu sumber akar tunggal bisa mengeluarkan/mempunyai banyak dahan cabang ujung benda sasaran."
+    },
+    {
+      "id": "pa-3-3",
+      "type": "quiz",
+      "params": {
+        "question": "Sementara itu dalam kehidupan sehari-hari anak SMA, jika kamu meneliti pemetaan tali asmara relasi penjurusan di sekolah: di mana sebuah Entitas (Sekumpulan banyak Murid Pendaftar di lapangan) ternyata diperbolehkan sekolah menyebrang mendaftarkan namanya ikut lebih ke sekian banyak wadah Entitas organisasi (Misal si A ikut 3 Eskul Pramuka-Futsal-IT, sedangkan si B ikut 2 Eskul Pramuka-Rohis, dan Eskul Pramuka itu sendiri ditempati ribuan anggota siswa bersilangan). Bentuk wujud benang rasio kusut dari ikatan data ini digolongkan dalam wujud tipe?",
+        "options": ["One-to-One", "Many-to-Many (M banding Banyak N)", "Many-to-Zero", "One-to-Many"],
+        "answer": 1
+      },
+      "hint": "Kelompok A bebas menyilang menyebrang mencolok ke pilihan majemuk Kelompok B, dan si B itu juga diperebutkan diisi ditindih saling silang serbu oleh kerumunan majemuk massal sisi geng pasukan A."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Waktunya menguji kepekaan seni datamu!\n",
+  "hint": "Ingat kecocokan setiap jenis grafik sesuai tujuan pesannya.",
+  "tasks": [
+    {
+      "id": "da-2-1",
+      "type": "quiz",
+      "params": {
+        "question": "Jika kamu ingin membuat laporan yang memvisualisasikan data 'Pergerakan nilai tukar mata uang Rupiah dari bulan Januari hingga Desember', jenis grafik apakah yang paling tepat digunakan?",
+        "options": ["Bar Chart (Grafik Batang)", "Line Chart (Grafik Garis)", "Pie Chart (Grafik Lingkaran)", "Map Chart (Peta Geografis)"],
+        "answer": 1
+      },
+      "hint": "Fokus pada kata kunci: Tren Waktu atau perjalanan suatu rentang waktu."
+    },
+    {
+      "id": "da-2-2",
+      "type": "quiz",
+      "params": {
+        "question": "Seorang murid membuat laporan menggunakan Pie Chart untuk menampilkan daftar makanan favorit siswa di kantin. Namun, karena ragam menunya terlalu banyak (ada 30 menu makanan berbeda), grafik Pie Chart tersebut terlihat pecah menjadi irisan yang terlalu kecil dan tidak bisa dibaca. Kesalahan apa yang dilakukannya?",
+        "options": ["Membuat Pie Chart menggunakan Excel, bukan Python", "Mengabaikan aturan desain di mana Pie Chart sebaiknya hanya menampilkan jumlah proporsi irisan yang sedikit (kurang dari 5 atau 6) agar mudah dibaca", "Warna Pie Chartnya tidak mencolok", "Pie Chart tidak bisa menghitung makanan"],
+        "answer": 1
+      },
+      "hint": "Pie Chart adalah soal kesederhanaan proporsi 100% (Misal perbandingan Siswa Lulus dan Tidak Lulus)."
+    },
+    {
+      "id": "da-2-3",
+      "type": "quiz",
+      "params": {
+        "question": "Jika seorang ilmuwan data (Data Scientist) ingin meneliti apakah terdapat korelasi atau hubungan antara 'Intensitas cahaya matahari' dengan 'Tingkat pertumbuhan tinggi tanaman (cm)', grafik apakah yang paling diandalkan?",
+        "options": ["Line Chart", "Bar Chart", "Scatter Plot (Titik Sebar)", "Pie Chart"],
+        "answer": 2
+      },
+      "hint": "Grafik ini mempertemukan dua sumbu X dan Y berupa angka acak yang digambar dalam sebaran rasi titik-titik."
+    }
+  ]
+}

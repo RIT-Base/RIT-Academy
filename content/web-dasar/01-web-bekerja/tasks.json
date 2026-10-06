@@ -1,0 +1,29 @@
+{
+  "editor": "html",
+  "starter": "<!-- Tulis kodemu di sini -->\n<h1>Judul Halaman</h1>\n<p>Tulis paragraf di sini.</p>",
+  "hint": "Ingat alur Browser → Request → Server → Response, dan pastikan HTML-mu punya elemen yang diminta task.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "html-contains",
+      "params": { "selector": "p" },
+      "hint": "Tambahkan elemen <p> berisi deskripsi singkat pada contoh kartu profil di materi.",
+      "block": 2
+    },
+    {
+      "id": "t2",
+      "type": "quiz",
+      "params": {
+        "question": "Apa yang terjadi saat kamu mengetik alamat website di browser lalu menekan Enter?",
+        "options": [
+          "Browser langsung menampilkan file dari komputer yang sudah dimiliki oleh kita.",
+          "Browser mengirim request ke server, lalu server membalas dengan response berupa halaman web",
+          "Website muncul karena sudah tersimpan permanen di dalam browser dan bisa diakses kapan saja.",
+          "Tidak terjadi apa-apa sampai kamu menekan tombol refresh"
+        ],
+        "answer": 1
+      },
+      "hint": "Ingat alur: Browser mengirim request, server membalas dengan response."
+    }
+  ]
+}

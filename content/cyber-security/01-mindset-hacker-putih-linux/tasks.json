@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis keamanan/jaringan\n",
+  "hint": "Ingat jenis-jenis hacker dan perintah dasar Terminal Linux.",
+  "tasks": [
+    {
+      "id": "cs-1-1",
+      "type": "quiz",
+      "params": {
+        "question": "Syarat MUTLAK yang membedakan aktivitas seorang White-Hat Hacker (Penetration Tester) dengan seorang Kriminal Siber (Black-Hat) adalah...",
+        "options": ["White-Hat menggunakan sistem operasi Linux, sedangkan Black-Hat menggunakan Windows", "White-Hat selalu memiliki Izin Resmi / Kontrak Legal dari pemilik sistem sebelum melakukan uji coba peretasan", "White-Hat bekerja di siang hari, Black-Hat di malam hari", "White-Hat menggunakan tools yang berbayar"],
+        "answer": 1
+      },
+      "hint": "Ini soal hukum dan legalitas."
+    },
+    {
+      "id": "cs-1-2",
+      "type": "quiz",
+      "params": {
+        "question": "Jika kamu sedang berada di Terminal Linux, dan kamu ingin melihat isi dari sebuah file teks bernama 'rahasia.txt' langsung di layar tanpa membuka aplikasi editor, perintah apa yang digunakan?",
+        "options": ["open rahasia.txt", "read rahasia.txt", "cat rahasia.txt", "ls rahasia.txt"],
+        "answer": 2
+      },
+      "hint": "Perintahnya sama dengan bahasa inggrisnya Kucing."
+    },
+    {
+      "id": "cs-1-3",
+      "type": "quiz",
+      "params": {
+        "question": "Fungsi dari perintah utilitas 'grep' di Linux adalah untuk...",
+        "options": ["Mengubah password pengguna", "Menyaring atau mencari baris teks yang mengandung kata kunci spesifik dari sebuah output atau file", "Membuat folder baru", "Mendownload file dari internet"],
+        "answer": 1
+      },
+      "hint": "Singkatan dari Global Regular Expression Print. Gunanya seperti fitur 'Search/Find' di Word."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "editor": "html",
+  "starter": "<!-- Kuis Studi Kasus Jalur Software & Aplikasi -->\n",
+  "hint": "Gunakan nalar arsitektur aplikasi dan pengalaman pengguna.",
+  "tasks": [
+    {
+      "id": "sw-q1",
+      "type": "quiz",
+      "params": {
+        "question": "Ketika kamu membuka website portofoliomu di smartphone, ternyata teks judul terpotong dan muncul scrollbar horizontal ke kanan. Apa penyebab paling umum dalam CSS?",
+        "options": [
+          "Kurang tag <script> JavaScript",
+          "Elemen memiliki nilai fixed width (misal width: 500px) tanpa max-width: 100%",
+          "Warna background terlalu terang",
+          "Server hosting kekurangan RAM"
+        ],
+        "answer": 1
+      },
+      "hint": "Ingat konsep responsivitas mobile dan fluid width."
+    },
+    {
+      "id": "sw-q2",
+      "type": "quiz",
+      "params": {
+        "question": "Di aplikasi mobile (Android/iOS), pengguna sering menutup aplikasi secara tiba-tiba saat mengisi form belanjaan. Strategi apa yang paling tepat diterapkan developer?",
+        "options": [
+          "Mengunci ponsel agar tidak bisa kembali ke home screen",
+          "Menyimpan draf ketikan secara berkala ke local storage / database lokal HP",
+          "Menghapus seluruh akun pengguna sebagai peringatan",
+          "Memaksa pengguna mengulang pengisian dari awal"
+        ],
+        "answer": 1
+      },
+      "hint": "Prinsip state persistence dan local caching."
+    },
+    {
+      "id": "sw-q3",
+      "type": "quiz",
+      "params": {
+        "question": "Dalam pengembangan game, konsep 'Game Loop' bertugas untuk menjalankan siklus yang terus berulang tanpa henti, yaitu...",
+        "options": [
+          "Membeli aset 3D ➔ Mengunggah ke Steam ➔ Menarik keuntungan",
+          "Membaca Input Pemain ➔ Memperbarui Logika/Fisika Dunia ➔ Merender Gambar ke Layar",
+          "Menghapus karakter yang kalah dari harddisk komputer",
+          "Mematikan monitor saat pemain kalah"
+        ],
+        "answer": 1
+      },
+      "hint": "Siklus Input -> Update -> Render."
+    }
+  ]
+}

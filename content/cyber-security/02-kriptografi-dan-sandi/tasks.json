@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis keamanan/jaringan\n",
+  "hint": "Ingat sifat kunci dari ketiganya: Encode (Mudah dibalik), Hash (Satu Arah), Encrypt (Butuh Kunci).",
+  "tasks": [
+    {
+      "id": "cs-2-1",
+      "type": "quiz",
+      "params": {
+        "question": "Metode kriptografi apa yang bersifat SATU ARAH (tidak bisa dibalikkan lagi menjadi teks asli) dan sering digunakan untuk mengamankan penyimpanan password di dalam Database?",
+        "options": ["Encryption (Enkripsi)", "Hashing", "Encoding", "Base64"],
+        "answer": 1
+      },
+      "hint": "Algoritma contohnya adalah MD5 atau SHA-256."
+    },
+    {
+      "id": "cs-2-2",
+      "type": "quiz",
+      "params": {
+        "question": "Base64 seringkali disalahartikan sebagai pengaman data, padahal sejatinya itu hanyalah proses pengubahan wujud format data agar bisa ditransfer lewat jaringan. Proses ini tergolong sebagai...",
+        "options": ["Encoding", "Hashing", "Encryption", "Ciphering"],
+        "answer": 0
+      },
+      "hint": "Proses ini bisa di-decode oleh siapapun tanpa butuh kata sandi."
+    },
+    {
+      "id": "cs-2-3",
+      "type": "quiz",
+      "params": {
+        "question": "Dalam Enkripsi Asimetris (seperti RSA yang digunakan pada protokol HTTPS), konsep kuncinya adalah...",
+        "options": ["Menggunakan kunci gembok yang sama persis untuk mengunci dan membuka data", "Tidak menggunakan kunci sama sekali", "Menggunakan dua kunci berbeda: Public Key untuk mengenkripsi/mengunci data, dan Private Key untuk mendekripsi/membuka data", "Kunci dikirimkan dalam bentuk teks biasa kepada hacker"],
+        "answer": 2
+      },
+      "hint": "Asimetris berarti tidak sama sisi."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Mari cek pemahamanmu tentang I/O dan Arduino!\n",
+  "hint": "Ingat konsep Pin Input dan Output.",
+  "tasks": [
+    {
+      "id": "iot-2-1",
+      "type": "quiz",
+      "params": {
+        "question": "Jika kamu ingin menyalakan Lampu LED yang tersambung ke pin Mikrokontroler, maka kamu harus menyetel pin tersebut sebagai...",
+        "options": ["Input", "Output", "Delay", "Breadboard"],
+        "answer": 1
+      },
+      "hint": "Mikrokontroler memberikan perintah 'keluar' ke lampu."
+    },
+    {
+      "id": "iot-2-2",
+      "type": "quiz",
+      "params": {
+        "question": "Dalam pemrograman Arduino, istilah untuk memberikan tegangan listrik menyala penuh pada sebuah pin digital disebut...",
+        "options": ["HIGH", "LOW", "INPUT", "DELAY"],
+        "answer": 0
+      },
+      "hint": "LOW berarti mati (0 Volt). Berarti sebaliknya apa?"
+    },
+    {
+      "id": "iot-2-3",
+      "type": "quiz",
+      "params": {
+        "question": "Mengapa kita membutuhkan perintah 'Delay' saat memprogram lampu berkedip (Blink)?",
+        "options": ["Karena mikrokontrolernya lambat", "Agar lampunya tidak meledak", "Karena mikrokontroler mengeksekusi baris kode sangat cepat sehingga jeda diperlukan agar kedipan terlihat", "Agar hemat baterai"],
+        "answer": 2
+      },
+      "hint": "Otak elektronik bekerja jauh lebih cepat dari mata manusia."
+    }
+  ]
+}

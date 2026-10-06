@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Waktunya menguji pemahamanmu tentang peran di Game Dev!\n",
+  "hint": "Coba ingat-ingat lagi penjelasan tentang 5 pilar utama game dev di materi ya.",
+  "tasks": [
+    {
+      "id": "gd-1-1",
+      "type": "quiz",
+      "params": {
+        "question": "Peran mana yang bertugas mengatur rintangan agar game tidak terlalu mudah dan tidak terlalu sulit?",
+        "options": ["Programmer", "Level Designer", "2D/3D Artist", "Audio Engineer"],
+        "answer": 1
+      },
+      "hint": "Mereka adalah 'arsitek' dari tantangan dalam game."
+    },
+    {
+      "id": "gd-1-2",
+      "type": "quiz",
+      "params": {
+        "question": "Dalam acara 'Game Jam', hal terpenting yang diuji adalah...",
+        "options": ["Bermain game selama 48 jam", "Kolaborasi membuat game dalam waktu singkat", "Mencari kelemahan sistem game", "Membuat musik background"],
+        "answer": 1
+      },
+      "hint": "Game Jam adalah kompetisi pembuat game, bukan turnamen main game."
+    },
+    {
+      "id": "gd-1-3",
+      "type": "quiz",
+      "params": {
+        "question": "Siapakah yang bertanggung jawab menulis lore dan dialog antar karakter?",
+        "options": ["Story Writer", "Level Designer", "Audio Engineer", "Programmer"],
+        "answer": 0
+      },
+      "hint": "Fokus utamanya adalah cerita dan naskah."
+    }
+  ]
+}

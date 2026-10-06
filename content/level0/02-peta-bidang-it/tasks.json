@@ -1,0 +1,52 @@
+{
+  "editor": "html",
+  "starter": "<!-- Modul ini fokus kuis identifikasi bidang IT -->\n<h1>Peta Bidang IT</h1>",
+  "hint": "Cocokkan deskripsi pekerjaan dengan tabel '10 Bidang Utama di IT' di materi.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "quiz",
+      "params": {
+        "question": "Seseorang yang tugasnya melindungi data siswa dari peretas dan memastikan password sistem aman, bekerja di bidang...",
+        "options": ["UI/UX Design", "Keamanan Siber", "Game Development", "Jaringan"],
+        "answer": 1
+      },
+      "hint": "Lihat baris 'Keamanan Siber' di tabel bidang IT."
+    },
+    {
+      "id": "t2",
+      "type": "quiz",
+      "params": {
+        "question": "Seseorang yang tugasnya mencoba-coba aplikasi berulang kali untuk menemukan bug sebelum dirilis, bekerja di bidang...",
+        "options": ["Quality Assurance (QA)", "DevOps", "Data & Machine Learning", "Mobile Development"],
+        "answer": 0
+      },
+      "hint": "Lihat baris 'Quality Assurance (QA)' di tabel bidang IT."
+    },
+    {
+      "id": "t3",
+      "type": "quiz",
+      "params": {
+        "question": "Seseorang yang merancang tombol, warna, dan alur tampilan aplikasi biar enak dipakai, bekerja di bidang...",
+        "options": ["UI/UX Design", "Jaringan", "Keamanan Siber", "Web Development"],
+        "answer": 0
+      },
+      "hint": "Lihat baris 'UI/UX Design' di tabel bidang IT."
+    },
+    {
+      "id": "t4",
+      "type": "quiz",
+      "params": {
+        "question": "Kenapa satu aplikasi sederhana seperti absensi sekolah bisa melibatkan banyak bidang IT sekaligus?",
+        "options": [
+          "Karena aturan sekolah mewajibkan banyak orang terlibat",
+          "Karena tiap tahap (rancang fitur, tampilan, bangun, uji, amankan, jaga performa) butuh keahlian berbeda",
+          "Karena aplikasi absensi selalu lebih rumit dari game",
+          "Karena hanya programmer yang boleh membuat aplikasi sekolah"
+        ],
+        "answer": 1
+      },
+      "hint": "Baca bagian 'Satu Aplikasi, Banyak Bidang Kebutuhan'."
+    }
+  ]
+}

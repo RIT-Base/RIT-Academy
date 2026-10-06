@@ -1,0 +1,43 @@
+{
+  "editor": "html",
+  "starter": "<!-- Kode awal yang muncul di editor checkpoint -->\n<h1>Judul</h1>",
+  "hint": "Petunjuk umum kalau siswa stuck, tampil di atas daftar task.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "html-contains",
+      "params": { "selector": "h1", "text": "Judul" },
+      "hint": "Pastikan ada elemen <h1> yang mengandung kata 'Judul'."
+    },
+    {
+      "id": "t2",
+      "type": "html-contains",
+      "params": { "selector": "p" },
+      "hint": "Tambahkan minimal satu elemen <p>.",
+      "block": 1
+    },
+    {
+      "id": "t3",
+      "type": "python-output",
+      "params": { "contains": "Halo" },
+      "hint": "Pastikan program mencetak kata 'Halo' lewat print()."
+    },
+    {
+      "id": "t4",
+      "type": "python-test",
+      "params": { "fn": "tambah(2, 3)", "equals": "5" },
+      "hint": "Buat fungsi tambah(a, b) yang mengembalikan a + b."
+    },
+    {
+      "id": "t5",
+      "type": "quiz",
+      "params": {
+        "question": "Contoh pertanyaan pilihan ganda?",
+        "options": ["Pilihan A", "Pilihan B (benar)", "Pilihan C", "Pilihan D"],
+        "answer": 1
+      },
+      "hint": "Baca ulang penjelasan di bagian terkait."
+    }
+  ],
+  "_catatan": "Ini file TEMPLATE REFERENSI SINTAKS, bukan contoh checkpoint yang harus lolos apa adanya — t3/t4 (python) sengaja ditulis di sini walau 'editor' di atas bertipe 'html', supaya kelima tipe task ke-*lihat* semua dalam satu file. Di modul ASLI, jangan campur tipe python & html tanpa 'block' dalam satu tasks.json kecuali kamu tahu editor checkpoint-nya cuma satu jenis (html ATAU python) — task tanpa 'block' selalu dinilai dari editor checkpoint itu. Lihat contoh nyata yang konsisten di content/web-dasar/01-web-bekerja/tasks.json. Field 'editor' menentukan tipe editor checkpoint ('html' atau 'python'). Semua task dinilai dari kode di editor checkpoint (mulai dari 'starter'), KECUALI task yang punya field opsional 'block': <n> — task itu dinilai dari blok kode interaktif ke-n di lesson.md (1-based). Field '_catatan' ini boleh dihapus di modul asli, platform mengabaikannya."
+}

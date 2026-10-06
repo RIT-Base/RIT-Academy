@@ -1,0 +1,52 @@
+{
+  "editor": "html",
+  "starter": "<!-- Kuis Studi Kasus Jalur Hardware & Keamanan -->\n",
+  "hint": "Gunakan pemahaman keamanan, protokol jaringan, dan perangkat fisik.",
+  "tasks": [
+    {
+      "id": "inf-q1",
+      "type": "quiz",
+      "params": {
+        "question": "Sebuah perangkat IoT pengukur suhu ruangan di lab sering tiba-tiba mengirim data acak bernilai -999 atau tidak terbaca sama sekali. Langkah pertama yang paling masuk akal diperiksa adalah...",
+        "options": [
+          "Langsung ganti mikrokontroler dengan komputer super",
+          "Memeriksa kestabilan koneksi kabel jumper fisik, catu daya listrik (VCC/GND), dan pin sensor",
+          "Menginstal sistem operasi Windows 11 di mikrokontroler",
+          "Mengecat ulang casing perangkat"
+        ],
+        "answer": 1
+      },
+      "hint": "Masalah konektivitas fisik dan grounding daya adalah penyebab 80% error sensor."
+    },
+    {
+      "id": "inf-q2",
+      "type": "quiz",
+      "params": {
+        "question": "Kamu menemukan form login di sebuah web yang langsung rentan saat dimasukkan karakter kutip tunggal (') dan mengembalikan pesan database MySQL error. Celah keamanan ini dikenal sebagai...",
+        "options": [
+          "DDoS Attack",
+          "SQL Injection (SQLi)",
+          "Buffer Overflow",
+          "Man-in-the-Middle"
+        ],
+        "answer": 1
+      },
+      "hint": "Injeksi query database melalui kolom input yang tidak disanitasi."
+    },
+    {
+      "id": "inf-q3",
+      "type": "quiz",
+      "params": {
+        "question": "Dalam budaya DevOps modern, apa keuntungan utama menggunakan Docker Container dibanding virtual machine tradisional?",
+        "options": [
+          "Container jauh lebih ringan dan cepat menyala karena berbagi kernel OS bersama",
+          "Container otomatis membuat aplikasi bebas dari bug logika",
+          "Container tidak memerlukan koneksi internet selamanya",
+          "Container menggantikan peran programmer secara total"
+        ],
+        "answer": 0
+      },
+      "hint": "Efisiensi resource dan isolasi proses menggunakan shared OS kernel."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "editor": "html",
+  "starter": "<style>\n  /* Tulis aturan CSS-mu di sini */\n\n</style>\n\n<h1>Judul Halaman</h1>\n<p class=\"kartu\">Paragraf ini punya class \"kartu\".</p>",
+  "hint": "Pastikan ada tag <style> berisi minimal satu aturan CSS, dan elemen ber-class \"kartu\" tetap ada di HTML-nya.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "html-contains",
+      "params": { "selector": "style" },
+      "hint": "Jangan hapus tag <style> — di situlah kamu menulis aturan CSS."
+    },
+    {
+      "id": "t2",
+      "type": "html-contains",
+      "params": { "selector": ".kartu" },
+      "hint": "Pastikan ada elemen dengan class=\"kartu\" di HTML-nya."
+    },
+    {
+      "id": "t3",
+      "type": "quiz",
+      "params": {
+        "question": "Kamu mau ngasih warna cuma ke elemen yang class-nya \"tombol\", bukan ke semua elemen sejenis di halaman. Selektor apa yang tepat?",
+        "options": ["p", "#tombol", ".tombol", "style"],
+        "answer": 2
+      },
+      "hint": "Class ditulis dengan tanda titik (.) di depan namanya."
+    },
+    {
+      "id": "t4",
+      "type": "quiz",
+      "params": {
+        "question": "Di box model CSS, bagian mana yang berfungsi seperti bubble wrap — jarak di ANTARA isi elemen dengan tepi kotaknya?",
+        "options": ["Content", "Padding", "Border", "Margin"],
+        "answer": 1
+      },
+      "hint": "Baca ulang bagian 'Box Model' dan analogi paket kiriman."
+    }
+  ]
+}

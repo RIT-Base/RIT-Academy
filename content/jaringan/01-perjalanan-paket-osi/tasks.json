@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis keamanan/jaringan\n",
+  "hint": "Cermati lagi tujuan Model OSI dan spesialisasi TCP vs UDP.",
+  "tasks": [
+    {
+      "id": "jar-1-1",
+      "type": "quiz",
+      "params": {
+        "question": "Jika seorang teknisi Jaringan Komputer mengatakan 'Kerusakannya ada di Layer 1 Fisik pada model OSI', apa kemungkinan penyebab terbesar dari kerusakan tersebut?",
+        "options": ["Aplikasi WhatsApp sedang down servernya", "Lupa mengisi Password", "Kabel LAN komputer ada yang terputus gigit tikus atau colokan listrik router belum dinyalakan", "Virus mematikan menghapus RAM"],
+        "answer": 2
+      },
+      "hint": "Layer terbawah (Physical) berkaitan dengan hardware kasat mata."
+    },
+    {
+      "id": "jar-1-2",
+      "type": "quiz",
+      "params": {
+        "question": "Di dalam Model OSI 7 Layer, pada lapisan manakah paket data ditempeli 'Alamat IP' pengirim dan penerima, dan proses pemilahan jalan tercepat (Routing) dilakukan?",
+        "options": ["Layer 7 (Application)", "Layer 3 (Network Layer)", "Layer 1 (Physical)", "Layer 4 (Transport)"],
+        "answer": 1
+      },
+      "hint": "Tugas pengalamatan perangkat internet (IP)."
+    },
+    {
+      "id": "jar-1-3",
+      "type": "quiz",
+      "params": {
+        "question": "Protokol pengiriman data (Transport Layer) manakah yang paling pas digunakan jika kamu ingin membangun aplikasi Video Call / Live Streaming bola, dengan pertimbangan kecepatan Real-Time lebih penting dibandingkan hilangnya sepotong resolusi gambar?",
+        "options": ["HTTPS", "SQL Protocol", "TCP (Transmission Control Protocol)", "UDP (User Datagram Protocol)"],
+        "answer": 3
+      },
+      "hint": "Cari kurir yang sangat ngebut dan ugal-ugalan tapi cocok buat streaming."
+    }
+  ]
+}

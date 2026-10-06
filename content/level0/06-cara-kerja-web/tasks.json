@@ -1,0 +1,52 @@
+{
+  "editor": "html",
+  "starter": "<!-- Modul ini fokus kuis ringan gambaran umum web -->\n<h1>Cara Kerja Web</h1>",
+  "hint": "Ini gambaran umum saja — detail lebih lanjut ada di course Web Dasar modul 1.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "quiz",
+      "params": {
+        "question": "Urutan gambaran umum saat kamu membuka sebuah website adalah...",
+        "options": [
+          "Server → Response → Browser → Request",
+          "Browser mengirim request → Server menerima & menyiapkan halaman → Server mengirim response",
+          "Response dikirim duluan sebelum request dibuat",
+          "DNS mengirim halaman web langsung ke layar"
+        ],
+        "answer": 1
+      },
+      "hint": "Lihat bagian 'Gambaran Besar: Browser → Request → Server → Response'."
+    },
+    {
+      "id": "t2",
+      "type": "quiz",
+      "params": {
+        "question": "Huruf 'S' tambahan pada 'https://' menandakan...",
+        "options": [
+          "Website itu lebih cepat diakses",
+          "Komunikasi antara browser dan server dienkripsi alias lebih aman",
+          "Website itu gratis diakses",
+          "Website tidak memerlukan DNS"
+        ],
+        "answer": 1
+      },
+      "hint": "Lihat bagian 'HTTP: Aturan Bahasa Web'."
+    },
+    {
+      "id": "t3",
+      "type": "quiz",
+      "params": {
+        "question": "URL paling tepat diartikan sebagai...",
+        "options": [
+          "Nama browser yang dipakai",
+          "Alamat lengkap sebuah halaman web",
+          "Jenis koneksi WiFi",
+          "Nama server yang menyimpan website"
+        ],
+        "answer": 1
+      },
+      "hint": "Lihat bagian 'URL: Alamat Halaman Web'."
+    }
+  ]
+}

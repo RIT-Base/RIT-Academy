@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Yuk evaluasi pemahaman arsitektur Offline Mobile App!\n",
+  "hint": "Ingat dua tingkatan sistem penyimpanan lokal di Flutter (SharedPref vs SQLite/Hive).",
+  "tasks": [
+    {
+      "id": "mob-4-1",
+      "type": "quiz",
+      "params": {
+        "question": "Jika kamu hanya ingin mengingat status sederhana (misal: apakah pengguna sebelumnya sudah memilih untuk mengaktifkan fitur 'Dark Mode'), jenis penyimpanan manakah yang paling ringan dan tepat digunakan?",
+        "options": ["Database MySQL Server (Cloud)", "SharedPreferences", "SQLite", "File Video Lokal"],
+        "answer": 1
+      },
+      "hint": "Hanya butuh simpan Key (isDarkMode) dan Value (true/false) sederhana."
+    },
+    {
+      "id": "mob-4-2",
+      "type": "quiz",
+      "params": {
+        "question": "Untuk aplikasi pencatat pengeluaran keuangan (Money Tracker) yang membutuhkan penyimpanan ribuan data transaksi kompleks secara offline, alat manakah yang paling pas digunakan pada ekosistem Flutter?",
+        "options": ["SharedPreferences", "SQLite / Hive (Database Lokal)", "Menyimpannya di variabel State biasa", "Print Console"],
+        "answer": 1
+      },
+      "hint": "Data kompleks dan bertumpuk banyak (relasi tabel) butuh lemari penyimpanan berkelas Database."
+    },
+    {
+      "id": "mob-4-3",
+      "type": "quiz",
+      "params": {
+        "question": "Sifat unik dari fitur Notifikasi Lokal di aplikasi Smartphone adalah...",
+        "options": ["Notifikasi hanya bisa muncul jika aplikasi sedang aktif dibuka (dimainkan) oleh user", "Notifikasi tidak akan berbunyi di iPhone", "Notifikasi bisa diatur agar muncul sesuai jadwal, BAHKAN ketika aplikasi tersebut sedang dalam keadaan tertutup (di-kill/dimatikan) oleh user.", "Membutuhkan koneksi internet super cepat agar bisa berbunyi"],
+        "answer": 2
+      },
+      "hint": "Aplikasi menitipkan tugas alarm ini kepada Sistem Operasi HP (Background Service)."
+    }
+  ]
+}

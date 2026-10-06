@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis desain/kualitas/produk\n",
+  "hint": "Ingat jenis format rasio angka medsos dan trik memotong audio J-Cut.",
+  "tasks": [
+    {
+      "id": "dg-3-1",
+      "type": "quiz",
+      "params": {
+        "question": "Teknik rahasia editor dalam pemotongan wawancara di mana suara sang narasumber orang kedua 'terdengar mendahului bocor terdengar duluan di layar', sebelum sedetik kemudian videonya baru berpindah memperlihatkan bentuk wajah orang kedua tersebut disebut dengan trik...",
+        "options": ["Cross-Fade Audio", "L-Cut", "J-Cut", "Jump Cut"],
+        "answer": 2
+      },
+      "hint": "Audio mendahului Video bentuk linimasanya menyerupai huruf J."
+    },
+    {
+      "id": "dg-3-2",
+      "type": "quiz",
+      "params": {
+        "question": "Jika ada sebuah perusahaan minuman meminta format video iklan untuk dinaikkan tayang secara khusus di platform TikTok dan Instagram Reels dengan tujuan agar video tersebut menutupi pandangan layar smartphone target penggunanya secara 100% Full-Screen. Format rasio ukuran dimensi layar berapa yang harus digunakan editor untuk proyek kanvas ini?",
+        "options": ["Layar Bioskop 21:9", "Layar Horizontal Lanskap 16:9", "Layar Persegi Kotak 1:1", "Layar Berdiri Portrait Vertikal 9:16"],
+        "answer": 3
+      },
+      "hint": "Dimensi kebalikan dari layar TV dan monitor YouTube komputer."
+    },
+    {
+      "id": "dg-3-3",
+      "type": "quiz",
+      "params": {
+        "question": "Agar kamu mendapatkan efek pergantian video/gambar transisi yang sangat pas (cinematic & memanjakan adrenalin klik) dengan dentuman ritme lagu latar (Jedag Jedug), elemen acuan apa di software editing yang wajib kamu jadikan patokan pemotongan garis pisaunya?",
+        "options": ["Garis lurus volume yang stabil hening", "Puncak grafik gelombang duri Audio (Waveform Beat / Ketukan Nada)", "Lirik lagu lisan si penyanyi", "Panjang durasi video pertama"],
+        "answer": 1
+      },
+      "hint": "Cari lambang yang menonjol dan bergerigi naik di dalam bilah linimasa (timeline) file audio / musik yang sedang kamu jadikan lagu latar."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Modul ini fokus kuis konsep & analisis keamanan/jaringan\n",
+  "hint": "Coba pelajari lagi tentang anatomi struktur IP Address IPv4 dan batas Subnet Maks.",
+  "tasks": [
+    {
+      "id": "jar-2-1",
+      "type": "quiz",
+      "params": {
+        "question": "Sebuah identitas unik Alamat IP (IPv4) itu aslinya ibarat alamat pengiriman pos yang menyembunyikan gabungan dari 2 informasi krusial (terbelah). Dua bagian pembentuk Alamat IP tersebut adalah...",
+        "options": ["Password ID dan Server ID", "Mac Address ID dan Cable ID", "TCP ID dan UDP ID", "Network ID (Grup Jaringan) dan Host ID (Nomor Perangkat/Komputernya)"],
+        "answer": 3
+      },
+      "hint": "Ada penanda nama Jalan Perumahannya, dan ada penanda nomor spesifik Rumahnya."
+    },
+    {
+      "id": "jar-2-2",
+      "type": "quiz",
+      "params": {
+        "question": "Ketika kamu ingin mengisolasi atau 'mencabik' sebuah jaringan skala besar yang tadinya beralamat 254 buah jatah menjadi blok-blok jaringan sempit terpisah yang ukurannya pas (misalnya per blok hanya boleh diisi maksimal 14 PC). Teknik rekayasa insinyur tersebut dalam memodifikasi porsi aturan IP Address jaringan dikenal dengan sebutan...",
+        "options": ["Cloud Deployment", "Subnetting", "Virtualization Docker", "Reverse Proxy"],
+        "answer": 1
+      },
+      "hint": "Tindakan pembuatan Sub-Network (Jaringan bawah)."
+    },
+    {
+      "id": "jar-2-3",
+      "type": "quiz",
+      "params": {
+        "question": "Jika aturan penggaris jatah Subnet Mask pada jaringan Lab Sekolah tersebut secara teknis disetting tertulis senilai '255.255.255.0' (atau notasi prefix CIDR Slash /24). Total maksimal jatah perangkat komputer atau HP mentok yang bisa masuk mengkoneksikan diri pada blok jalan jaringan WiFi Router lab tersebut adalah...",
+        "options": ["Hanya 254 perangkat", "Tanpa batasan limit", "Hanya 10 perangkat", "Di atas 65 ribu perangkat"],
+        "answer": 0
+      },
+      "hint": "Sebab nilai oktet IPv4 paling tinggi itu angka 255 (dikurangi untuk cadangan gerbang router/broadcast)."
+    }
+  ]
+}

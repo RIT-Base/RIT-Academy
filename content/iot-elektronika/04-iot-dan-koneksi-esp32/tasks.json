@@ -1,0 +1,37 @@
+{
+  "editor": "python",
+  "starter": "# Waktunya review arsitektur IoT!\n",
+  "hint": "Ingat konsep ESP32 dan cara mereka ngobrol via MQTT.",
+  "tasks": [
+    {
+      "id": "iot-4-1",
+      "type": "quiz",
+      "params": {
+        "question": "Mengapa mikrokontroler ESP32 lebih disukai untuk proyek IoT dibandingkan Arduino Uno biasa?",
+        "options": ["Ukurannya sangat besar", "Sudah memiliki fitur koneksi WiFi bawaan", "Tidak membutuhkan tegangan listrik", "Hanya bisa menggunakan baterai"],
+        "answer": 1
+      },
+      "hint": "Fitur kunci dari Internet of Things adalah 'Internet'."
+    },
+    {
+      "id": "iot-4-2",
+      "type": "quiz",
+      "params": {
+        "question": "Protokol komunikasi khusus IoT yang sangat ringan dan bekerja dengan konsep 'Publish-Subscribe' (seperti grup chat) adalah...",
+        "options": ["HTTP", "MQTT", "HTML", "WiFi"],
+        "answer": 1
+      },
+      "hint": "Empat huruf berakhiran TT."
+    },
+    {
+      "id": "iot-4-3",
+      "type": "quiz",
+      "params": {
+        "question": "Apa fungsi 'Cloud Server' dalam sistem arsitektur IoT?",
+        "options": ["Menggantikan fungsi sensor", "Menghubungkan langsung kabel dari rumah ke HP", "Menjadi jembatan perantara data antara Alat (ESP32) dan Antarmuka (HP)", "Mendinginkan mesin ESP32"],
+        "answer": 2
+      },
+      "hint": "Cloud bertugas menerima data dari hardware dan menampilkannya di aplikasi."
+    }
+  ]
+}

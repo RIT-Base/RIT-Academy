@@ -1,0 +1,45 @@
+{
+  "editor": "html",
+  "starter": "<!-- Konfigurasi halaman utama websitemu -->\n<!DOCTYPE html>\n<html>\n<head>\n  <title>Web Pertamaku</title>\n</head>\n<body>\n  <h1>Websiteku Siap Online!</h1>\n</body>\n</html>\n",
+  "hint": "Jawab kuis konsepnya. Di kode HTML starter, elemen h1 dan title sudah tersedia kok!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "quiz",
+      "params": {
+        "question": "Jika 'Hosting' diibaratkan sebagai Rumah tempat menyimpan barang, maka 'Domain' (contoh: google.com) diibaratkan sebagai...",
+        "options": [
+          "Satpam Rumah",
+          "Alamat Rumah",
+          "Atap Rumah",
+          "Perabotan Rumah"
+        ],
+        "answer": 1
+      },
+      "hint": "Baca ulang bagian Domain dan Hosting di materi atas."
+    },
+    {
+      "id": "t2",
+      "type": "quiz",
+      "params": {
+        "question": "Jika kamu ingin mengaktifkan GitHub Pages gratis dengan mudah, kamu harus membuat repository GitHub dengan nama tertentu. Format nama tersebut adalah...",
+        "options": [
+          "namaku.com",
+          "index.html.github",
+          "namamu.github.io",
+          "website-gratis-2026.id"
+        ],
+        "answer": 2
+      },
+      "hint": "Cek langkah ke-2 pada bagian Panduan Praktis GitHub Pages."
+    },
+    {
+      "id": "t3",
+      "type": "html-contains",
+      "params": {
+        "selector": "h1"
+      },
+      "hint": "Cukup pastikan tidak menghapus elemen <h1> di editor."
+    }
+  ]
+}

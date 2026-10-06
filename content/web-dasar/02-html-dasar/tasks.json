@@ -1,0 +1,29 @@
+{
+  "editor": "html",
+  "starter": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Halamanku</title>\n  </head>\n  <body>\n    <!-- Tulis kodemu di sini -->\n\n  </body>\n</html>",
+  "hint": "Ingat struktur dasar: DOCTYPE, html, head, body. Isi yang tampil di layar ditulis di dalam body.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "html-contains",
+      "params": { "selector": "h1" },
+      "hint": "Tambahkan elemen <h1> di dalam <body> untuk judul halaman."
+    },
+    {
+      "id": "t2",
+      "type": "html-contains",
+      "params": { "selector": "a[href]" },
+      "hint": "Tambahkan elemen <a> dengan atribut href, contoh: <a href=\"https://academy.tcc15.my.id\">Kunjungi TCC</a>."
+    },
+    {
+      "id": "t3",
+      "type": "quiz",
+      "params": {
+        "question": "Bagian mana dari dokumen HTML yang isinya benar-benar tampil di layar pengunjung?",
+        "options": ["<head>", "<title>", "<body>", "<!DOCTYPE html>"],
+        "answer": 2
+      },
+      "hint": "Baca ulang bagian 'Struktur Dasar Sebuah Dokumen HTML' — bandingkan fungsi head dan body."
+    }
+  ]
+}

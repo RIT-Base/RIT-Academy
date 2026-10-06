@@ -1,0 +1,30 @@
+{
+  "editor": "python",
+  "starter": "nilai = 80\n# Tulis kondisi if jika nilai >= 75 cetak 'Lulus', else 'Remedial'\n",
+  "hint": "Pastikan kamu menggunakan indentasi (spasi/tab) di dalam blok if dan else.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "python-output",
+      "params": {
+        "contains": "Lulus"
+      },
+      "hint": "Karena nilai awal 80, program harus mengeksekusi blok if dan mencetak 'Lulus'."
+    },
+    {
+      "id": "t2",
+      "type": "quiz",
+      "params": {
+        "question": "Operator mana yang dipakai untuk membandingkan KESAMAAN (sama dengan) di kondisi if?",
+        "options": [
+          "=",
+          "==",
+          "!=",
+          "><"
+        ],
+        "answer": 1
+      },
+      "hint": "Ingat, '=' (sama dengan satu) dipakai untuk assign variabel, bukan membandingkan."
+    }
+  ]
+}

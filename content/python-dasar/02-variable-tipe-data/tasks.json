@@ -1,0 +1,30 @@
+{
+  "editor": "python",
+  "starter": "poin_game = 50\n# Tambahkan 20 ke poin_game lalu cetak hasilnya\n",
+  "hint": "Gunakan print() setelah kamu menambah nilai poin_game.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "python-output",
+      "params": {
+        "contains": "70"
+      },
+      "hint": "Pastikan kamu berhasil melakukan penjumlahan 50 + 20 dan mencetaknya."
+    },
+    {
+      "id": "t2",
+      "type": "quiz",
+      "params": {
+        "question": "Tipe data manakah yang HANYA memiliki nilai True atau False?",
+        "options": [
+          "String",
+          "Integer",
+          "Float",
+          "Boolean"
+        ],
+        "answer": 3
+      },
+      "hint": "Cek bagian 'Jenis-Jenis Barang (Tipe Data)'."
+    }
+  ]
+}
