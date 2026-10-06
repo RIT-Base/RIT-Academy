@@ -13,7 +13,7 @@ Banyak siswa baru mikir IT cuma soal "bikin aplikasi" atau "ngoding game". Padah
 
 ## 10 Bidang Utama di IT
 
-Berikut peta bidang IT yang bakal sering kamu dengar di ekskul TCC maupun dunia kerja nanti:
+Berikut peta bidang IT yang bakal sering kamu dengar di komunitas RIT maupun dunia kerja nanti:
 
 | Bidang | Ngapain aja? | Contoh sehari-hari |
 |---|---|---|

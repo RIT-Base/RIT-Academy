@@ -1,5 +1,7 @@
 import { ContentLoader } from "../content-loader.js";
 import { ProgressStore } from "../progress-store.js";
+import { getPathColorTheme } from "./paths.js";
+import { openCertificateModal } from "../certificate.js";
 
 async function render() {
   const courseSlug = new URLSearchParams(window.location.search).get("course");
@@ -26,6 +28,7 @@ async function render() {
     return;
   }
 
+  const theme = getPathColorTheme(course.slug);
   const modules = [...(course.modules || [])].sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
   const totalModules = modules.length;
   let doneCount = 0;
@@ -38,31 +41,32 @@ async function render() {
   
   const progressPercent = totalModules === 0 ? 0 : Math.round((doneCount / totalModules) * 100);
 
-  // 1. Render Header
+  // 1. Render Header Dinamis Sesuai Warna Course (TASK-099)
   const headerMount = document.getElementById("path-header-mount");
   if (headerMount) {
     headerMount.innerHTML = `
-      <div style="background: var(--color-primary); padding: var(--space-6) 0; position: relative; overflow: hidden; border-radius: 0 0 var(--radius-lg) var(--radius-lg); box-shadow: var(--shadow-md);">
-        <div style="position: absolute; right: -2rem; top: -2rem; width: 150px; height: 150px; background: rgba(255,255,255,0.1); border-radius: 50%; filter: blur(30px);"></div>
-        <div style="position: absolute; left: -3rem; bottom: -1rem; width: 100px; height: 100px; background: var(--color-accent); border-radius: 50%; filter: blur(40px); opacity: 0.5;"></div>
+      <div class="path-header-banner" style="--course-color: ${theme.color}; --course-border: ${theme.border}; --course-bg: ${theme.bg};">
+        <!-- Ornamen Glow Dinamis Warna Course -->
+        <div class="banner-glow-1"></div>
+        <div class="banner-glow-2"></div>
         
-        <div class="container" style="position: relative; z-index: 10; color: #fff;">
+        <div class="container banner-container">
           <div style="display: flex; align-items: center; gap: 8px; margin-bottom: var(--space-3);">
-            <a href="paths.html" style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; background: rgba(255,255,255,0.2); color: #fff; text-decoration: none; transition: background var(--transition-fast);">
+            <a href="paths.html" class="banner-back-btn" aria-label="Kembali ke Learning Paths" title="Kembali ke Learning Paths">
               <span class="material-symbols-outlined" style="font-size: 18px;">arrow_back</span>
             </a>
-            <span style="background: rgba(255,255,255,0.2); padding: 4px 12px; border-radius: var(--radius-pill); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; backdrop-filter: blur(4px);">TCC COURSE PATH</span>
+            <span class="banner-badge">RIT COURSE PATH</span>
           </div>
-          <h1 style="color: #fff; margin-bottom: var(--space-2); font-size: calc(var(--fs-2xl) + 0.5rem); letter-spacing: -0.02em;">${course.title}</h1>
-          <p style="color: rgba(255,255,255,0.9); font-size: var(--fs-md); max-width: 60ch;">${course.description || "Jalur pembelajaran komprehensif untuk mengembangkan keahlianmu."}</p>
+          <h1 class="banner-title">${course.title}</h1>
+          <p class="banner-desc">${course.description || "Jalur pembelajaran komprehensif untuk mengembangkan keahlianmu."}</p>
           
-          <div style="margin-top: var(--space-5); max-width: 400px;">
-            <div style="display: flex; justify-content: space-between; font-size: var(--fs-xs); font-weight: 700; margin-bottom: 6px;">
+          <div class="banner-progress-wrap">
+            <div class="banner-progress-labels">
               <span>Overall Progress</span>
-              <span>${progressPercent}%</span>
+              <span class="banner-progress-percent">${progressPercent}%</span>
             </div>
-            <div style="width: 100%; height: 8px; background: rgba(255,255,255,0.2); border-radius: var(--radius-pill); overflow: hidden;">
-              <div style="height: 100%; width: ${progressPercent}%; background: var(--color-accent-light); border-radius: var(--radius-pill); transition: width 1s ease;"></div>
+            <div class="banner-progress-track">
+              <div class="banner-progress-bar" style="width: ${progressPercent}%;"></div>
             </div>
           </div>
         </div>
@@ -74,30 +78,68 @@ async function render() {
   const sidebarMount = document.getElementById("path-sidebar-mount");
   if (sidebarMount) {
     sidebarMount.innerHTML = `
-      <div class="card" style="display: flex; flex-direction: column; gap: var(--space-3); margin-bottom: var(--space-4);">
+      <div class="card" style="display: flex; flex-direction: column; gap: var(--space-3); margin-bottom: var(--space-4); border-top: 4px solid ${theme.border};">
         <h3 style="margin: 0;">Path Overview</h3>
         <div style="display: flex; align-items: center; gap: 8px; color: var(--color-text-muted);">
-          <span class="material-symbols-outlined" style="font-size: 20px;">library_books</span>
+          <span class="material-symbols-outlined" style="font-size: 20px; color: ${theme.color};">library_books</span>
           <span style="font-size: var(--fs-sm);">${totalModules} Modul Pembelajaran</span>
         </div>
         <div style="display: flex; align-items: center; gap: 8px; color: var(--color-text-muted);">
-          <span class="material-symbols-outlined" style="font-size: 20px;">emoji_events</span>
+          <span class="material-symbols-outlined" style="font-size: 20px; color: ${theme.color};">emoji_events</span>
           <span style="font-size: var(--fs-sm);">Sertifikat setelah selesai</span>
         </div>
         <hr style="border: 0; border-top: 1px solid var(--color-border); margin: var(--space-2) 0;">
         <h4 style="margin: 0; font-size: 10px; font-weight: 700; text-transform: uppercase; color: var(--color-text-faint); letter-spacing: 0.05em;">Status Kamu</h4>
         <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: var(--space-3) 0;">
-          <span style="font-size: 3rem; font-weight: 800; color: var(--color-text); line-height: 1;">${progressPercent}%</span>
+          <span style="font-size: 3rem; font-weight: 800; color: ${theme.color}; line-height: 1;">${progressPercent}%</span>
           <span style="font-size: var(--fs-xs); color: var(--color-text-muted);">Tuntas</span>
           
+          ${progressPercent === 100 ? `
+            <button id="claim-cert-btn" class="btn btn-primary" style="width: 100%; justify-content: center; gap: 8px; margin-top: 14px; font-weight: 700; box-shadow: 0 4px 14px rgba(5, 217, 231, 0.4);">
+              <span class="material-symbols-outlined" style="font-size: 20px;">workspace_premium</span> Klaim Sertifikat
+            </button>
+          ` : ''}
+
           ${progressPercent > 0 ? `
-            <button id="reset-course-btn" style="margin-top: 16px; background: transparent; border: 1px solid var(--color-danger); color: var(--color-danger); padding: 6px 12px; border-radius: var(--radius-pill); font-size: 10px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 4px; transition: background var(--transition-fast);">
+            <button id="reset-course-btn" style="margin-top: 12px; background: transparent; border: 1px solid var(--color-danger); color: var(--color-danger); padding: 6px 12px; border-radius: var(--radius-pill); font-size: 10px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 4px; transition: background var(--transition-fast);">
               <span class="material-symbols-outlined" style="font-size: 14px;">restart_alt</span> Ulangi Course
             </button>
           ` : ''}
         </div>
       </div>
     `;
+
+    // Pastikan unlock achievement jika sudah 100%
+    if (progressPercent === 100) {
+      ProgressStore.isCourseCompleted(course.slug, modules);
+    }
+
+    const claimCertBtn = document.getElementById("claim-cert-btn");
+    if (claimCertBtn) {
+      claimCertBtn.addEventListener("click", () => {
+        const profile = ProgressStore.getProfile();
+        const serial = ProgressStore.getCertificateSerial(course.slug);
+        const doneList = ProgressStore.getDoneList().filter(d => d.course === course.slug);
+        let completionDate = new Date();
+        if (doneList.length > 0) {
+          const maxTime = Math.max(...doneList.map(d => new Date(d.doneAt).getTime()));
+          completionDate = new Date(maxTime);
+        }
+        const formattedDate = completionDate.toLocaleDateString("id-ID", {
+          day: "numeric",
+          month: "long",
+          year: "numeric"
+        });
+
+        openCertificateModal({
+          studentName: profile.nickname || "Siswa RIT Academy",
+          courseTitle: course.title,
+          courseSlug: course.slug,
+          date: formattedDate,
+          serial: serial
+        });
+      });
+    }
 
     const resetCourseBtn = document.getElementById("reset-course-btn");
     if (resetCourseBtn) {
@@ -123,7 +165,6 @@ async function render() {
     stepperHtml += modules.map((modul, idx) => {
       const status = ProgressStore.getStatus(course.slug, modul.slug, modules);
       
-      // Semua modul sekarang bisa diklik (tidak ada isLocked)
       const isDone = status === "done";
       const isActive = status === "active"; 
       const href = `materi.html?course=${encodeURIComponent(course.slug)}&modul=${encodeURIComponent(modul.slug)}`;
@@ -136,13 +177,11 @@ async function render() {
         badgeHtml = `<span style="font-size: 10px; font-weight: 700; color: var(--color-success); text-transform: uppercase; letter-spacing: 0.05em;">Modul ${idx + 1} • Selesai</span>`;
         actionHtml = `<div style="margin-top: var(--space-3);"><span style="display: inline-flex; align-items: center; gap: 4px; padding: 6px 12px; background: var(--color-surface-alt); border-radius: var(--radius-sm); font-size: var(--fs-xs); font-weight: 700; color: var(--color-text);"><span class="material-symbols-outlined" style="font-size: 16px;">replay</span> Review</span></div>`;
       } else if (isActive) {
-        // Modul yang direkomendasikan untuk dikerjakan selanjutnya
-        iconHtml = `<div style="width: 48px; height: 48px; border-radius: 50%; background: var(--color-primary); color: #fff; border: 4px solid var(--color-bg); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 4px rgba(79,70,229,0.2); position: relative; z-index: 2;"><span class="material-symbols-outlined" style="font-size: 24px;">play_arrow</span></div>`;
-        cardStyle = `background: var(--color-primary-light); border: 2px solid var(--color-primary); box-shadow: var(--shadow-sm); transform: scale(1.01); z-index: 10; position: relative;`;
-        badgeHtml = `<span style="font-size: 10px; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; gap: 4px;"><span style="width: 6px; height: 6px; background: var(--color-primary); border-radius: 50%; animation: pulse 2s infinite;"></span> DISARANKAN</span>`;
-        actionHtml = `<div style="margin-top: var(--space-3);"><span class="btn btn-primary" style="width: 100%; justify-content: center; padding: 12px;"><span class="material-symbols-outlined" style="font-size: 18px;">rocket_launch</span> Lanjutkan Belajar</span></div>`;
+        iconHtml = `<div style="width: 48px; height: 48px; border-radius: 50%; background: ${theme.color}; color: ${theme.btnText}; border: 4px solid var(--color-bg); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 4px ${theme.bg}; position: relative; z-index: 2;"><span class="material-symbols-outlined" style="font-size: 24px;">play_arrow</span></div>`;
+        cardStyle = `background: ${theme.bg}; border: 2px solid ${theme.border}; box-shadow: var(--shadow-sm); transform: scale(1.01); z-index: 10; position: relative;`;
+        badgeHtml = `<span style="font-size: 10px; font-weight: 700; color: ${theme.color}; text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; gap: 4px;"><span style="width: 6px; height: 6px; background: ${theme.color}; border-radius: 50%;"></span> DISARANKAN</span>`;
+        actionHtml = `<div style="margin-top: var(--space-3);"><span class="btn" style="background: ${theme.color}; color: ${theme.btnText}; font-weight: 700; width: 100%; justify-content: center; padding: 12px; box-shadow: 0 2px 8px ${theme.bg};"><span class="material-symbols-outlined" style="font-size: 18px;">rocket_launch</span> Lanjutkan Belajar</span></div>`;
       } else {
-        // Modul bebas (Tersedia tapi belum direkomendasikan)
         iconHtml = `<div style="width: 48px; height: 48px; border-radius: 50%; background: var(--color-surface-alt); color: var(--color-text-muted); border: 4px solid var(--color-bg); display: flex; align-items: center; justify-content: center; position: relative; z-index: 2;"><span class="material-symbols-outlined" style="font-size: 20px;">menu_book</span></div>`;
         cardStyle = `background: var(--color-surface); border: 1px solid var(--color-border);`;
         badgeHtml = `<span style="font-size: 10px; font-weight: 700; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Modul ${idx + 1}</span>`;

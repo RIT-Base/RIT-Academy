@@ -66,7 +66,7 @@ pembuka. Contoh paling umum adalah tag `<a>` (link) yang butuh atribut
 `href` buat nentuin link-nya mengarah ke mana:
 
 ```html
-<a href="https://academy.tcc15.my.id">Kunjungi website TCC</a>
+<a href="https://rit-base.org">Kunjungi website RIT</a>
 ```
 
 Di sini, `href="..."` adalah atribut. Tanpa atribut ini, browser nggak tahu

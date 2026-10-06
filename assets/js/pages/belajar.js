@@ -1,11 +1,13 @@
 import { ContentLoader } from "../content-loader.js";
 import { ProgressStore } from "../progress-store.js";
+import { getPathColorTheme } from "./paths.js";
 
 // Fungsi untuk me-render setiap modul dalam bentuk Node Stepper
 function moduleItemHtml(course, modul, status, index) {
   const isLocked = status === "locked";
   const isDone = status === "done";
   const href = isLocked ? "#" : `materi.html?course=${encodeURIComponent(course.slug)}&modul=${encodeURIComponent(modul.slug)}`;
+  const theme = getPathColorTheme(course.slug);
   
   // Variabel untuk menyimpan gaya (styling) berdasarkan status
   let iconName, iconBg, iconColor, cardStyle, badgeHtml, actionHtml;
@@ -37,17 +39,17 @@ function moduleItemHtml(course, modul, status, index) {
   } else {
     // Active / Sedang Dikerjakan
     iconName = "play_arrow";
-    iconBg = "var(--color-primary)";
-    iconColor = "#ffffff";
-    cardStyle = "background: var(--color-primary-light); border: 2px solid var(--color-primary); box-shadow: var(--shadow-sm);";
+    iconBg = theme.color;
+    iconColor = theme.btnText;
+    cardStyle = `background: ${theme.bg}; border: 2px solid ${theme.border}; box-shadow: var(--shadow-sm);`;
     badgeHtml = `
-      <span style="color: var(--color-primary); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; gap: 4px;">
-        <span style="width: 6px; height: 6px; background: var(--color-primary); border-radius: 50%; box-shadow: 0 0 4px var(--color-primary);"></span> IN PROGRESS
+      <span style="color: ${theme.color}; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; gap: 4px;">
+        <span style="width: 6px; height: 6px; background: ${theme.color}; border-radius: 50%; box-shadow: 0 0 4px ${theme.color};"></span> IN PROGRESS
       </span>
     `;
     actionHtml = `
       <div style="margin-top: var(--space-4);">
-        <span class="btn btn-primary" style="width: 100%; justify-content: center; padding: 12px; box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);">
+        <span class="btn" style="background: ${theme.color}; color: ${theme.btnText}; font-weight: 700; width: 100%; justify-content: center; padding: 12px; box-shadow: 0 4px 12px ${theme.bg};">
           <span class="material-symbols-outlined" style="font-size: 18px;">rocket_launch</span> Lanjut Belajar
         </span>
       </div>
@@ -69,7 +71,7 @@ function moduleItemHtml(course, modul, status, index) {
           </div>
           <h3 style="margin: 0 0 var(--space-2) 0; font-size: var(--fs-md);">${modul.title}</h3>
           <p style="color: var(--color-text-muted); font-size: var(--fs-sm); margin: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
-            Selesaikan tantangan koding interaktif untuk membuka materi selanjutnya di TCC Academy.
+            Selesaikan tantangan koding interaktif untuk membuka materi selanjutnya di RIT Academy.
           </p>
           ${actionHtml}
         </a>
@@ -80,6 +82,7 @@ function moduleItemHtml(course, modul, status, index) {
 
 async function render() {
   const mount = document.getElementById("course-list");
+  if (!mount) return;
   const index = await ContentLoader.loadCourseIndex();
   if (!index || !Array.isArray(index.courses)) {
     mount.innerHTML = `<p class="empty-state">Daftar course belum tersedia. Hubungi Sensei ya.</p>`;
@@ -91,6 +94,7 @@ async function render() {
 
   mount.innerHTML = index.courses
     .map((course) => {
+      const theme = getPathColorTheme(course.slug);
       const modules = [...(course.modules || [])].sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
       
       const itemsHtml = modules.length
@@ -101,18 +105,18 @@ async function render() {
         <section id="course-${course.slug}" style="margin-bottom: var(--space-8);">
           <!-- Course Title -->
           <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-5);">
-            <div style="width: 48px; height: 48px; border-radius: 12px; background: var(--color-surface); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; align-items: center; justify-content: center; font-size: 24px; color: var(--color-primary);">
-              <span class="material-symbols-outlined">${course.slug.includes('web') ? 'html' : (course.slug.includes('python') ? 'terminal' : 'menu_book')}</span>
+            <div style="width: 48px; height: 48px; border-radius: 12px; background: ${theme.bg}; border: 1px solid ${theme.border}; box-shadow: var(--shadow-sm); display: flex; align-items: center; justify-content: center; font-size: 24px; color: ${theme.color};">
+              <span class="material-symbols-outlined">${course.slug.includes("web") ? "html" : (course.slug.includes("python") ? "terminal" : "menu_book")}</span>
             </div>
             <div>
-              <p style="margin: 0; font-size: 10px; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.1em;">COURSE TCC</p>
+              <p style="margin: 0; font-size: 10px; font-weight: 700; color: ${theme.color}; text-transform: uppercase; letter-spacing: 0.1em;">COURSE RIT</p>
               <h2 style="margin: 0; font-size: var(--fs-lg); line-height: 1.2;">${course.title}</h2>
             </div>
           </div>
 
           <!-- Wrapper Stepper dengan Garis Vertikal -->
           <div style="position: relative; padding-left: 4px;">
-            <div style="position: absolute; left: 26px; top: 24px; bottom: 24px; width: 2px; background: linear-gradient(to bottom, var(--color-primary) 0%, var(--color-border) 20%, var(--color-border) 100%); z-index: 0;"></div>
+            <div style="position: absolute; left: 26px; top: 24px; bottom: 24px; width: 2px; background: linear-gradient(to bottom, ${theme.color} 0%, var(--color-border) 20%, var(--color-border) 100%); z-index: 0;"></div>
             ${itemsHtml}
           </div>
         </section>

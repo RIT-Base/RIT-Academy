@@ -9,7 +9,7 @@ Sebelum tukang mulai kerja, dia siapin dulu peralatannya: obeng, palu, meteran. 
 
 ## Kenapa Ini Penting?
 
-Nama-nama alat ini bakal sering banget kamu dengar selama belajar di TCC — dan di dunia kerja IT beneran. Modul ini cuma kenalan singkat aja, biar kamu nggak asing pas ketemu istilahnya nanti.
+Nama-nama alat ini bakal sering banget kamu dengar selama belajar di RIT — dan di dunia kerja IT beneran. Modul ini cuma kenalan singkat aja, biar kamu nggak asing pas ketemu istilahnya nanti.
 
 ## Text Editor: Tempat Nulis Kode
 

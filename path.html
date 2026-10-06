@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detail Course | TCC Academy</title>
-  <meta name="description" content="Roadmap bertahap untuk jalur belajar pilihanmu.">
+  <title>Detail Course | RIT Academy</title>
+  <meta name="description" content="Roadmap bertahap untuk jalur belajar pilihanmu di RIT Academy.">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,16 +12,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="icon" href="data:,">
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/202061261?s=400&u=80f9d7669e799d3be3a78575889b4ef55a7ce77b&v=4" type="image/png">
+
+  <!-- Cegah Flash of Unstyled Theme (FOUC) -->
+  <script>
+    (function() {
+      try {
+        const saved = localStorage.getItem('rit_theme');
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const theme = saved || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body style="display: flex; flex-direction: column; min-height: 100vh; background: var(--color-bg);">
   <a href="#main" class="skip-link">Langsung ke konten utama</a>
+
+  <!-- Tombol Toggle Tema Mobile -->
+  <button type="button" class="mobile-theme-toggle theme-toggle-btn" aria-label="Ganti mode terang/gelap" title="Ganti Mode Tema">
+    <span class="material-symbols-outlined theme-icon" style="font-size: 20px;">dark_mode</span>
+  </button>
   
   <!-- Navbar -->
   <nav class="top-nav" aria-label="Navigasi utama">
     <a href="index.html" class="brand">
       <span class="material-symbols-outlined" style="color: var(--color-primary); font-size: 28px;" aria-hidden="true">terminal</span> 
-      TCC Academy
+      RIT Academy
     </a>
     <ul class="top-nav__links">
       <li><a href="index.html" data-nav-link="index.html">Beranda</a></li>
@@ -29,8 +46,11 @@
       <li><a href="tools.html" data-nav-link="tools.html">Tools</a></li>
       <li><a href="forum.html" data-nav-link="forum.html">Forum</a></li>
     </ul>
-    <div style="display: flex; align-items: center; padding-right: var(--space-4);">
-      <a href="profil.html" data-nav-link="profil.html" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; background-color: var(--color-primary); border-radius: 50%; color: #fff;">
+    <div style="display: flex; align-items: center; gap: var(--space-2); padding-right: var(--space-4);">
+      <button type="button" class="theme-toggle-btn icon-btn" aria-label="Ganti mode terang/gelap" title="Ganti Mode Tema">
+        <span class="material-symbols-outlined theme-icon" style="font-size: 20px;">dark_mode</span>
+      </button>
+      <a href="profil.html" data-nav-link="profil.html" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; background-color: var(--color-primary); border-radius: 50%; color: var(--rit-black);">
         <span class="material-symbols-outlined" style="font-size: 20px;">person</span>
       </a>
     </div>
@@ -65,6 +85,19 @@
 
     </div>
   </main>
+
+  <footer class="site-footer" style="background: var(--color-surface); margin-top: var(--space-7); padding-bottom: calc(var(--nav-height-bottom) + var(--space-6)); border-top: 1px solid var(--color-border);">
+    <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-4);">
+      <div style="display: flex; align-items: center; gap: var(--space-2);">
+        <span class="material-symbols-outlined">terminal</span>
+        <strong style="font-size: var(--fs-xs); letter-spacing: 0.05em;">RIT ACADEMY &copy; <span data-year></span></strong>
+      </div>
+      <div style="display: flex; gap: var(--space-4);">
+        <a href="docs/CONTENT-GUIDE.md" style="font-size: var(--fs-sm); color: var(--color-text-muted);">Panduan Sensei</a>
+        <a href="forum.html" style="font-size: var(--fs-sm); color: var(--color-text-muted);">Forum Diskusi</a>
+      </div>
+    </div>
+  </footer>
 
   <nav class="bottom-nav" aria-label="Navigasi bawah">
     <a href="index.html" data-nav-link="index.html"><span class="material-symbols-outlined icon" aria-hidden="true">home</span>Beranda</a>

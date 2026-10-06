@@ -32,7 +32,7 @@ Kamu belum dituntut menghafal cara kerja Git yang sangat canggih sekarang. Cukup
 4. `git push`
    **Terbangkan ke Awan.** Mengirim semua checkpoint yang ada di laptopmu meluncur naik ke GitHub agar aman di internet.
 
-Saat di TCC Academy nanti (di level selanjutnya), kamu akan terbiasa menggunakan keempat jurus dasar ini!
+Saat di RIT Academy nanti (di level selanjutnya), kamu akan terbiasa menggunakan keempat jurus dasar ini!
 
 ## Ringkasan
 - Menamai file dengan `v1`, `v2`, `final` adalah cara lama yang berbahaya untuk mengelola kode.

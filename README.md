@@ -1,6 +1,6 @@
-# TCC Academy — Base Platform (Prototype)
+# RIT Academy — Base Platform (Prototype)
 
-Website belajar IT untuk ekskul komputer **TCC SMAN 15 Garut**. Prototype ini
+Platform belajar IT interaktif **RIT Academy** (RIT FKOMINFO UNIGA). Platform ini
 fungsional penuh: navigasi, materi interaktif, sistem checkpoint, dan tiga
 lab (HTML, Python, Blockly) semuanya jalan. Styling masih versi dasar yang
 rapi — desain final menyusul dari `DESIGN.md` → Google Stitch → diselaraskan
@@ -66,7 +66,7 @@ Ringkas banget:
 
 ## Cara kerja progress
 
-Progress belajar disimpan di `localStorage` browser (key `tcc_progress_v1`)
+Progress belajar disimpan di `localStorage` browser (key `rit_progress_v1`)
 lewat abstraksi `ProgressStore` di `assets/js/progress-store.js`. Modul
 pertama tiap course selalu terbuka; modul berikutnya otomatis terbuka
 ("active") setelah modul sebelumnya ditandai selesai ("done"). Ganti
@@ -116,5 +116,5 @@ format lengkap ada di `docs/CONTENT-GUIDE.md`.
 
 Karena lingkungan build ini tidak punya browser sungguhan untuk uji visual
 interaktif (mengetik kode → Run → lihat hasil, atau drag-drop block Blockly),
-**mohon Sensei / TCC coba langsung di browser sungguhan** sebelum dipakai
+**mohon Sensei coba langsung di browser sungguhan** sebelum dipakai
 siswa — terutama tiga lab dan alur checkpoint end-to-end.

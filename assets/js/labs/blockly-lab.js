@@ -49,7 +49,7 @@ const DEFAULT_WORKSPACE_XML = `
 <xml xmlns="https://developers.google.com/blockly/xml">
   <block type="text_print" x="12" y="16">
     <value name="TEXT">
-      <shadow type="text"><field name="TEXT">Halo, TCC Academy!</field></shadow>
+      <shadow type="text"><field name="TEXT">Halo, RIT Academy!</field></shadow>
     </value>
   </block>
 </xml>

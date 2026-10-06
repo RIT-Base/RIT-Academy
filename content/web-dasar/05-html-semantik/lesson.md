@@ -56,7 +56,7 @@ Ada tiga pihak yang diuntungkan kalau kamu pakai HTML semantik:
 <main>
   <section id="tentang">
     <h2>Tentang Saya</h2>
-    <p>Aku anggota TCC SMAN 15 Garut.</p>
+    <p>Aku mahasiswa FKOMINFO UNIGA / anggota RIT.</p>
   </section>
   <section id="hobi">
     <h2>Hobi</h2>
@@ -68,7 +68,7 @@ Ada tiga pihak yang diuntungkan kalau kamu pakai HTML semantik:
 </main>
 
 <footer>
-  <p>&copy; 2026 Budi. Dibuat untuk TCC Academy.</p>
+  <p>&copy; 2026 Budi. Dibuat untuk RIT Academy.</p>
 </footer>
 ```
 

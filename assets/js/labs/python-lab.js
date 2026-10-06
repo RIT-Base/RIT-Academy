@@ -26,17 +26,17 @@ export async function ensurePyodide(onStatus) {
       onStatus?.("loading", "Memuat Python (pertama kali agak lama)...");
       await loadScriptOnce(PYODIDE_CDN);
       const pyodide = await window.loadPyodide();
-      pyodide.globals.set("_tcc_native_input", (promptText) => {
+      pyodide.globals.set("_rit_native_input", (promptText) => {
         const val = window.prompt(promptText ?? "");
         return val === null ? "" : val;
       });
       await pyodide.runPythonAsync(`
-import builtins as _tcc_builtins
-def _tcc_input_override(prompt=""):
-    _val = _tcc_native_input(str(prompt))
+import builtins as _rit_builtins
+def _rit_input_override(prompt=""):
+    _val = _rit_native_input(str(prompt))
     print(f"{prompt}{_val}")
     return _val
-_tcc_builtins.input = _tcc_input_override
+_rit_builtins.input = _rit_input_override
       `);
       pyodideInstance = pyodide;
       onStatus?.("ready", "Python siap.");

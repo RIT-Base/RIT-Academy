@@ -37,7 +37,7 @@ Perhatikan: dari lima langkah itu, cuma langkah ke-3 yang "coding-heavy" penuh. 
 
 ## Pesan Kunci
 
-**Dasar tetap wajib buat semua** — semua anggota TCC tetap perlu belajar dasar web dan pemrograman, karena itu bikin kamu ngerti gimana sistem digital bekerja, apapun peranmu nanti. Tapi **nggak semua orang harus jadi programmer**. Kalau kamu lebih suka mikirin alur dan kebutuhan (cocok jadi analis/produk), atau lebih suka desain visual (cocok jadi UI/UX), itu juga jalan yang valid banget di IT.
+**Dasar tetap wajib buat semua** — semua anggota RIT tetap perlu belajar dasar web dan pemrograman, karena itu bikin kamu ngerti gimana sistem digital bekerja, apapun peranmu nanti. Tapi **nggak semua orang harus jadi programmer**. Kalau kamu lebih suka mikirin alur dan kebutuhan (cocok jadi analis/produk), atau lebih suka desain visual (cocok jadi UI/UX), itu juga jalan yang valid banget di IT.
 
 ## 🪞 Refleksi Diri
 
@@ -52,7 +52,7 @@ Nggak ada jawaban benar atau salah — ini cuma buat bantu kamu mengenali kecend
 
 - IT punya peran **coding-heavy**, **hybrid**, dan **non-coding** — semuanya penting.
 - Bikin satu aplikasi butuh kerja sama banyak peran: Analis → UI/UX → Developer → QA → Security.
-- Semua anggota TCC tetap belajar dasar web & pemrograman, tapi nggak semua harus jadi programmer.
+- Semua anggota RIT tetap belajar dasar web & pemrograman, tapi nggak semua harus jadi programmer.
 - Ada tempat di IT buat berbagai minat — logika, visual, maupun komunikasi.
 
 Selanjutnya kamu akan belajar cara kerja komputer dari dalam — biar makin paham fondasi dari semua bidang IT yang udah kamu kenal ini.

@@ -18,7 +18,7 @@ Kita menggunakan kata kunci `def` (dari kata mendefinisikan) untuk membungkus pe
 ```python
 def sapaan_pagi():
     print("Selamat Pagi!")
-    print("Semoga hari TCC-mu menyenangkan.")
+    print("Semoga hari RIT-mu menyenangkan.")
 ```
 Menulis blok `def` di atas **belum menjalankan apapun**, ia hanya membuat "tombol" atau "alatnya" saja. Untuk membuat alat itu berjalan, kamu harus menekan tombol (memanggil namanya):
 

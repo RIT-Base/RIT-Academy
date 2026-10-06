@@ -1,5 +1,6 @@
 import { ContentLoader } from "../content-loader.js";
 import { ProgressStore } from "../progress-store.js";
+import { getCurrentTheme } from "../app.js";
 import { createHtmlLab } from "../labs/html-lab.js";
 import { createPythonLab, runPython, runPythonAndEval } from "../labs/python-lab.js";
 import {
@@ -98,6 +99,23 @@ async function main() {
       <div class="lesson-content" id="lesson-body" style="font-size: var(--fs-base); line-height: 1.8; color: var(--color-text-muted);"></div>
       
       <div id="checkpoint-mount"></div>
+
+      <!-- Widget Diskusi & Tanya Jawab Modul (Giscus) -->
+      <section class="module-discussion-section" style="margin-top: var(--space-7); padding-top: var(--space-6); border-top: 1px solid var(--color-border);">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-4);">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span class="material-symbols-outlined" style="color: var(--color-primary); font-size: 24px;">forum</span>
+            <h2 style="margin: 0; font-size: var(--fs-lg);">Diskusi & Tanya Jawab Modul</h2>
+          </div>
+          <span class="badge" style="background: var(--color-surface-alt); border: 1px solid var(--color-border); font-size: var(--fs-xs); color: var(--color-text-muted);">
+            GitHub Discussions (Q&A)
+          </span>
+        </div>
+        <p class="text-muted" style="font-size: var(--fs-sm); margin-bottom: var(--space-5);">
+          Punya pertanyaan atau ingin berbagi temuan seputar modul ini? Tulis komentarmu di bawah menggunakan akun GitHub.
+        </p>
+        <div id="giscus-materi-container" class="giscus-container" style="min-height: 240px;"></div>
+      </section>
     </article>
   `;
 
@@ -670,6 +688,38 @@ function renderCheckpoint(tasksData, inlineLabs) {
       window.location.href = `path.html?course=${encodeURIComponent(course)}`;
     }
   });
+
+  // Pasang widget Giscus untuk materi aktif
+  initGiscusMateri(course, modul);
+}
+
+function initGiscusMateri(courseSlug, moduleSlug) {
+  const container = document.getElementById("giscus-materi-container");
+  if (!container) return;
+  container.innerHTML = "";
+
+  ProgressStore.unlockAchievement("community-voice");
+
+  const resolvedTheme = document.documentElement.getAttribute("data-theme") || getCurrentTheme();
+  const giscusTheme = resolvedTheme === "dark" ? "dark_dimmed" : "light";
+
+  const script = document.createElement("script");
+  script.src = "https://giscus.app/client.js";
+  script.setAttribute("data-repo", "RIT-Base/RIT-Academy");
+  script.setAttribute("data-repo-id", "R_kgDOU9z4yg");
+  script.setAttribute("data-category", "Q&A");
+  script.setAttribute("data-category-id", "DIC_kwDOU9z4ys4DHJz_");
+  script.setAttribute("data-mapping", "specific");
+  script.setAttribute("data-term", `${courseSlug}/${moduleSlug}`);
+  script.setAttribute("data-reactions-enabled", "1");
+  script.setAttribute("data-emit-metadata", "0");
+  script.setAttribute("data-input-position", "top");
+  script.setAttribute("data-theme", giscusTheme);
+  script.setAttribute("data-lang", "id");
+  script.setAttribute("crossorigin", "anonymous");
+  script.async = true;
+
+  container.appendChild(script);
 }
 
 document.addEventListener("DOMContentLoaded", main);

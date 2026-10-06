@@ -5,11 +5,11 @@ course: "nama-course"
 ---
 
 Tulis 1 paragraf pembuka yang menjelaskan modul ini akan membahas apa, dan
-kenapa penting buat anggota baru TCC.
+kenapa penting buat anggota baru RIT.
 
 ## Sub-judul Pertama
 
-Jelaskan konsepnya dengan bahasa yang santai dan gampang dimengerti anak SMA
+Jelaskan konsepnya dengan bahasa yang santai dan gampang dimengerti pemula
 yang baru belajar IT. Hindari istilah yang belum dijelaskan.
 
 Kalau perlu contoh kode yang BISA DICOBA LANGSUNG oleh siswa, pakai fenced

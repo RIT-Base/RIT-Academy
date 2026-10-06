@@ -30,7 +30,7 @@ Coba mainkan editor mini ini. Ubah kata di dalamnya dan jalankan!
 
 ```python
 # Coba ubah tulisan di bawah ini!
-print("Salam kenal, saya anggota TCC!")
+print("Salam kenal, saya anggota RIT!")
 ```
 
 ## Menulis Komentar yang Tidak Terlihat 

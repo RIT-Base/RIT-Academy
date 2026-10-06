@@ -13,7 +13,7 @@
       "id": "t2",
       "type": "html-contains",
       "params": { "selector": "a[href]" },
-      "hint": "Tambahkan elemen <a> dengan atribut href, contoh: <a href=\"https://academy.tcc15.my.id\">Kunjungi TCC</a>."
+      "hint": "Tambahkan elemen <a> dengan atribut href, contoh: <a href=\"https://rit-base.org\">Kunjungi RIT</a>."
     },
     {
       "id": "t3",

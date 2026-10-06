@@ -1,54 +1,79 @@
 <!doctype html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Halaman Tidak Ditemukan · TCC Academy</title>
-<meta name="description" content="Halaman tidak ditemukan.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/main.css">
-<link rel="icon" href="data:,">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Tidak Ditemukan | RIT Academy</title>
+  <meta name="description" content="Halaman tidak ditemukan di RIT Academy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/202061261?s=400&u=80f9d7669e799d3be3a78575889b4ef55a7ce77b&v=4" type="image/png">
+
+  <!-- Cegah Flash of Unstyled Theme (FOUC) -->
+  <script>
+    (function() {
+      try {
+        const saved = localStorage.getItem('rit_theme');
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const theme = saved || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
 </head>
-<body >
-<a href="#main" class="skip-link">Langsung ke konten utama</a>
-<nav class="top-nav" aria-label="Navigasi utama">
-  <a href="index.html" class="brand"><span aria-hidden="true">💻</span> TCC Academy</a>
-  <ul class="top-nav__links">
-    <li><a href="index.html" data-nav-link="index.html">Beranda</a></li>
-    <li><a href="belajar.html" data-nav-link="belajar.html">Belajar</a></li>
-    <li><a href="tools.html" data-nav-link="tools.html">Tools</a></li>
-    <li><a href="paths.html" data-nav-link="paths.html">Learning Paths</a></li>
-    <li><a href="forum.html" data-nav-link="forum.html">Forum</a></li>
-    <li><a href="profil.html" data-nav-link="profil.html">Profil</a></li>
-  </ul>
-</nav>
+<body>
+  <a href="#main" class="skip-link">Langsung ke konten utama</a>
 
-<main id="main" class="container">
-  <div class="error-page">
-    <div class="emoji" aria-hidden="true">🧭</div>
-    <h1>404 — Nyasar di Internet</h1>
-    <p class="text-muted" style="max-width:42ch;margin:0 auto var(--space-5)">Halaman yang kamu cari nggak ketemu. Mungkin linknya salah ketik, atau halamannya belum ada.</p>
-    <a href="index.html" class="btn btn-primary">Kembali ke Beranda</a>
-  </div>
-</main>
+  <!-- Tombol Toggle Tema Mobile -->
+  <button type="button" class="mobile-theme-toggle theme-toggle-btn" aria-label="Ganti mode terang/gelap" title="Ganti Mode Tema">
+    <span class="material-symbols-outlined theme-icon" style="font-size: 20px;">dark_mode</span>
+  </button>
 
-<footer class="site-footer">
-  <div class="container">
-    <p>&copy; <span data-year></span> TCC Academy — Ekskul Komputer TCC SMAN 15 Garut.</p>
-    <p><a href="docs/CONTENT-GUIDE.md">Panduan konten untuk Sensei</a></p>
-  </div>
-</footer>
+  <nav class="top-nav" aria-label="Navigasi utama">
+    <a href="index.html" class="brand"><span class="material-symbols-outlined" style="color: var(--color-primary); font-size: 28px;" aria-hidden="true">terminal</span> RIT Academy</a>
+    <ul class="top-nav__links">
+      <li><a href="index.html" data-nav-link="index.html">Beranda</a></li>
+      <li><a href="paths.html" data-nav-link="paths.html">Belajar</a></li>
+      <li><a href="tools.html" data-nav-link="tools.html">Tools</a></li>
+      <li><a href="forum.html" data-nav-link="forum.html">Forum</a></li>
+    </ul>
+    <div style="display: flex; align-items: center; gap: var(--space-2); padding-right: var(--space-4);">
+      <button type="button" class="theme-toggle-btn icon-btn" aria-label="Ganti mode terang/gelap" title="Ganti Mode Tema">
+        <span class="material-symbols-outlined theme-icon" style="font-size: 20px;">dark_mode</span>
+      </button>
+      <a href="profil.html" data-nav-link="profil.html" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; background-color: var(--color-primary); border-radius: 50%; color: var(--rit-black);">
+        <span class="material-symbols-outlined" style="font-size: 20px;">person</span>
+      </a>
+    </div>
+  </nav>
 
-<nav class="bottom-nav" aria-label="Navigasi bawah">
-  <a href="index.html" data-nav-link="index.html"><span class="icon" aria-hidden="true">🏠</span>Beranda</a>
-  <a href="belajar.html" data-nav-link="belajar.html"><span class="icon" aria-hidden="true">📚</span>Belajar</a>
-  <a href="tools.html" data-nav-link="tools.html"><span class="icon" aria-hidden="true">🧰</span>Tools</a>
-  <a href="forum.html" data-nav-link="forum.html"><span class="icon" aria-hidden="true">💬</span>Forum</a>
-  <a href="profil.html" data-nav-link="profil.html"><span class="icon" aria-hidden="true">👤</span>Profil</a>
-</nav>
+  <main id="main" class="container">
+    <div class="error-page">
+      <div class="emoji" aria-hidden="true">🧭</div>
+      <h1>404 — Nyasar di Internet</h1>
+      <p class="text-muted" style="max-width:42ch;margin:0 auto var(--space-5)">Halaman yang kamu cari tidak ditemukan. Mungkin tautannya salah ketik, atau halamannya sedang dalam pembaruan.</p>
+      <a href="index.html" class="btn btn-primary">Kembali ke Beranda</a>
+    </div>
+  </main>
 
-<script type="module" src="assets/js/app.js"></script>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span data-year></span> RIT Academy — Komunitas Riset & Teknologi FKOMINFO UNIGA.</p>
+      <p><a href="docs/CONTENT-GUIDE.md">Panduan konten untuk Sensei</a></p>
+    </div>
+  </footer>
+
+  <nav class="bottom-nav" aria-label="Navigasi bawah">
+    <a href="index.html" data-nav-link="index.html"><span class="material-symbols-outlined icon" aria-hidden="true">home</span>Beranda</a>
+    <a href="paths.html" data-nav-link="paths.html"><span class="material-symbols-outlined icon" aria-hidden="true">school</span>Belajar</a>
+    <a href="tools.html" data-nav-link="tools.html"><span class="material-symbols-outlined icon" aria-hidden="true">build</span>Tools</a>
+    <a href="forum.html" data-nav-link="forum.html"><span class="material-symbols-outlined icon" aria-hidden="true">forum</span>Forum</a>
+    <a href="profil.html" data-nav-link="profil.html"><span class="material-symbols-outlined icon" aria-hidden="true">person</span>Profil</a>
+  </nav>
+
+  <script type="module" src="assets/js/app.js"></script>
 </body>
 </html>

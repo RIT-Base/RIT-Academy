@@ -1,4 +1,4 @@
-# Panduan Konten TCC Academy
+# Panduan Konten RIT Academy
 
 Dokumen ini untuk **Sensei** yang menambah/mengedit materi — tidak perlu
 menyentuh kode platform sama sekali. Semua materi = dua file per modul:

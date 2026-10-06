@@ -15,7 +15,7 @@ Setiap orang bisa mengklaim dirinya bisa membuat website. Tapi seorang programme
 
 Untuk bisa membuat web kita online, kita butuh dua hal penting:
 1. **Hosting:** Ini adalah "Tanah" atau "Rumah" tempat kamu menyewa komputer yang nyala 24 jam (server) untuk menaruh file HTML dan CSS-mu.
-2. **Domain:** Ini adalah "Alamat Rumah" (contoh: `google.com`, `tcc15.my.id`) supaya orang tidak perlu repot mengetik angka-angka rumit untuk mengunjungimu.
+2. **Domain:** Ini adalah "Alamat Rumah" (contoh: `google.com`, `rit-base.org`) supaya orang tidak perlu repot mengetik angka-angka rumit untuk mengunjungimu.
 
 ## Panduan Praktis Online Gratis: GitHub Pages
 

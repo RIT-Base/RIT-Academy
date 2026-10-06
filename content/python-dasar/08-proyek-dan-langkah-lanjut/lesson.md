@@ -5,7 +5,7 @@ course: "python-dasar"
 emoji: "🏆"
 ---
 
-Wow, luar biasa! 🎉 Kamu telah mencapai ujung tombak course Pemrograman Dasar Python di TCC Academy. Kamu telah menempuh perjalanan dari sekadar menata blok-blok algoritma, mencetak "Halo", menguasai logika if-else, menjalankan perulangan, hingga menggunakan alat profesional seperti Fungsi dan List (Array).
+Wow, luar biasa! 🎉 Kamu telah mencapai ujung tombak course Pemrograman Dasar Python di RIT Academy. Kamu telah menempuh perjalanan dari sekadar menata blok-blok algoritma, mencetak "Halo", menguasai logika if-else, menjalankan perulangan, hingga menggunakan alat profesional seperti Fungsi dan List (Array).
 
 Kamu secara resmi telah menanamkan otak **Computational Thinking**!
 
@@ -48,11 +48,11 @@ Tentu saja di program sesungguhnya (menggunakan modul *Random* milik Python), an
 
 ## Katalog Rekomendasi 🚀: Kemana Peta Jalan Selanjutnya?
 
-TCC Academy Course (seperti Web Dasar, Python Dasar) ini dirancang sebagai landasan (Launchpad). Jika kamu merasa "Ternyata ngoding itu logis dan nagih ya!", inilah beberapa peta jalan yang bisa menuntun hobi atau karirmu ke depannya:
+RIT Academy Course (seperti Web Dasar, Python Dasar) ini dirancang sebagai landasan (Launchpad). Jika kamu merasa "Ternyata ngoding itu logis dan nagih ya!", inilah beberapa peta jalan yang bisa menuntun hobi atau karirmu ke depannya:
 
 ### 1. 🌐 Jalur Web Developer (Frontend & Backend)
 Kamu ingin karyamu diakses jutaan orang di internet lewat link URL?
-- **Mulailah dari:** Course "Web Dasar" di TCC Academy (Pelajari fondasi HTML dan CSS layout).
+- **Mulailah dari:** Course "Web Dasar" di RIT Academy (Pelajari fondasi HTML dan CSS layout).
 - **Langkah berikutnya:** Belajar bahasa JavaScript untuk menggerakkan tampilan. 
 - **Referensi luar:** Cek pedoman jalan terbaik sedunia di [roadmap.sh/frontend](https://roadmap.sh/frontend) dan channel YouTube **Web Programming Unpas (WPU)**.
 

@@ -122,7 +122,7 @@ Bayangin kamu ngirim barang lewat paket: **content** itu barangnya,
 }
 ```
 
-> ⚠️ **Perhatian:** Sandbox HTML Lab di TCC Academy nggak bisa "menilai"
+> ⚠️ **Perhatian:** Sandbox HTML Lab di RIT Academy nggak bisa "menilai"
 > warna atau ukuran yang kamu pilih — jadi checkpoint modul ini lebih
 > fokus ngecek apakah kamu sudah **menulis** CSS-nya dengan benar (ada
 > `<style>`, ada elemen ber-class), bukan warna spesifiknya.

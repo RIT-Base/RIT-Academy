@@ -3,26 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Forum | TCC Academy</title>
+  <title>Forum | RIT Academy</title>
+  <meta name="description" content="Forum diskusi dan komunitas RIT Academy di GitHub Discussions.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="icon" href="data:,">
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/202061261?s=400&u=80f9d7669e799d3be3a78575889b4ef55a7ce77b&v=4" type="image/png">
+
+  <!-- Cegah Flash of Unstyled Theme (FOUC) -->
+  <script>
+    (function() {
+      try {
+        const saved = localStorage.getItem('rit_theme');
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const theme = saved || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body data-nav-active="forum.html">
   <a href="#main" class="skip-link">Langsung ke konten utama</a>
+
+  <!-- Tombol Toggle Tema Mobile -->
+  <button type="button" class="mobile-theme-toggle theme-toggle-btn" aria-label="Ganti mode terang/gelap" title="Ganti Mode Tema">
+    <span class="material-symbols-outlined theme-icon" style="font-size: 20px;">dark_mode</span>
+  </button>
+
   <nav class="top-nav" aria-label="Navigasi utama">
-    <a href="index.html" class="brand"><span class="material-symbols-outlined" style="color: var(--color-primary); font-size: 28px;" aria-hidden="true">terminal</span> TCC Academy</a>
+    <a href="index.html" class="brand"><span class="material-symbols-outlined" style="color: var(--color-primary); font-size: 28px;" aria-hidden="true">terminal</span> RIT Academy</a>
     <ul class="top-nav__links">
       <li><a href="index.html" data-nav-link="index.html">Beranda</a></li>
       <li><a href="paths.html" data-nav-link="paths.html">Belajar</a></li>
       <li><a href="tools.html" data-nav-link="tools.html">Tools</a></li>
       <li><a href="forum.html" data-nav-link="forum.html" aria-current="page" style="color: var(--color-primary); font-weight: 700;">Forum</a></li>
     </ul>
-    <div style="display: flex; align-items: center; padding-right: var(--space-4);">
-      <a href="profil.html" data-nav-link="profil.html" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; background-color: var(--color-primary); border-radius: 50%; color: #fff;">
+    <div style="display: flex; align-items: center; gap: var(--space-2); padding-right: var(--space-4);">
+      <button type="button" class="theme-toggle-btn icon-btn" aria-label="Ganti mode terang/gelap" title="Ganti Mode Tema">
+        <span class="material-symbols-outlined theme-icon" style="font-size: 20px;">dark_mode</span>
+      </button>
+      <a href="profil.html" data-nav-link="profil.html" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; background-color: var(--color-primary); border-radius: 50%; color: var(--rit-black);">
         <span class="material-symbols-outlined" style="font-size: 20px;">person</span>
       </a>
     </div>
@@ -34,13 +56,13 @@
       <span style="display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 64px; background: var(--color-primary-light); color: var(--color-primary); border-radius: 50%; margin-bottom: var(--space-3);">
         <span class="material-symbols-outlined" style="font-size: 32px;">forum</span>
       </span>
-      <h1 style="font-size: var(--fs-2xl); margin-bottom: var(--space-2);">Forum TCC Academy</h1>
-      <p class="text-muted" style="max-width: 60ch; margin: 0 auto var(--space-5);">Tempat bertanya, berbagi solusi, dan memamerkan kodemu. Kita menggunakan platform diskusi resmi dari GitHub.</p>
+      <h1 style="font-size: var(--fs-2xl); margin-bottom: var(--space-2);">Forum RIT Academy</h1>
+      <p class="text-muted" style="max-width: 60ch; margin: 0 auto var(--space-5);">Tempat bertanya, berbagi solusi, dan memamerkan kodemu. Kita menggunakan platform diskusi resmi dari GitHub Discussions.</p>
       
-      <a href="https://github.com/KazukiFujimaru/TCC-Academy/discussions" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 16px 32px; font-size: var(--fs-md);">
+      <a href="https://github.com/RIT-Base/RIT-Academy/discussions" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 16px 32px; font-size: var(--fs-md);">
         <span class="material-symbols-outlined">chat</span> Tanya di GitHub Discussions
       </a>
-      <p style="font-size: var(--fs-xs); color: var(--color-text-faint); margin-top: var(--space-3);">Diskusi lewat GitHub sekalian melatih GitHub-mu — itu bagian dari kurikulum kita (modul 8–9) 😉</p>
+      <p style="font-size: var(--fs-xs); color: var(--color-text-faint); margin-top: var(--space-3);">Diskusi lewat GitHub sekalian melatih GitHub portofolio — bagian penting dari ekosistem RIT 😉</p>
     </div>
 
     <div class="grid grid-2">
@@ -97,6 +119,20 @@
         </div>
       </div>
     </div>
+
+    <!-- Obrolan Komunitas Langsung (Giscus) -->
+    <section class="forum-discussion-section" style="margin-top: var(--space-8); padding-top: var(--space-6); border-top: 1px solid var(--color-border);">
+      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-4);">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="material-symbols-outlined" style="color: var(--color-primary); font-size: 26px;">forum</span>
+          <h2 style="margin: 0; font-size: var(--fs-xl);">Obrolan Komunitas Langsung</h2>
+        </div>
+        <a href="https://github.com/RIT-Base/RIT-Academy/discussions" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size: var(--fs-xs); padding: 6px 12px;">
+          Buka di GitHub <span class="material-symbols-outlined" style="font-size: 14px;">open_in_new</span>
+        </a>
+      </div>
+      <div id="giscus-forum-container" class="giscus-container" style="min-height: 260px;"></div>
+    </section>
   </main>
 
   <!-- Footer -->
@@ -104,7 +140,7 @@
     <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-4);">
       <div style="display: flex; align-items: center; gap: var(--space-2);">
         <span class="material-symbols-outlined">terminal</span>
-        <strong style="font-size: var(--fs-xs); letter-spacing: 0.05em;">TCC ACADEMY &copy; <span data-year></span></strong>
+        <strong style="font-size: var(--fs-xs); letter-spacing: 0.05em;">RIT ACADEMY &copy; <span data-year></span></strong>
       </div>
       <div style="display: flex; gap: var(--space-4);">
         <a href="docs/CONTENT-GUIDE.md" style="font-size: var(--fs-sm); color: var(--color-text-muted);">Panduan Sensei</a>

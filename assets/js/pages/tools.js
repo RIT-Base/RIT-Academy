@@ -1,6 +1,7 @@
 import { createHtmlLab } from "../labs/html-lab.js";
 import { createPythonLab } from "../labs/python-lab.js";
 import { createBlocklyLab } from "../labs/blockly-lab.js";
+import { ProgressStore } from "../progress-store.js";
 
 const HTML_STARTER = `<!doctype html>
 <html lang="id">
@@ -9,13 +10,13 @@ const HTML_STARTER = `<!doctype html>
   <title>Halaman Percobaan</title>
 </head>
 <body>
-  <h1>Halo, TCC Academy!</h1>
+  <h1>Halo, RIT Academy!</h1>
   <p>Coba edit kode ini. Hasilnya akan langsung muncul di panel Live Preview di bawah!</p>
 </body>
 </html>`;
 
 const PYTHON_STARTER = `nama = input("Siapa namamu? ")
-print(f"Halo, {nama}! Selamat datang di Python Lab TCC Academy.")
+print(f"Halo, {nama}! Selamat datang di Python Lab RIT Academy.")
 
 for i in range(1, 4):
     print(f"Ini baris ke-{i}")
@@ -30,6 +31,7 @@ function activateTab(name) {
     document.getElementById(`panel-${t}`).classList.toggle("is-active", t === name);
   });
   initLab(name);
+  ProgressStore.unlockAchievement("sandbox-tinkerer");
 }
 
 function initLab(name) {

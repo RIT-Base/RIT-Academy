@@ -12,7 +12,7 @@ supaya semua yang kamu bangun nanti nggak cuma "ikut-ikutan tutorial" tapi kamu 
 
 ## Browser, Request, dan Server
 
-Bayangkan kamu mengetik `www.academy.tcc15.my.id` di address bar (tempat kamu ngetik nama website) lalu menekan Enter. Yang kamu pakai untuk membuka halaman mulai dari Chrome, Firefox, Edge, atau apa pun aplikasinya, itu namanya **browser**. Begitu kamu menekan Enter, browser
+Bayangkan kamu mengetik `rit-base.org` di address bar (tempat kamu ngetik nama website) lalu menekan Enter. Yang kamu pakai untuk membuka halaman mulai dari Chrome, Firefox, Edge, atau apa pun aplikasinya, itu namanya **browser**. Begitu kamu menekan Enter, browser
 mengirim semacam "surat permintaan" ke komputer lain di internet yang
 menyimpan website tersebut. Permintaan ini disebut **request**. Komputer yang
 menyimpan dan melayani website itu disebut **server**. Server tugasnya menunggu
@@ -35,7 +35,7 @@ berarti komunikasi itu terenkripsi alias lebih aman. Sekarang, komunikasi antar 
 
 Alamat website yang kamu ketik tadi disebut **URL** (*Uniform Resource
 Locator*). URL punya beberapa bagian penting: protokol (`https://`), nama
-domain (`academy.tcc15.my.id`), dan kadang ada path tambahan seperti
+domain (`rit-base.org`), dan kadang ada path tambahan seperti
 `/materi/web-dasar` yang menunjuk ke halaman spesifik di dalam website itu.
 Setiap bagian ini membantu browser tahu persis server mana yang harus
 dihubungi, dan halaman mana yang diminta dari server tersebut.
@@ -44,7 +44,7 @@ Coba edit kode di bawah ini dan ganti isi `<h1>` :
 
 ```html
 <!-- Ini contoh halaman HTML paling sederhana -->
-<h1>Halo dari TCC Academy!</h1>
+<h1>Halo dari RIT Academy!</h1>
 <p>Ini paragraf pertamamu. Coba ganti isinya dan lihat perubahannya</p>
 ```
 
@@ -62,7 +62,7 @@ bawah ini dengan menambahkan sebuah paragraf `<p>` berisi deskripsi singkat
 tentang dirimu:
 
 ```html
-<h1>Profil Anggota TCC</h1>
+<h1>Profil Anggota RIT</h1>
 <!-- Tambahkan <p> berisi deskripsi singkat tentang dirimu di bawah ini -->
 ```
 

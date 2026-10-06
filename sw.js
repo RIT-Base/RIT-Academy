@@ -1,4 +1,4 @@
-// sw.js — TCC & RIT Academy Service Worker
+// sw.js — RIT Academy Service Worker
 // CacheStorage API untuk aset statis dan CDN runtime (CodeMirror, Pyodide, Fonts)
 // 100% Client-Side di browser mahasiswa (bebas biaya, hemat kuota seluler, offline-ready).
 

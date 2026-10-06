@@ -14,7 +14,7 @@ Di dunia teknologi (IT), **Portofolio jauh lebih nyaring bersuara daripada Ijaza
 ## Rancang Bangun Portofolio Pertamamu
 
 Sebuah web profil sederhana biasanya terbagi atas struktur seperti ini:
-1. **Header / Hero Section:** Ini adalah wajah websitemu. Berisi `<h1>` nama lengkapmu, foto (bisa pakai `<img>`), dan biografi singkat yang menarik (misal: "Halo, saya siswa SMA 15 yang tertarik membuat Game & Web!").
+1. **Header / Hero Section:** Ini adalah wajah websitemu. Berisi `<h1>` nama lengkapmu, foto (bisa pakai `<img>`), dan biografi singkat yang menarik (misal: "Halo, saya mahasiswa FKOMINFO / pegiat teknologi yang tertarik membuat Game & Web!").
 2. **Keahlian (Skills):** Area ini menjelaskan apa saja yang sudah kamu pelajari. Sangat cocok disusun rapi menggunakan CSS *Flexbox* (ingat pelajaran Modul 07) untuk menaruh kotak-kotak skill secara bersisihan (kiri-kanan).
 3. **Kontak (Tautan Sosial):** Bagian akhir `<main>` atau `<footer>` tempat kamu menaruh Link (`<a>`) menuju akun Instagram atau GitHub-mu.
 
@@ -23,12 +23,12 @@ Sebuah web profil sederhana biasanya terbagi atas struktur seperti ini:
 Setelah karya portofoliomu online (di GitHub Pages atau Vercel), ke mana selanjutnya?
 Kamu menyadari portofolio ini masih statis (diam) dan tidak bisa interaktif ditekan-tekan logic-nya.
 
-TCC Academy punya banyak *Learning Paths*:
+RIT Academy punya banyak *Learning Paths*:
 - Jika kamu mau web-mu dinamis (bisa menampilkan pop-up animasi, kalkulator, narik data server): Belajarlah bahasa **JavaScript**. 
 - Ingin langsung membuat sistem cerdas dan game? Ikuti course **Python Dasar**.
 - Ingin merakit alat internet pintar (Smart Home)? Kamu bisa masuk jalur **IoT (Internet of Things)** di kemudian hari.
 
-Jadilah seperti spons, serap semua dasar-dasar IT di TCC Academy ini untuk menemukan passion terbaikmu!
+Jadilah seperti spons, serap semua dasar-dasar IT di RIT Academy ini untuk menemukan passion terbaikmu!
 
 ## Ringkasan Penutup
 - Kurikulum Web Dasar merangkum struktur HTML5, *styling* dengan CSS murni, hingga publikasi/deploy.

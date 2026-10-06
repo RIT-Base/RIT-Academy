@@ -9,7 +9,7 @@ Coba cek HP kamu sekarang. Ada aplikasi chat buat kirim pesan ke teman, ada game
 
 ## Kenapa Ini Penting?
 
-Kamu baru gabung TCC, dan mungkin masih bingung: "IT itu sebenarnya ngapain sih?" Wajar. Sebelum belajar ngoding atau bikin website, kamu perlu tahu dulu peta besarnya — biar nggak kaget dan nggak salah paham bahwa IT cuma soal "duduk depan laptop ngetik kode doang".
+Kamu baru gabung RIT, dan mungkin masih bingung: "IT itu sebenarnya ngapain sih?" Wajar. Sebelum belajar ngoding atau bikin website, kamu perlu tahu dulu peta besarnya — biar nggak kaget dan nggak salah paham bahwa IT cuma soal "duduk depan laptop ngetik kode doang".
 
 ## IT Itu Apa, Sebenarnya?
 

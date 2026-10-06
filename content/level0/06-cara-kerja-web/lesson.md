@@ -28,7 +28,7 @@ Supaya browser dan server "nyambung" saat berkomunikasi, mereka pakai aturan ber
 
 ## URL: Alamat Halaman Web
 
-**URL** adalah alamat lengkap sebuah halaman web, misalnya `https://academy.tcc15.my.id/materi`. Anggap ini kayak alamat lengkap suatu tempat — bukan cuma nama kotanya, tapi juga jalan dan nomor rumahnya, biar kamu diantar tepat ke halaman yang dimaksud.
+**URL** adalah alamat lengkap sebuah halaman web, misalnya `https://rit-base.org/materi`. Anggap ini kayak alamat lengkap suatu tempat — bukan cuma nama kotanya, tapi juga jalan dan nomor rumahnya, biar kamu diantar tepat ke halaman yang dimaksud.
 
 > 💡 **Tips:** Ini baru gambaran umum. Nanti di course **Web Dasar**, modul pertama bakal bahas detail ini lebih dalam — lengkap dengan praktik langsung.
 

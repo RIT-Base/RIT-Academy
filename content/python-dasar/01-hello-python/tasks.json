@@ -7,9 +7,9 @@
       "id": "t1",
       "type": "python-output",
       "params": {
-        "contains": "Halo TCC Academy!"
+        "contains": "Halo RIT Academy!"
       },
-      "hint": "Pastikan kodemu mencetak 'Halo TCC Academy!' lewat fungsi print(). Hati-hati case-sensitive."
+      "hint": "Pastikan kodemu mencetak 'Halo RIT Academy!' lewat fungsi print(). Hati-hati case-sensitive."
     },
     {
       "id": "t2",

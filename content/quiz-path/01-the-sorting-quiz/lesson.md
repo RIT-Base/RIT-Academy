@@ -9,7 +9,7 @@ Selamat datang di **The Sorting Gate RIT Academy**!
 
 Di dunia teknologi, ada begitu banyak cabang keahlian dan jalur spesialisasi. Sering kali mahasiswa baru merasa bingung atau ragu: *"Sebaiknya aku fokus mendalami apa ya? Apakah koding web, merakit mikrokontroler, analisis data, keamanan siber, atau manajemen produk?"*
 
-Kuis diagnostik ini dirancang khusus untuk memetakan kecenderungan berpikirmu ke dalam **13 Path Spesialisasi IT** yang ada di RIT/TCC Academy:
+Kuis diagnostik ini dirancang khusus untuk memetakan kecenderungan berpikirmu ke dalam **13 Path Spesialisasi IT** yang ada di RIT Academy:
 
 1. **Jalur Software & App:** Web Development, Mobile Development, Game Development.
 2. **Jalur Hardware & Infrastruktur:** IoT & Elektronika, Jaringan Komputer, IT Support, DevOps.

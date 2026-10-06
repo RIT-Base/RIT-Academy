@@ -22,9 +22,9 @@ bab pakai huruf paling besar, sub-bab lebih kecil, dan seterusnya.
 > ⚠️ **Perhatian:** Heading bawaan HTML ukurannya berbeda, namun Heading tidak digunakan sebagai penentu ukuran teks. Ukuran teks nantinya bisa dimodifikasi di CSS. Heading fungsi utamanya adalah untuk mengatur struktur, hierarki, dan navigasi isi dokumen atau halaman web agar lebih rapi dan mudah dibaca.
 
 ```html
-<h1>Profil Anggota TCC</h1>
+<h1>Profil Anggota RIT</h1>
 <h2>Tentang Saya</h2>
-<p>Halo, namaku Budi. Aku anggota TCC sejak kelas X.</p>
+<p>Halo, namaku Budi. Aku anggota RIT angkatan 2024.</p>
 <h2>Hobi</h2>
 <p>Aku suka main game strategi dan belajar coding di waktu luang.</p>
 ```
@@ -57,7 +57,7 @@ kalau kamu nggak mau pengunjung website kehilangan halamanmu waktu klik
 link keluar.
 
 ```html
-<a href="https://academy.tcc15.my.id" target="_blank">Website TCC</a>
+<a href="https://rit-base.org" target="_blank">Website RIT</a>
 ```
 
 ## List: `<ul>` dan `<ol>`
