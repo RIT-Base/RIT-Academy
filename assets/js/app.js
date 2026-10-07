@@ -132,10 +132,45 @@ function initServiceWorker() {
   }
 }
 
+export function syncNavbarUser() {
+  try {
+    const rawUser = localStorage.getItem("rit_auth_user_v1");
+    const authUser = rawUser ? JSON.parse(rawUser) : null;
+    const rawProfile = localStorage.getItem("rit_profile_v1");
+    const profile = rawProfile ? JSON.parse(rawProfile) : {};
+
+    const avatarUrl = authUser?.avatar_url || profile?.avatar_url;
+    const displayName =
+      authUser?.nickname || profile?.nickname || authUser?.github_username || "";
+
+    const navAvatarLinks = document.querySelectorAll(
+      'nav.top-nav a[href="profil.html"], nav.top-nav a[data-nav-link="profil.html"]'
+    );
+
+    navAvatarLinks.forEach((link) => {
+      if (avatarUrl) {
+        link.innerHTML = `<img src="${avatarUrl}" alt="${
+          displayName || "Profil"
+        }" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-primary);">`;
+        link.setAttribute("title", `Profil (${displayName || "Pengguna"})`);
+      } else {
+        link.innerHTML = `<span class="material-symbols-outlined" style="font-size: 20px;">person</span>`;
+        link.setAttribute("title", "Profil");
+      }
+    });
+  } catch (e) {
+    console.warn("app.js: syncNavbarUser error:", e);
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initTheme();
   markActiveNav();
   setFooterYear();
   initSkipLink();
   initServiceWorker();
+  syncNavbarUser();
+
+  window.addEventListener("rit_auth_state_changed", syncNavbarUser);
+  window.addEventListener("rit_cloud_sync_completed", syncNavbarUser);
 });

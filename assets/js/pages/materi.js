@@ -3,6 +3,7 @@ import { ProgressStore } from "../progress-store.js";
 import { getCurrentTheme } from "../app.js";
 import { createHtmlLab } from "../labs/html-lab.js";
 import { createPythonLab, runPython, runPythonAndEval } from "../labs/python-lab.js";
+import { fetchSubmission, submitProject } from "../supabase.js";
 import {
   checkHtmlContains,
   checkPythonOutput,
@@ -99,6 +100,7 @@ async function main() {
       <div class="lesson-content" id="lesson-body" style="font-size: var(--fs-base); line-height: 1.8; color: var(--color-text-muted);"></div>
       
       <div id="checkpoint-mount"></div>
+      <div id="submission-mount"></div>
 
       <!-- Widget Diskusi & Tanya Jawab Modul (Giscus) -->
       <section class="module-discussion-section" style="margin-top: var(--space-7); padding-top: var(--space-6); border-top: 1px solid var(--color-border);">
@@ -275,10 +277,231 @@ async function main() {
         <p class="text-muted">Belum ada task checkpoint untuk modul ini.</p>
       </div>
     `;
+    await renderProjectSubmissionSection(course, modul);
     return;
   }
 
   renderCheckpoint(tasksData, inlineLabs);
+  await renderProjectSubmissionSection(course, modul);
+}
+
+// 2.5. Engine Pengumpulan Tugas Akhir (TASK-104)
+async function renderProjectSubmissionSection(courseSlug, modulSlug) {
+  const mount = document.getElementById("submission-mount");
+  if (!mount || !modulSlug) return;
+
+  const isProject =
+    modulSlug.toLowerCase().includes("proyek") ||
+    modulSlug.toLowerCase().includes("project");
+
+  if (!isProject) {
+    mount.innerHTML = "";
+    return;
+  }
+
+  const authUser = ProgressStore.getAuthUser();
+  const isCloud = ProgressStore.isCloudConnected() && Boolean(authUser?.id);
+
+  if (!isCloud) {
+    mount.innerHTML = `
+      <section class="submission-section" style="border-left: 4px solid var(--color-warning);">
+        <div style="display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: var(--space-3);">
+          <div style="display: flex; align-items: center; gap: var(--space-3);">
+            <div style="width: 44px; height: 44px; border-radius: var(--radius-md); background: var(--color-warning-light); color: var(--color-warning); display: flex; align-items: center; justify-content: center;">
+              <span class="material-symbols-outlined" style="font-size: 24px;">upload_file</span>
+            </div>
+            <div>
+              <h2 style="margin: 0; font-size: var(--fs-lg);">Pengumpulan Tugas Akhir</h2>
+              <p class="text-muted" style="margin: 0; font-size: var(--fs-xs);">Kumpulkan tautan repositori tugasmu untuk dinilai mentor & komunitas RIT.</p>
+            </div>
+          </div>
+          <span class="cloud-sync-pill is-offline">
+            <span class="material-symbols-outlined" style="font-size: 13px;">lock</span> Login Diperlukan
+          </span>
+        </div>
+
+        <div style="background: var(--color-surface-alt); border: 1px solid var(--color-border); padding: var(--space-4); border-radius: var(--radius-md); display: flex; flex-direction: column; gap: var(--space-3);">
+          <p style="margin: 0; font-size: var(--fs-sm); line-height: 1.6; color: var(--color-text);">
+            Untuk mengumpulkan dan menautkan repositori karyamu ke akun RIT Academy serta sertifikat kelulusan resmi, silakan masuk menggunakan akun GitHub.
+          </p>
+          <div>
+            <a href="login.html" class="btn btn-github btn-sm" style="text-decoration: none; padding: 8px 16px;">
+              <svg class="github-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>Masuk dengan GitHub</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    `;
+    return;
+  }
+
+  // Ambil existing submission jika ada
+  let existing = null;
+  try {
+    const res = await fetchSubmission(authUser.id, courseSlug);
+    existing = res.data;
+  } catch (e) {
+    console.warn("materi.js: Gagal fetch submission:", e);
+  }
+
+  const statusMap = {
+    submitted: { label: "Menunggu Review", icon: "hourglass_empty" },
+    reviewed: { label: "Sedang Ditinjau", icon: "rate_review" },
+    approved: { label: "Disetujui", icon: "verified" },
+    revision: { label: "Perlu Revisi", icon: "warning" },
+  };
+
+  const currentStatus = existing?.status || "submitted";
+  const statusInfo = statusMap[currentStatus] || statusMap.submitted;
+
+  mount.innerHTML = `
+    <section class="submission-section" style="border-left: 4px solid var(--color-primary);">
+      <div style="display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: var(--space-3);">
+        <div style="display: flex; align-items: center; gap: var(--space-3);">
+          <div style="width: 44px; height: 44px; border-radius: var(--radius-md); background: var(--color-primary-light); color: var(--color-primary-dark); display: flex; align-items: center; justify-content: center;">
+            <span class="material-symbols-outlined" style="font-size: 24px;">upload_file</span>
+          </div>
+          <div>
+            <h2 style="margin: 0; font-size: var(--fs-lg);">Pengumpulan Tugas Akhir</h2>
+            <p class="text-muted" style="margin: 0; font-size: var(--fs-xs);">Kumpulkan karya tugas akhirmu untuk dinilai oleh mentor & komunitas RIT Academy.</p>
+          </div>
+        </div>
+
+        ${
+          existing
+            ? `
+          <span class="submission-pill is-${currentStatus}">
+            <span class="material-symbols-outlined" style="font-size: 14px;">${statusInfo.icon}</span>
+            ${statusInfo.label}
+          </span>
+        `
+            : `
+          <span class="cloud-sync-pill is-synced">
+            <span class="material-symbols-outlined" style="font-size: 13px;">cloud_done</span> Akun Terhubung
+          </span>
+        `
+        }
+      </div>
+
+      <div id="submission-alert" style="display: none; padding: var(--space-3) var(--space-4); border-radius: var(--radius-md); font-size: var(--fs-sm); align-items: center; gap: 8px;"></div>
+
+      <form id="submission-form" style="display: flex; flex-direction: column; gap: var(--space-4);">
+        <div class="form-group" style="margin: 0;">
+          <label for="sub-repo-url" class="form-label" style="display: flex; align-items: center; justify-content: space-between;">
+            <span>URL Repositori GitHub <span style="color: var(--color-danger);">*</span></span>
+            <span style="font-size: 11px; color: var(--color-text-muted); font-weight: normal;">Wajib</span>
+          </label>
+          <input type="url" id="sub-repo-url" class="form-input" placeholder="https://github.com/${
+            authUser.github_username || "username"
+          }/proyek-akhir" value="${existing?.repo_url || ""}" required>
+        </div>
+
+        <div class="form-group" style="margin: 0;">
+          <label for="sub-demo-url" class="form-label" style="display: flex; align-items: center; justify-content: space-between;">
+            <span>URL Live Demo / Web Pages (Opsional)</span>
+            <span style="font-size: 11px; color: var(--color-text-muted); font-weight: normal;">Opsional</span>
+          </label>
+          <input type="url" id="sub-demo-url" class="form-input" placeholder="https://${
+            authUser.github_username || "username"
+          }.github.io/proyek-akhir" value="${existing?.demo_url || ""}">
+        </div>
+
+        <div class="form-group" style="margin: 0;">
+          <label for="sub-notes" class="form-label" style="display: flex; align-items: center; justify-content: space-between;">
+            <span>Catatan Mahasiswa (Opsional)</span>
+            <span style="font-size: 11px; color: var(--color-text-muted); font-weight: normal;">Opsional</span>
+          </label>
+          <textarea id="sub-notes" class="form-input" rows="3" placeholder="Ceritakan fitur utama, tantangan pengerjaan, atau panduan menjalankan karyamu..." style="resize: vertical;">${
+            existing?.notes || ""
+          }</textarea>
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-2);">
+          ${
+            existing?.submitted_at
+              ? `
+            <span style="font-size: var(--fs-xs); color: var(--color-text-muted);">
+              Terkirim pada: <strong>${new Date(existing.submitted_at).toLocaleDateString(
+                "id-ID",
+                { day: "numeric", month: "short", year: "numeric" }
+              )}</strong>
+            </span>
+          `
+              : `<span></span>`
+          }
+
+          <button type="submit" id="btn-submit-task" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px;">
+            <span class="material-symbols-outlined" style="font-size: 18px;">send</span>
+            <span>${existing ? "Perbarui Pengumpulan" : "Kumpulkan Tugas Akhir"}</span>
+          </button>
+        </div>
+      </form>
+    </section>
+  `;
+
+  const form = document.getElementById("submission-form");
+  const alertEl = document.getElementById("submission-alert");
+  const submitBtn = document.getElementById("btn-submit-task");
+
+  form?.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const repoUrl = document.getElementById("sub-repo-url").value.trim();
+    const demoUrl = document.getElementById("sub-demo-url").value.trim();
+    const notes = document.getElementById("sub-notes").value.trim();
+
+    if (!repoUrl) {
+      if (alertEl) {
+        alertEl.style.display = "flex";
+        alertEl.style.background = "var(--color-danger-light)";
+        alertEl.style.color = "var(--color-danger)";
+        alertEl.innerHTML = `<span class="material-symbols-outlined">error</span> Harap isi URL Repositori GitHub`;
+      }
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = `<span class="material-symbols-outlined spin-animation">sync</span> Mengirimkan...`;
+
+    const nowIso = new Date().toISOString();
+    const payload = {
+      user_id: authUser.id,
+      course_slug: courseSlug,
+      repo_url: repoUrl,
+      demo_url: demoUrl || null,
+      notes: notes || null,
+      status: existing?.status || "submitted",
+      submitted_at: existing?.submitted_at || nowIso,
+      updated_at: nowIso,
+    };
+
+    const { data, error } = await submitProject(payload);
+
+    if (error) {
+      if (alertEl) {
+        alertEl.style.display = "flex";
+        alertEl.style.background = "var(--color-danger-light)";
+        alertEl.style.color = "var(--color-danger)";
+        alertEl.innerHTML = `<span class="material-symbols-outlined">error</span> Gagal mengirimkan tugas: ${error.message}`;
+      }
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = `<span class="material-symbols-outlined">send</span> Coba Lagi`;
+    } else {
+      // Tandai modul sebagai selesai di ProgressStore
+      ProgressStore.setDone(courseSlug, modulSlug);
+
+      if (alertEl) {
+        alertEl.style.display = "flex";
+        alertEl.style.background = "var(--color-success-light)";
+        alertEl.style.color = "var(--color-success)";
+        alertEl.innerHTML = `<span class="material-symbols-outlined">check_circle</span> Tugas akhir berhasil dikumpulkan ke database RIT Academy!`;
+      }
+
+      setTimeout(() => {
+        renderProjectSubmissionSection(courseSlug, modulSlug);
+      }, 1200);
+    }
+  });
 }
 
 // 3. Engine Khusus: The Sorting Quiz (Diagnostik 16 Path)

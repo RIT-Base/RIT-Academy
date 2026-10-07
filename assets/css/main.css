@@ -1545,3 +1545,252 @@ html[data-theme="dark"] .path-header-banner .banner-progress-track {
   border-color: var(--color-primary);
   box-shadow: var(--shadow-md);
 }
+
+/* ---------- TASK-103: Tombol GitHub OAuth & Cloud Sync UI ---------- */
+.btn-github {
+  background: #181717;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  font-weight: 700;
+  border-radius: var(--radius-md);
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+}
+
+:root[data-theme="dark"] .btn-github,
+html[data-theme="dark"] .btn-github {
+  background: #24292f;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-github:hover {
+  background: #24292e;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2), 0 0 16px rgba(5, 217, 231, 0.25);
+}
+
+.btn-github:active {
+  transform: scale(0.98);
+}
+
+.btn-github .github-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
+/* Cloud Sync Pills */
+.cloud-sync-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.cloud-sync-pill.is-synced {
+  background: var(--color-success-light);
+  color: var(--color-success);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.cloud-sync-pill.is-offline {
+  background: var(--color-surface-alt);
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+}
+
+.cloud-sync-pill.is-syncing {
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  border: 1px solid rgba(5, 217, 231, 0.3);
+}
+
+/* Account Overview Card */
+.account-card {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-5);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.account-card__info {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.account-card__avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-primary);
+  box-shadow: var(--glow-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-surface-alt);
+  color: var(--color-text-muted);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.account-card__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.account-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.account-card__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+/* Feature bullets in login */
+.login-feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+  text-align: left;
+}
+
+.login-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.login-feature-item strong {
+  color: var(--color-text);
+}
+
+.login-feature-item .icon {
+  font-size: 18px;
+  color: var(--color-primary-dark);
+  margin-top: 1px;
+  flex-shrink: 0;
+}
+
+/* ---------- TASK-104: UI Formulir Pengumpulan Tugas Akhir (Project Submissions) ---------- */
+.submission-section {
+  margin-top: var(--space-6);
+  padding: var(--space-5);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.submission-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.submission-pill.is-submitted {
+  background: var(--color-warning-light);
+  color: var(--color-warning);
+  border: 1px solid rgba(217, 119, 6, 0.3);
+}
+
+.submission-pill.is-approved {
+  background: var(--color-success-light);
+  color: var(--color-success);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.submission-pill.is-revision {
+  background: var(--color-danger-light);
+  color: var(--color-danger);
+  border: 1px solid rgba(220, 38, 38, 0.3);
+}
+
+.submission-pill.is-reviewed {
+  background: var(--color-accent-light);
+  color: var(--color-accent);
+  border: 1px solid rgba(37, 99, 235, 0.3);
+}
+
+.submission-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-3);
+}
+
+.submission-item-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.submission-item-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.submission-link-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--fs-xs);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  background: var(--color-surface-alt);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.submission-link-pill:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}

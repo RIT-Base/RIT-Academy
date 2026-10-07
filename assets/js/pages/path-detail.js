@@ -2,6 +2,7 @@ import { ContentLoader } from "../content-loader.js";
 import { ProgressStore } from "../progress-store.js";
 import { getPathColorTheme } from "./paths.js";
 import { openCertificateModal } from "../certificate.js";
+import { fetchSubmission } from "../supabase.js";
 
 async function render() {
   const courseSlug = new URLSearchParams(window.location.search).get("course");
@@ -75,8 +76,28 @@ async function render() {
   }
 
   // 2. Render Sidebar
+  let submissionData = null;
+  const authUser = ProgressStore.getAuthUser();
+  if (authUser?.id) {
+    try {
+      const subRes = await fetchSubmission(authUser.id, course.slug);
+      submissionData = subRes.data;
+    } catch (e) {
+      console.warn("path-detail.js: fetchSubmission error:", e);
+    }
+  }
+
   const sidebarMount = document.getElementById("path-sidebar-mount");
   if (sidebarMount) {
+    const statusMap = {
+      submitted: { label: "Menunggu Review", icon: "hourglass_empty" },
+      reviewed: { label: "Sedang Ditinjau", icon: "rate_review" },
+      approved: { label: "Disetujui", icon: "verified" },
+      revision: { label: "Perlu Revisi", icon: "warning" },
+    };
+    const subStatus = submissionData?.status || "submitted";
+    const subStatusInfo = statusMap[subStatus] || statusMap.submitted;
+
     sidebarMount.innerHTML = `
       <div class="card" style="display: flex; flex-direction: column; gap: var(--space-3); margin-bottom: var(--space-4); border-top: 4px solid ${theme.border};">
         <h3 style="margin: 0;">Path Overview</h3>
@@ -88,11 +109,32 @@ async function render() {
           <span class="material-symbols-outlined" style="font-size: 20px; color: ${theme.color};">emoji_events</span>
           <span style="font-size: var(--fs-sm);">Sertifikat setelah selesai</span>
         </div>
+        <div style="display: flex; align-items: center; gap: 8px; color: var(--color-text-muted);">
+          <span class="material-symbols-outlined" style="font-size: 20px; color: ${theme.color};">upload_file</span>
+          <span style="font-size: var(--fs-sm);">
+            ${submissionData ? `Tugas: <span class="submission-pill is-${subStatus}" style="font-size: 10px; padding: 2px 8px;"><span class="material-symbols-outlined" style="font-size: 11px;">${subStatusInfo.icon}</span> ${subStatusInfo.label}</span>` : 'Tugas Akhir Mandiri'}
+          </span>
+        </div>
+
         <hr style="border: 0; border-top: 1px solid var(--color-border); margin: var(--space-2) 0;">
         <h4 style="margin: 0; font-size: 10px; font-weight: 700; text-transform: uppercase; color: var(--color-text-faint); letter-spacing: 0.05em;">Status Kamu</h4>
         <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: var(--space-3) 0;">
           <span style="font-size: 3rem; font-weight: 800; color: ${theme.color}; line-height: 1;">${progressPercent}%</span>
           <span style="font-size: var(--fs-xs); color: var(--color-text-muted);">Tuntas</span>
+
+          ${submissionData ? `
+            <div style="width: 100%; margin-top: var(--space-3); padding: var(--space-2) var(--space-3); background: var(--color-surface-alt); border-radius: var(--radius-sm); border: 1px solid var(--color-border); font-size: 11px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                <span style="font-weight: 700; color: var(--color-text);">Tugas Akhir</span>
+                <span class="submission-pill is-${subStatus}" style="font-size: 9px; padding: 1px 6px;">
+                  ${subStatusInfo.label}
+                </span>
+              </div>
+              <a href="${submissionData.repo_url}" target="_blank" rel="noopener" style="color: var(--color-primary-dark); font-family: var(--font-mono); text-decoration: none; display: flex; align-items: center; gap: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                <span class="material-symbols-outlined" style="font-size: 13px;">link</span> ${submissionData.repo_url.replace('https://github.com/', '')}
+              </a>
+            </div>
+          ` : ''}
           
           ${progressPercent === 100 ? `
             <button id="claim-cert-btn" class="btn btn-primary" style="width: 100%; justify-content: center; gap: 8px; margin-top: 14px; font-weight: 700; box-shadow: 0 4px 14px rgba(5, 217, 231, 0.4);">
