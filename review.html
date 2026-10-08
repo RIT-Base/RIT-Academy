@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel Review Submission | RIT Academy</title>
+  <meta name="description" content="Panel evaluasi tugas dan peninjauan proyek akhir mahasiswa RIT Academy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/202061261?s=400&u=80f9d7669e799d3be3a78575889b4ef55a7ce77b&v=4" type="image/png">
+
+  <!-- Cegah Flash of Unstyled Theme (FOUC) -->
+  <script>
+    (function() {
+      try {
+        const saved = localStorage.getItem('rit_theme');
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const theme = saved || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-nav-active="review.html">
+  <a href="#main" class="skip-link">Langsung ke konten utama</a>
+
+  <!-- Tombol Toggle Tema Mobile -->
+  <button type="button" class="mobile-theme-toggle theme-toggle-btn" aria-label="Ganti mode terang/gelap" title="Ganti Mode Tema">
+    <span class="material-symbols-outlined theme-icon" style="font-size: 20px;">dark_mode</span>
+  </button>
+
+  <!-- Navigasi Utama -->
+  <nav class="top-nav" aria-label="Navigasi utama">
+    <a href="index.html" class="brand"><span class="material-symbols-outlined" style="color: var(--color-primary); font-size: 28px;" aria-hidden="true">terminal</span> RIT Academy</a>
+    <ul class="top-nav__links">
+      <li><a href="index.html" data-nav-link="index.html">Beranda</a></li>
+      <li><a href="paths.html" data-nav-link="paths.html">Belajar</a></li>
+      <li><a href="tools.html" data-nav-link="tools.html">Tools</a></li>
+      <li><a href="forum.html" data-nav-link="forum.html">Forum</a></li>
+      <li><a href="review.html" data-nav-link="review.html" aria-current="page" style="color: var(--color-primary); font-weight: 700;">Review</a></li>
+    </ul>
+    <div style="display: flex; align-items: center; gap: var(--space-2); padding-right: var(--space-4);">
+      <button type="button" class="theme-toggle-btn icon-btn" aria-label="Ganti mode terang/gelap" title="Ganti Mode Tema">
+        <span class="material-symbols-outlined theme-icon" style="font-size: 20px;">dark_mode</span>
+      </button>
+      <a href="profil.html" data-nav-link="profil.html" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; background-color: var(--color-primary); border-radius: 50%; color: var(--rit-black);" title="Profil Saya">
+        <span class="material-symbols-outlined" style="font-size: 20px;">person</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Konten Utama -->
+  <main id="main" class="container page-section path-content" style="min-height: 70vh;">
+    <div id="review-mount">
+      <div style="text-align: center; padding: var(--space-7) 0;">
+        <span class="material-symbols-outlined spin-animation" style="font-size: 36px; color: var(--color-primary);">sync</span>
+        <p class="text-muted" style="margin-top: var(--space-2); font-size: var(--fs-sm);">Memeriksa hak akses & memuat data submission...</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal Evaluasi / Review Submission -->
+  <div id="review-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="review-modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="review-modal-title">
+          <span class="material-symbols-outlined" style="color: var(--color-primary);">rate_review</span>
+          <span>Beri Review & Nilai</span>
+        </h3>
+        <button type="button" class="modal-close-btn" id="btn-close-review-modal" aria-label="Tutup dialog">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+
+      <form id="review-form">
+        <div class="modal-body">
+          <!-- Ringkasan Submission Target -->
+          <div id="review-modal-student-summary" style="background: var(--color-surface-alt); padding: var(--space-3); border-radius: var(--radius-md); border: 1px solid var(--color-border); display: flex; flex-direction: column; gap: 4px;">
+            <!-- Dimuat dinamis oleh review.js -->
+          </div>
+
+          <!-- Pilihan Status Review -->
+          <div class="form-group" style="margin: 0;">
+            <label class="form-label" style="font-weight: 700; margin-bottom: 6px; display: block;">
+              Keputusan Penilaian <span style="color: var(--color-danger);">*</span>
+            </label>
+            <div class="status-radio-group">
+              <label class="status-radio-option status-opt-approved" id="opt-label-approved">
+                <input type="radio" name="review_status" value="approved" required>
+                <span class="material-symbols-outlined" style="color: var(--color-success); font-size: 22px;">verified</span>
+                <span style="font-size: var(--fs-xs); font-weight: 700;">Disetujui</span>
+                <span style="font-size: 10px; color: var(--color-text-muted);">Lulus & Terverifikasi</span>
+              </label>
+
+              <label class="status-radio-option status-opt-revision" id="opt-label-revision">
+                <input type="radio" name="review_status" value="revision" required>
+                <span class="material-symbols-outlined" style="color: var(--color-danger); font-size: 22px;">warning</span>
+                <span style="font-size: var(--fs-xs); font-weight: 700;">Perlu Revisi</span>
+                <span style="font-size: 10px; color: var(--color-text-muted);">Ada catatan perbaikan</span>
+              </label>
+
+              <label class="status-radio-option status-opt-reviewed" id="opt-label-reviewed">
+                <input type="radio" name="review_status" value="reviewed" required>
+                <span class="material-symbols-outlined" style="color: var(--color-accent); font-size: 22px;">rate_review</span>
+                <span style="font-size: var(--fs-xs); font-weight: 700;">Sedang Ditinjau</span>
+                <span style="font-size: 10px; color: var(--color-text-muted);">Masih dalam evaluasi</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Textarea Feedback & Catatan Mentor -->
+          <div class="form-group" style="margin: 0;">
+            <label for="review-feedback-input" class="form-label" style="font-weight: 700; margin-bottom: 4px; display: flex; align-items: center; justify-content: space-between;">
+              <span>Catatan & Feedback Mentor <span style="color: var(--color-danger);">*</span></span>
+              <span style="font-size: 11px; color: var(--color-text-muted); font-weight: normal;">Akan dibaca oleh siswa</span>
+            </label>
+            <textarea id="review-feedback-input" class="form-input" rows="4" placeholder="Tuliskan ulasan kode, apresiasi pengerjaan, atau poin-poin spesifik yang wajib diperbaiki siswa..." required style="resize: vertical; font-size: var(--fs-sm); line-height: 1.5;"></textarea>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline" id="btn-cancel-review-modal">Batal</button>
+          <button type="submit" class="btn btn-primary" id="btn-save-review" style="display: inline-flex; align-items: center; gap: 8px;">
+            <span class="material-symbols-outlined" style="font-size: 18px;">save</span>
+            <span>Simpan Evaluasi</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal Kelola Akun Reviewer (Role Management) -->
+  <div id="role-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="role-modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="role-modal-title">
+          <span class="material-symbols-outlined" style="color: var(--color-primary);">manage_accounts</span>
+          <span>Manajemen Akun Reviewer</span>
+        </h3>
+        <button type="button" class="modal-close-btn" id="btn-close-role-modal" aria-label="Tutup dialog">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p class="text-muted" style="margin: 0; font-size: var(--fs-xs); line-height: 1.5;">
+          Akun dengan hak akses <strong>Reviewer</strong> atau <strong>Admin</strong> dapat mengakses panel ini untuk memeriksa submission dan memberikan catatan feedback pada tugas akhir mahasiswa.
+        </p>
+
+        <!-- Form Tambah Reviewer -->
+        <div style="background: var(--color-surface-alt); padding: var(--space-4); border-radius: var(--radius-md); border: 1px solid var(--color-border); display: flex; flex-direction: column; gap: var(--space-3);">
+          <div style="font-weight: 700; font-size: var(--fs-sm); display: flex; align-items: center; gap: 6px;">
+            <span class="material-symbols-outlined" style="font-size: 18px; color: var(--color-primary);">person_add</span>
+            <span>Tambah Reviewer Baru</span>
+          </div>
+
+          <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 200px;">
+              <input type="text" id="input-new-reviewer-username" class="form-input" placeholder="Masukkan @username GitHub siswa..." style="padding: 8px 12px; font-size: var(--fs-sm);">
+            </div>
+            <button type="button" id="btn-add-reviewer" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; font-size: var(--fs-sm);">
+              <span class="material-symbols-outlined" style="font-size: 18px;">add</span>
+              <span>Jadikan Reviewer</span>
+            </button>
+          </div>
+          <div id="role-add-status" style="display: none; font-size: var(--fs-xs);"></div>
+          <p style="margin: 0; font-size: 11px; color: var(--color-text-faint);">
+            *Catatan: Siswa yang akan dijadikan reviewer harus sudah pernah login ke RIT Academy minimal 1 kali agar profilnya terdaftar di database.
+          </p>
+        </div>
+
+        <!-- Daftar Reviewer Aktif -->
+        <div>
+          <div style="font-weight: 700; font-size: var(--fs-sm); margin-bottom: var(--space-3); display: flex; align-items: center; justify-content: space-between;">
+            <span>Daftar Reviewer Aktif</span>
+            <span id="reviewer-count-badge" class="badge" style="background: var(--color-surface-alt); font-size: 11px;">0 Reviewer</span>
+          </div>
+          <div id="reviewers-list-container" style="display: flex; flex-direction: column; gap: var(--space-2); max-height: 260px; overflow-y: auto;">
+            <p class="text-muted" style="font-size: var(--fs-xs); text-align: center; padding: var(--space-4) 0;">Memuat daftar reviewer...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline" id="btn-done-role-modal">Selesai</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-root" class="toast-container"></div>
+
+  <!-- Footer -->
+  <footer class="site-footer" style="background: var(--color-surface); margin-top: var(--space-7); padding-bottom: calc(var(--nav-height-bottom) + var(--space-6)); border-top: 1px solid var(--color-border);">
+    <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-4);">
+      <div style="display: flex; align-items: center; gap: var(--space-2);">
+        <span class="material-symbols-outlined">terminal</span>
+        <strong style="font-size: var(--fs-xs); letter-spacing: 0.05em;">RIT ACADEMY &copy; <span data-year></span></strong>
+      </div>
+      <div style="display: flex; gap: var(--space-4);">
+        <a href="docs/CONTENT-GUIDE.md" style="font-size: var(--fs-sm); color: var(--color-text-muted);">Panduan Sensei</a>
+        <a href="forum.html" style="font-size: var(--fs-sm); color: var(--color-text-muted);">Forum Diskusi</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Navigasi Bawah (Mobile) -->
+  <nav class="bottom-nav" aria-label="Navigasi bawah">
+    <a href="index.html" data-nav-link="index.html"><span class="material-symbols-outlined icon" aria-hidden="true">home</span>Beranda</a>
+    <a href="paths.html" data-nav-link="paths.html"><span class="material-symbols-outlined icon" aria-hidden="true">school</span>Belajar</a>
+    <a href="tools.html" data-nav-link="tools.html"><span class="material-symbols-outlined icon" aria-hidden="true">build</span>Tools</a>
+    <a href="forum.html" data-nav-link="forum.html"><span class="material-symbols-outlined icon" aria-hidden="true">forum</span>Forum</a>
+    <a href="profil.html" data-nav-link="profil.html"><span class="material-symbols-outlined icon" aria-hidden="true">person</span>Profil</a>
+  </nav>
+
+  <script type="module" src="assets/js/app.js"></script>
+  <script type="module" src="assets/js/pages/review.js"></script>
+</body>
+</html>

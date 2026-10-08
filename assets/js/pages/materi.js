@@ -386,6 +386,33 @@ async function renderProjectSubmissionSection(courseSlug, modulSlug) {
 
       <div id="submission-alert" style="display: none; padding: var(--space-3) var(--space-4); border-radius: var(--radius-md); font-size: var(--fs-sm); align-items: center; gap: 8px;"></div>
 
+      ${
+        existing?.reviewer_feedback
+          ? `
+        <div class="reviewer-feedback-box is-${currentStatus}">
+          <div class="reviewer-feedback-header">
+            <span style="display: inline-flex; align-items: center; gap: 6px;">
+              <span class="material-symbols-outlined" style="font-size: 18px;">${statusInfo.icon}</span>
+              <span>${
+                currentStatus === "revision"
+                  ? "Catatan Evaluasi Mentor (Perlu Revisi)"
+                  : currentStatus === "approved"
+                  ? "Catatan Evaluasi Mentor (Tugas Disetujui 🎉)"
+                  : "Catatan Evaluasi Mentor"
+              }</span>
+            </span>
+            ${
+              existing.reviewed_at
+                ? `<span class="reviewer-feedback-date">${new Date(existing.reviewed_at).toLocaleDateString("id-ID", { day: "numeric", month: "short", year: "numeric" })}</span>`
+                : ""
+            }
+          </div>
+          <div class="reviewer-feedback-body">${existing.reviewer_feedback}</div>
+        </div>
+      `
+          : ""
+      }
+
       <form id="submission-form" style="display: flex; flex-direction: column; gap: var(--space-4);">
         <div class="form-group" style="margin: 0;">
           <label for="sub-repo-url" class="form-label" style="display: flex; align-items: center; justify-content: space-between;">
@@ -433,7 +460,7 @@ async function renderProjectSubmissionSection(courseSlug, modulSlug) {
 
           <button type="submit" id="btn-submit-task" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px;">
             <span class="material-symbols-outlined" style="font-size: 18px;">send</span>
-            <span>${existing ? "Perbarui Pengumpulan" : "Kumpulkan Tugas Akhir"}</span>
+            <span>${existing?.status === "revision" ? "Kirim Ulang Revisi Tugas" : existing ? "Perbarui Pengumpulan" : "Kumpulkan Tugas Akhir"}</span>
           </button>
         </div>
       </form>

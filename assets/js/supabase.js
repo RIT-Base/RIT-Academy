@@ -240,3 +240,158 @@ export async function fetchUserSubmissions(userId) {
   }
 }
 
+/**
+ * TASK-105: Mengambil seluruh submission dari semua siswa beserta profil mereka untuk panel review.
+ * Mendukung nested join Supabase dengan fallback batch enrich untuk keandalan maksimal.
+ */
+export async function fetchAllSubmissionsWithProfiles() {
+  try {
+    // 1. Coba nested join Supabase via relasi foreign key
+    const { data, error } = await supabase
+      .from("project_submissions")
+      .select(`
+        *,
+        profiles:user_id (
+          id,
+          nickname,
+          github_username,
+          avatar_url,
+          role
+        )
+      `)
+      .order("submitted_at", { ascending: false });
+
+    if (!error && Array.isArray(data)) {
+      return { data, error: null };
+    }
+
+    // 2. Fallback jika nested relation alias belum ter-cache: fetch manual & gabungkan
+    const subRes = await supabase
+      .from("project_submissions")
+      .select("*")
+      .order("submitted_at", { ascending: false });
+
+    if (subRes.error) throw subRes.error;
+    const submissions = subRes.data || [];
+    if (submissions.length === 0) return { data: [], error: null };
+
+    const userIds = Array.from(new Set(submissions.map((s) => s.user_id).filter(Boolean)));
+    const profileMap = new Map();
+
+    if (userIds.length > 0) {
+      const profRes = await supabase
+        .from("profiles")
+        .select("id, nickname, github_username, avatar_url, role")
+        .in("id", userIds);
+
+      if (!profRes.error && Array.isArray(profRes.data)) {
+        profRes.data.forEach((p) => profileMap.set(p.id, p));
+      }
+    }
+
+    const merged = submissions.map((s) => ({
+      ...s,
+      profiles: profileMap.get(s.user_id) || null,
+    }));
+
+    return { data: merged, error: null };
+  } catch (err) {
+    console.warn("Supabase: Gagal mengambil seluruh data submission:", err);
+    return { data: [], error: err };
+  }
+}
+
+/**
+ * TASK-105: Memperbarui status dan catatan evaluasi (feedback) dari reviewer.
+ */
+export async function updateSubmissionReview(submissionId, reviewPayload) {
+  if (!submissionId) {
+    return { data: null, error: new Error("ID submission diperlukan") };
+  }
+  try {
+    const updateData = {
+      ...reviewPayload,
+      updated_at: new Date().toISOString(),
+    };
+    const { data, error } = await supabase
+      .from("project_submissions")
+      .update(updateData)
+      .eq("id", submissionId)
+      .select()
+      .maybeSingle();
+
+    if (error) throw error;
+    return { data, error: null };
+  } catch (err) {
+    console.warn("Supabase: Gagal memperbarui review submission:", err);
+    return { data: null, error: err };
+  }
+}
+
+/**
+ * TASK-105: Mengambil daftar semua akun dengan role 'reviewer' atau 'admin'.
+ */
+export async function fetchReviewers() {
+  try {
+    const { data, error } = await supabase
+      .from("profiles")
+      .select("id, nickname, github_username, avatar_url, role, updated_at")
+      .in("role", ["reviewer", "admin"])
+      .order("role", { ascending: true });
+
+    if (error) throw error;
+    return { data: data || [], error: null };
+  } catch (err) {
+    console.warn("Supabase: Gagal mengambil daftar reviewer:", err);
+    return { data: [], error: err };
+  }
+}
+
+/**
+ * TASK-105: Mencari profil siswa berdasarkan username GitHub.
+ */
+export async function searchProfiles(query) {
+  if (!query || !query.trim()) return { data: [], error: null };
+  try {
+    const clean = query.trim().replace(/^@/, "");
+    const { data, error } = await supabase
+      .from("profiles")
+      .select("id, nickname, github_username, avatar_url, role")
+      .ilike("github_username", `%${clean}%`)
+      .limit(10);
+
+    if (error) throw error;
+    return { data: data || [], error: null };
+  } catch (err) {
+    console.warn("Supabase: Gagal mencari profil pengguna:", err);
+    return { data: [], error: err };
+  }
+}
+
+/**
+ * TASK-105: Memperbarui role pengguna di tabel profiles (e.g. 'student' <-> 'reviewer').
+ */
+export async function updateProfileRole(userId, newRole) {
+  if (!userId || !newRole) {
+    return { data: null, error: new Error("User ID dan role baru diperlukan") };
+  }
+  try {
+    const { data, error } = await supabase
+      .from("profiles")
+      .update({
+        role: newRole,
+        updated_at: new Date().toISOString(),
+      })
+      .eq("id", userId)
+      .select()
+      .maybeSingle();
+
+    if (error) throw error;
+    return { data, error: null };
+  } catch (err) {
+    console.warn("Supabase: Gagal memperbarui role pengguna:", err);
+    return { data: null, error: err };
+  }
+}
+
+

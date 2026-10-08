@@ -689,6 +689,7 @@ async function syncWithCloud() {
       github_username: githubUsername,
       avatar_url: avatarUrl,
       nickname,
+      role: remoteProfile.role || "student",
     };
     localStorage.setItem(AUTH_USER_KEY, JSON.stringify(authUserInfo));
     localStorage.setItem(LAST_SYNC_KEY, new Date().toISOString());
@@ -801,6 +802,29 @@ if (typeof window !== "undefined") {
   }
 }
 
+/**
+ * TASK-105: Mengambil role akun pengguna saat ini ('student' | 'reviewer' | 'admin').
+ */
+function getUserRole() {
+  const authUser = getAuthUser();
+  return authUser?.role || "student";
+}
+
+/**
+ * TASK-105: Memeriksa apakah pengguna memiliki hak akses reviewer atau admin.
+ */
+function isReviewer() {
+  const role = getUserRole();
+  return role === "reviewer" || role === "admin";
+}
+
+/**
+ * TASK-105: Memeriksa apakah pengguna memiliki hak akses admin penuh.
+ */
+function isAdmin() {
+  return getUserRole() === "admin";
+}
+
 export const ProgressStore = {
   getStatus,
   setDone,
@@ -823,5 +847,8 @@ export const ProgressStore = {
   isCloudConnected,
   getAuthUser,
   getLastSyncTime,
+  getUserRole,
+  isReviewer,
+  isAdmin,
   _key: key,
 };

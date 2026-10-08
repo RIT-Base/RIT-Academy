@@ -193,6 +193,36 @@ async function render() {
       </div>
     </div>
 
+    ${
+      ProgressStore.isReviewer()
+        ? `
+    <!-- Banner Akses Reviewer & Mentor (TASK-105) -->
+    <div class="card" style="grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-3); background: var(--color-surface); border: 1px solid var(--color-primary); box-shadow: 0 0 15px rgba(5, 217, 231, 0.1);">
+      <div style="display: flex; align-items: center; gap: var(--space-3);">
+        <div style="width: 44px; height: 44px; border-radius: var(--radius-md); background: var(--color-primary-light); color: var(--color-primary-dark); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <span class="material-symbols-outlined" style="font-size: 26px;">rate_review</span>
+        </div>
+        <div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <h3 style="margin: 0; font-size: var(--fs-md);">Panel Evaluasi & Review Tugas</h3>
+            <span class="role-badge ${ProgressStore.isAdmin() ? "is-admin" : "is-reviewer"}">
+              ${ProgressStore.isAdmin() ? "ADMIN" : "REVIEWER"}
+            </span>
+          </div>
+          <p class="text-muted" style="margin: 2px 0 0; font-size: var(--fs-xs);">
+            Anda memiliki hak akses untuk meninjau, memberi feedback, dan menilai tugas akhir mahasiswa RIT Academy.
+          </p>
+        </div>
+      </div>
+      <a href="review.html" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; padding: 10px 18px;">
+        <span class="material-symbols-outlined" style="font-size: 18px;">dashboard</span>
+        <span>Buka Panel Review</span>
+      </a>
+    </div>
+    `
+        : ""
+    }
+
     <!-- Kartu Identitas Siswa -->
     <div class="card" style="display: flex; flex-direction: column; gap: var(--space-4);">
       <h3 style="display: flex; align-items: center; gap: 8px; margin: 0;">
@@ -451,6 +481,27 @@ async function render() {
                         : ""
                     }
                   </div>
+
+                  ${
+                    s.reviewer_feedback
+                      ? `
+                    <div class="reviewer-feedback-box is-${s.status || "submitted"}">
+                      <div class="reviewer-feedback-header">
+                        <span style="display: inline-flex; align-items: center; gap: 4px;">
+                          <span class="material-symbols-outlined" style="font-size: 15px;">rate_review</span>
+                          <span>Catatan Feedback Mentor</span>
+                        </span>
+                        ${
+                          s.reviewed_at
+                            ? `<span class="reviewer-feedback-date">${new Date(s.reviewed_at).toLocaleDateString("id-ID", { day: "numeric", month: "short", year: "numeric" })}</span>`
+                            : ""
+                        }
+                      </div>
+                      <div class="reviewer-feedback-body">${s.reviewer_feedback}</div>
+                    </div>
+                  `
+                      : ""
+                  }
 
                   <div style="display: flex; flex-direction: column; gap: 6px; margin-top: auto; padding-top: var(--space-2); border-top: 1px solid var(--color-border);">
                     <a href="${s.repo_url}" target="_blank" rel="noopener" class="submission-link-pill">
