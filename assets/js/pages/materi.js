@@ -278,6 +278,7 @@ async function main() {
       </div>
     `;
     await renderProjectSubmissionSection(course, modul);
+    initGiscusMateri(course, modul);
     return;
   }
 
@@ -285,11 +286,13 @@ async function main() {
   if (tasksData?.type === "submission" || tasksData?.submissionOnly) {
     document.getElementById("checkpoint-mount").innerHTML = "";
     await renderProjectSubmissionSection(course, modul);
+    initGiscusMateri(course, modul);
     return;
   }
 
   renderCheckpoint(tasksData, inlineLabs);
   await renderProjectSubmissionSection(course, modul);
+  initGiscusMateri(course, modul);
 }
 
 // 2.5. Engine Pengumpulan Tugas Akhir (TASK-104)
@@ -945,9 +948,6 @@ function renderCheckpoint(tasksData, inlineLabs) {
       window.location.href = `path.html?course=${encodeURIComponent(course)}`;
     }
   });
-
-  // Pasang widget Giscus untuk materi aktif
-  initGiscusMateri(course, modul);
 }
 
 function initGiscusMateri(courseSlug, moduleSlug) {
