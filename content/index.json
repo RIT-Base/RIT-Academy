@@ -75,29 +75,34 @@
           "order": 5
         },
         {
-          "slug": "06-css-pengantar",
-          "title": "CSS Pengantar",
+          "slug": "06-css-fondasi",
+          "title": "CSS dalam Website",
           "order": 6
         },
         {
-          "slug": "07-css-layout",
-          "title": "CSS Layout dengan Flexbox",
+          "slug": "07-merakit-web-lokal",
+          "title": "Merakit Website di Komputer Sendiri",
           "order": 7
         },
         {
-          "slug": "08-git-github",
-          "title": "Mengenal Git & GitHub",
+          "slug": "08-inspect-dan-sandbox",
+          "title": "Developer Tools untuk Website",
           "order": 8
         },
         {
-          "slug": "09-deploy",
-          "title": "Menerbitkan Website ke Internet",
+          "slug": "09-git-github",
+          "title": "Mengenal Git & GitHub",
           "order": 9
         },
         {
-          "slug": "10-proyek-akhir",
-          "title": "Proyek Akhir: Portofolio Pribadi",
+          "slug": "10-deploy",
+          "title": "Menerbitkan Website ke Internet",
           "order": 10
+        },
+        {
+          "slug": "11-proyek-akhir",
+          "title": "Proyek Akhir: Portofolio Website Pribadi",
+          "order": 11
         }
       ]
     },

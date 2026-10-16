@@ -281,6 +281,13 @@ async function main() {
     return;
   }
 
+  // Modul Tugas Akhir / Submission Murni: Lewati Checkpoint Editor dan langsung render Form Pengumpulan
+  if (tasksData?.type === "submission" || tasksData?.submissionOnly) {
+    document.getElementById("checkpoint-mount").innerHTML = "";
+    await renderProjectSubmissionSection(course, modul);
+    return;
+  }
+
   renderCheckpoint(tasksData, inlineLabs);
   await renderProjectSubmissionSection(course, modul);
 }

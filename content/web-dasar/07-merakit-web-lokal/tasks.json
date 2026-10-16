@@ -1,0 +1,49 @@
+{
+  "editor": "html",
+  "starter": "<!DOCTYPE html>\n<html lang=\"id\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Profil Saya</title>\n  <!-- Hubungkan file style.css eksternal menggunakan tag <link> di bawah ini -->\n\n</head>\n<body>\n  <h1>Website Lokal Pertamaku</h1>\n  <p>Dibuat di komputer sendiri dengan rapi.</p>\n</body>\n</html>",
+  "hint": "Tuliskan tag <link rel=\"stylesheet\" href=\"style.css\"> di dalam bagian <head> untuk menghubungkan file CSS.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "html-contains",
+      "params": { "selector": "link[rel='stylesheet']" },
+      "hint": "Pastikan ada tag <link> dengan atribut rel=\"stylesheet\" di bagian <head>."
+    },
+    {
+      "id": "t2",
+      "type": "html-contains",
+      "params": { "selector": "link[href='style.css']" },
+      "hint": "Pastikan atribut href pada tag link mengarah ke 'style.css'."
+    },
+    {
+      "id": "t3",
+      "type": "quiz",
+      "params": {
+        "question": "Mengapa kita sangat disarankan menamai file utama sebuah website dengan nama 'index.html'?",
+        "options": [
+          "Karena browser menolak membuka file dengan nama lain",
+          "Karena web server otomatis mencari file indeks/daftar isi ini secara default jika nama file tidak disebutkan di URL",
+          "Agar ukuran file HTML menjadi lebih kecil dan hemat memori",
+          "Karena aturan dari bahasa CSS"
+        ],
+        "answer": 1
+      },
+      "hint": "Ingat bagian Fun Fact: web server mencari daftar isi/indeks otomatis saat pengunjung membuka alamat website."
+    },
+    {
+      "id": "t4",
+      "type": "quiz",
+      "params": {
+        "question": "Mengapa nama berkas gambar seperti 'Foto Profil.jpg' bisa muncul normal di laptop Windows tetapi rawan rusak (gambar pecah) saat di-upload ke server internet?",
+        "options": [
+          "Karena server internet tidak mendukung file gambar berformat .jpg",
+          "Karena Windows menghapus otomatis spasi saat file dikirim ke internet",
+          "Karena server internet berjalan di Linux yang membedakan huruf besar-kecil (case-sensitive) serta mengubah spasi jadi %20",
+          "Karena file gambar di Windows selalu dikompresi otomatis"
+        ],
+        "answer": 2
+      },
+      "hint": "Ingat perbedaan Windows (case-insensitive) vs Linux server (case-sensitive) dan bahaya spasi."
+    }
+  ]
+}

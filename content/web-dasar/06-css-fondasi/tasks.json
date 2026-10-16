@@ -1,0 +1,44 @@
+{
+  "editor": "html",
+  "starter": "<!-- 1. Tambahkan tag <style>...</style> untuk menulis aturan CSS di sini -->\n\n<h1>Profil Anggota RIT</h1>\n<!-- 2. Tambahkan atribut class=\"kartu\" pada tag <p> di bawah ini -->\n<p>Halo, aku sedang belajar CSS Fondasi di RIT Academy!</p>",
+  "hint": "Tuliskan tag <style>...</style> dan tambahkan atribut class=\"kartu\" pada elemen <p>.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "html-contains",
+      "params": { "selector": "style" },
+      "hint": "Buatlah tag <style>...</style> untuk menampung aturan CSS."
+    },
+    {
+      "id": "t2",
+      "type": "html-contains",
+      "params": { "selector": "p.kartu" },
+      "hint": "Tambahkan atribut class=\"kartu\" pada elemen <p> (misal: <p class=\"kartu\">)."
+    },
+    {
+      "id": "t3",
+      "type": "quiz",
+      "params": {
+        "question": "Di proyek website nyata standar industri, cara memasang CSS mana yang paling direkomendasikan agar struktur dokumen tetap bersih dan rapi?",
+        "options": [
+          "Inline CSS (menempel di atribut style tiap tag)",
+          "Internal CSS (di dalam tag <style> di bagian head)",
+          "External CSS (file terpisah .css dipanggil via tag <link>)",
+          "Menulis CSS di dalam tag <body>"
+        ],
+        "answer": 2
+      },
+      "hint": "Ingat bagian 'External CSS': memisahkan kerangka HTML dan desain CSS ke file tersendiri."
+    },
+    {
+      "id": "t4",
+      "type": "quiz",
+      "params": {
+        "question": "Pada Box Model CSS, lapisan manakah yang berfungsi sebagai bantalan empuk di DALAM kotak (jarak antara teks dan garis tepi kotak)?",
+        "options": ["Content", "Padding", "Border", "Margin"],
+        "answer": 1
+      },
+      "hint": "Ingat analogi paket belanja: bubble wrap empuk di dalam kardus adalah padding."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "editor": "html",
+  "starter": "<!-- Konfirmasi kesiapan meja kerja Git & GitHub -->\n<h1>Meja Kerja GitHub Siap!</h1>\n<p>Akun sudah aktif, 2FA dan Recovery Codes sudah diamankan.</p>",
+  "hint": "Jawab kuis konsepnya. Di kode HTML starter, elemen h1 dan p sudah tersedia.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "quiz",
+      "params": {
+        "question": "Apa perbedaan mendasar antara Git dan GitHub?",
+        "options": [
+          "Git adalah versi berbayar, sedangkan GitHub adalah versi gratis",
+          "Git adalah aplikasi pencatat versi di komputer lokal, sedangkan GitHub adalah layanan awan untuk menyimpannya",
+          "Git adalah bahasa pemrograman baru, sedangkan GitHub adalah sistem operasi",
+          "Tidak ada perbedaan sama sekali"
+        ],
+        "answer": 1
+      },
+      "hint": "Ingat perumpamaan alat pencatat lokal vs tempat penyimpanan di awan (seperti Google Drive)."
+    },
+    {
+      "id": "t2",
+      "type": "quiz",
+      "params": {
+        "question": "Mengapa mengunduh dan menyimpan berkas 'Recovery Codes' saat mengaktifkan 2FA di GitHub adalah langkah yang SANGAT KRITIS?",
+        "options": [
+          "Agar kecepatan internet saat mengunggah kode menjadi lebih cepat",
+          "Karena kode pemulihan tersebut adalah satu-satunya kunci untuk membuka akunmu jika sewaktu-waktu HP rusak atau aplikasi authenticator terhapus",
+          "Untuk mendapatkan centang hijau di profil GitHub",
+          "Sebagai syarat agar bisa mengunduh file HTML orang lain"
+        ],
+        "answer": 1
+      },
+      "hint": "Baca ulang peringatan kotak merah di bagian 'Mengamankan Akun'."
+    },
+    {
+      "id": "t3",
+      "type": "quiz",
+      "params": {
+        "question": "Bagi pemula yang baru belajar, apa manfaat utama menggunakan aplikasi 'GitHub Desktop' dibanding langsung mengetik di Terminal?",
+        "options": [
+          "Membuat kode HTML berubah otomatis menjadi aplikasi Android",
+          "Menghubungkan dan mengunggah kode ke GitHub lewat tampilan visual tanpa harus menghafal perintah terminal yang rumit",
+          "Menghapus semua file error secara otomatis",
+          "Membuat desain website menjadi berwarna ungu"
+        ],
+        "answer": 1
+      },
+      "hint": "Ingat tujuan GitHub Desktop: antarmuka visual yang ramah tanpa ketikan terminal rumit."
+    }
+  ]
+}

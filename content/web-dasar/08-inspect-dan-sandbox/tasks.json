@@ -1,0 +1,67 @@
+{
+  "editor": "html",
+  "starter": "<!-- Modul ini fokus kuis diagnostik Inspect Element & DevTools -->\n",
+  "hint": "Jawab kuis uji pemahaman Inspect Element berdasarkan materi dan latihan di atas.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "quiz",
+      "params": {
+        "question": "Apa yang akan terjadi pada website jika kamu mengedit teks atau mengganti warna di dalam jendela Inspect Element browser, lalu menekan tombol Refresh (F5)?",
+        "options": [
+          "Website akan rusak permanen dan harus diketik ulang dari awal",
+          "Perubahan akan tersimpan otomatis ke server pusat website tersebut",
+          "Halaman web akan kembali seperti semula karena perubahan hanya bersifat sementara di memori browsermu",
+          "Browser akan error dan terkunci"
+        ],
+        "answer": 2
+      },
+      "hint": "Ingat konsep Sandbox Aman: perubahan di Inspect Element tidak memengaruhi file asli di server."
+    },
+    {
+      "id": "t2",
+      "type": "quiz",
+      "params": {
+        "question": "Jika kamu ingin menguji coba mengganti warna teks, menambahkan padding, atau mematikan aturan CSS pada sebuah elemen, panel DevTools manakah yang harus kamu buka?",
+        "options": [
+          "Panel Console",
+          "Panel Styles (di samping panel Elements)",
+          "Panel Network",
+          "Panel Application"
+        ],
+        "answer": 1
+      },
+      "hint": "Panel Styles adalah laboratorium tempat kamu mengutak-atik aturan CSS."
+    },
+    {
+      "id": "t3",
+      "type": "quiz",
+      "params": {
+        "question": "Fitur/tombol pintas apa di DevTools yang berguna untuk mengarahkan kursor langsung ke tombol di layar agar baris kodenya otomatis tersorot di panel Elements?",
+        "options": [
+          "Ikon Kursor Penunjuk Elemen (Inspect Cursor / Ctrl+Shift+C)",
+          "Tombol Print Screen",
+          "Tombol Backspace",
+          "Menu Bookmark"
+        ],
+        "answer": 0
+      },
+      "hint": "Ingat jurus 1: ikon panah kecil di pojok kiri atas jendela DevTools."
+    },
+    {
+      "id": "t4",
+      "type": "quiz",
+      "params": {
+        "question": "Pada berkas latihan 'latihan-inspect-rit.zip', ada gambar poster raksasa yang ukurannya bablas melebihi layar. Aturan CSS apa yang tepat untuk membuatnya responsif menurut pada wadahnya?",
+        "options": [
+          "width: 9999px;",
+          "max-width: 100%; height: auto;",
+          "display: none;",
+          "margin: -50px;"
+        ],
+        "answer": 1
+      },
+      "hint": "Ingat solusi Tantangan 2 di modul: max-width 100% membatasi lebar gambar agar tidak melebihi layar."
+    }
+  ]
+}

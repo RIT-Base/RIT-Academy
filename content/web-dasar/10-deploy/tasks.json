@@ -1,0 +1,52 @@
+{
+  "editor": "html",
+  "starter": "<!-- Modul ini fokus kuis konsep Hosting & GitHub Pages -->\n",
+  "hint": "Jawab kuis konsep seputar Hosting, GitHub Pages, dan Domain di bawah ini.",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "quiz",
+      "params": {
+        "question": "Jika 'Hosting' diibaratkan sebagai Rumah/Tanah tempat menyimpan berkas web, maka 'Domain' (contoh: google.com atau rit-base.org) diibaratkan sebagai...",
+        "options": [
+          "Satpam Penjaga Rumah",
+          "Alamat Rumah yang mudah diingat orang",
+          "Atap dan Genteng Rumah",
+          "Perabotan di dalam Ruang Tamu"
+        ],
+        "answer": 1
+      },
+      "hint": "Baca kembali bagian 'Mengenal Hosting dan Domain'."
+    },
+    {
+      "id": "t2",
+      "type": "quiz",
+      "params": {
+        "question": "Mengapa saat mem-publish repositori di GitHub Desktop, kita WAJIB menghilangkan centang pada opsi 'Keep this code private'?",
+        "options": [
+          "Agar ukuran file kode di laptop berkurang secara otomatis",
+          "Karena pada akun gratis, fitur GitHub Pages hanya bisa aktif jika repositori berstatus Public",
+          "Agar file CSS bisa otomatis berubah warna",
+          "Karena GitHub melarang pembuatan repositori private sama sekali"
+        ],
+        "answer": 1
+      },
+      "hint": "Ingat kotak merah peringatan di bagian Langkah 2: Mengunggah Proyek."
+    },
+    {
+      "id": "t3",
+      "type": "quiz",
+      "params": {
+        "question": "Jika setelah mengaktifkan GitHub Pages websitemu justru menampilkan error '404 File Not Found', hal mendasar apa yang paling sering menjadi penyebabnya?",
+        "options": [
+          "Nama file utama bukan 'index.html' (misal salah ketik jadi Index.html atau home.html), atau proses build robot GitHub Actions belum selesai",
+          "Komputer laptopmu dimatikan saat membuka link di HP",
+          "File CSS tidak menggunakan warna biru",
+          "Akun GitHub belum berumur 1 tahun"
+        ],
+        "answer": 0
+      },
+      "hint": "Cek bagian 'Pertolongan Pertama: Jika Muncul Halaman Error 404'."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "editor": "html",
-  "starter": "<!-- Tulis kodemu di sini -->\n<h1>Judul Halaman</h1>\n<p>Tulis paragraf di sini.</p>",
+  "starter": "<!-- Lengkapi kartu profil ini -->\n<h1>Profil Anggota RIT</h1>\n<!-- Tambahkan paragraf baru berisi deskripsi singkat tentang dirimu di bawah ini -->\n",
   "hint": "Ingat alur Browser → Request → Server → Response, dan pastikan HTML-mu punya elemen yang diminta task.",
   "tasks": [
     {
